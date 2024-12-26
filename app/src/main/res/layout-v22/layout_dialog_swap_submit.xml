@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_1A02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/roundborder_batch_vote" android:layout_width="fill_parent" android:layout_height="580.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/header_view" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="67.0dip" android:paddingHorizontal="15.0dip">
+            <ImageView android:id="@+id/iv_back" android:layout_width="9.0dip" android:layout_height="15.0dip" android:src="@mipmap/ic_left_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirmtransaction" android:layout_centerInParent="true" />
+            <ImageView android:id="@+id/iv_close" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:src="@mipmap/ic_popup_close" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ScrollView android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb" android:scrollbarTrackVertical="@color/gray_F5F6F7" android:scrollbarStyle="insideOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/send" android:layout_below="@id/header_view">
+            <LinearLayout android:orientation="vertical" android:id="@+id/li_content" android:background="@drawable/roundborder_batch_vote" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/gray_b3_15" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/dp_20">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/swap_divider" app:layout_constraintTop_toTopOf="parent">
+                        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/image_token_from" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" app:failureImage="@mipmap/ic_swap_default_logo" app:failureImageScaleType="focusCrop" app:placeholderImage="@mipmap/ic_swap_default_logo" app:placeholderImageScaleType="focusCrop" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_02" android:gravity="center" android:id="@+id/text_token_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="100 TRX" />
+                    </LinearLayout>
+                    <ImageView android:id="@+id/swap_divider" android:layout_width="16.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@mipmap/ic_swap_token" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@id/swap_divider" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                        <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/image_token_to" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" app:failureImage="@mipmap/ic_swap_default_logo" app:failureImageScaleType="focusCrop" app:placeholderImage="@mipmap/ic_swap_default_logo" app:placeholderImageScaleType="focusCrop" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/black_23" android:gravity="center" android:id="@+id/text_token_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="5.0 USDT" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:paddingHorizontal="@dimen/dp_20">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_rate" android:text="@string/swap_rate" style="@style/confirm_name" />
+                        <TextView android:gravity="center|right" android:id="@+id/tv_rate_right" android:text="1 TRX=100.45 BTT" android:layout_toRightOf="@id/tv_rate" android:layout_alignParentRight="true" style="@style/confirm_value" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:id="@+id/tv_fee" android:text="@string/swap_fee" style="@style/confirm_name" />
+                        <ImageView android:id="@+id/iv_help_fee" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/tv_fee" style="@style/confirm_question_tips" />
+                        <TextView android:gravity="center|right" android:id="@+id/tv_fee_right" android:text="1 TRX=100.45 BTT" android:layout_toRightOf="@id/iv_help_fee" android:layout_alignParentRight="true" style="@style/confirm_value" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:id="@+id/tv_min" android:text="@string/swap_min_received" style="@style/confirm_name" />
+                        <ImageView android:id="@+id/iv_help_min" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/tv_min" style="@style/confirm_question_tips" />
+                        <TextView android:gravity="center|right" android:id="@+id/tv_min_received_right" android:text="1 TRX=100.45 BTT" android:layout_toRightOf="@id/iv_help_min" android:layout_alignParentRight="true" style="@style/confirm_value" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:id="@+id/tv_price_impact" android:text="@string/swap_price_impact" style="@style/confirm_name" />
+                        <ImageView android:id="@+id/iv_help_price" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_toRightOf="@id/tv_price_impact" style="@style/confirm_question_tips" />
+                        <TextView android:gravity="center|right" android:id="@+id/tv_price_impact_right" android:text="1 TRX=100.45 BTT" android:layout_toRightOf="@id/iv_help_price" android:layout_alignParentRight="true" style="@style/confirm_value" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray_9B" android:id="@+id/tv_min_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/swap_submit_tips" />
+                    <View android:background="@color/gray_b3_15" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" />
+                    <com.tron.wallet.business.confirm.fg.component.GlobalFeeResourceView android:id="@+id/resource_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" app:showConfirmButton="false" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.tron.wallet.business.confirm.fg.component.GlobalConfirmButton android:id="@+id/send" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

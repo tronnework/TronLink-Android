@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/tronlink_note" />
+    <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <EditText android:textSize="13.0dip" android:id="@+id/et_transfer_address" android:text="" android:lines="1" android:layout_toLeftOf="@id/iv_one_delete" android:inputType="text" style="@style/et48_ee_1" />
+        <ImageView android:id="@+id/iv_one_delete" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/delete_black" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

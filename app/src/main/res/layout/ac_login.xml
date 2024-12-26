@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/rl_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@+id/ll_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <RelativeLayout android:background="@drawable/bg_login_logo" android:layout_width="88.0dip" android:layout_height="88.0dip">
+            <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/iv_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/login_arrow" />
+        <RelativeLayout android:background="@drawable/bg_login_logo" android:layout_width="88.0dip" android:layout_height="88.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@mipmap/ic_launcher" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ff888998" android:id="@+id/tv_walletname_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="50.0dip" android:text="@string/tron_tvname" android:layout_below="@id/ll_logo" />
+    <TextView android:enabled="true" android:textSize="14.0dip" android:textColor="#ff505160" android:id="@+id/tv_walletname" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="25.0dip" android:drawableRight="@mipmap/icon_arrow" android:drawablePadding="6.0dip" android:layout_alignTop="@id/tv_walletname_title" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff888998" android:id="@+id/tv_balance_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="12.0dip" android:text="@string/approve_balance_amount" android:layout_below="@id/tv_walletname_title" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff505160" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="25.0dip" android:layout_alignTop="@id/tv_balance_title" android:layout_alignParentRight="true" />
+    <View android:id="@+id/view_border" android:background="#fff7f8fa" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="22.0dip" android:layout_below="@id/tv_balance_title" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/view_border" android:layout_alignLeft="@id/view_border" android:layout_alignRight="@id/view_border">
+        <TextView android:textColor="#ff636acc" android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/roundborder_white_636acc" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancle" android:layout_weight="1.0" android:layout_below="@id/view_border" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tv_login" android:background="@drawable/roundborder_636acc" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="@string/login" android:layout_weight="1.0" android:layout_below="@id/view_border" />
+    </LinearLayout>
+</RelativeLayout>

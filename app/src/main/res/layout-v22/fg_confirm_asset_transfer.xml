@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="580.0dip" android:layout_alignParentBottom="true">
+        <com.tron.wallet.business.confirm.fg.component.GlobalTitleHeaderView android:id="@+id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ScrollView android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb" android:scrollbarTrackVertical="@color/gray_F5F6F7" android:scrollbarStyle="insideOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_asset_confirm" android:layout_below="@id/header_view">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_address" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_marginHorizontal="@dimen/dp_20">
+                    <RelativeLayout android:background="@drawable/bg_rectangle_f5f6f7" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/icon" android:paddingHorizontal="12.0dip" android:paddingVertical="8.0dip">
+                        <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/transfer_out_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm_sending_address" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/gray_808D98" android:ellipsize="end" android:gravity="left" android:id="@+id/transfer_out_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4dp" android:text="" android:layout_below="@id/transfer_out_address_title" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/gray_808D98" android:ellipsize="middle" android:id="@+id/transfer_out_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" android:singleLine="true" android:layout_below="@id/transfer_out_address" />
+                    </RelativeLayout>
+                    <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/icon_confirm_to" android:layout_centerInParent="true" />
+                    <RelativeLayout android:background="@drawable/bg_rectangle_f5f6f7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon">
+                        <RelativeLayout android:id="@+id/scam_tag" android:background="@drawable/round_transaction_confirm_state_bg_red" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:paddingHorizontal="6.0dip">
+                            <TextView android:id="@+id/tv_state" android:layout_marginBottom="1.0dip" android:text="@string/title_scam" android:layout_centerInParent="true" style="@style/text11_ec" />
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="right" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip" android:paddingVertical="8.0dip">
+                            <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/black_23" android:id="@+id/receiving_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm_receiving_address" android:layout_alignParentRight="true" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/gray_808D98" android:ellipsize="end" android:gravity="right" android:id="@+id/receiving_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_4dp" android:text="" android:layout_below="@id/receiving_address_title" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/gray_808D98" android:ellipsize="middle" android:id="@+id/receiving_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="" android:singleLine="true" android:layout_below="@id/receiving_address" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_below="@id/rl_address" android:layout_marginHorizontal="@dimen/dp_20">
+                    <TextView android:text="@string/contract_type" android:layout_centerVertical="true" style="@style/confirm_name" />
+                    <TextView android:textColor="@color/black_02" android:id="@+id/tv_type" android:text="@string/multisign_transaction" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/confirm_value" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_amount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_below="@id/rl_type" android:layout_marginHorizontal="@dimen/dp_20">
+                    <TextView android:text="@string/dapp_count" android:layout_centerVertical="true" style="@style/confirm_name" />
+                    <TextView android:id="@+id/tv_amount" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/confirm_value" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_contract" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_below="@id/rl_amount" android:layout_marginHorizontal="@dimen/dp_20">
+                    <TextView android:id="@+id/dapp_contract_title" android:text="@string/dapp_contract" android:layout_centerVertical="true" style="@style/confirm_name" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_toRightOf="@id/dapp_contract_title" android:layout_centerVertical="true">
+                        <LinearLayout android:id="@+id/rl_contract_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <ImageView android:id="@+id/sc_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/icon_contract" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/tv_contract_address" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/blue_3c" android:gravity="right" android:id="@+id/tv_contract_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/sc_icon" app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+                        <TextView android:textSize="12.0dip" android:textColor="@color/black_02" android:id="@+id/tv_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/rl_contract_address" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_token_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_below="@id/rl_contract" android:layout_marginHorizontal="@dimen/dp_20">
+                    <TextView android:text="Token ID" android:layout_centerVertical="true" style="@style/confirm_name" />
+                    <TextView android:textColor="@color/blue_13" android:id="@+id/tv_token_id" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/confirm_value" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_note" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="8.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_below="@id/rl_token_id" android:layout_marginHorizontal="@dimen/dp_20">
+                    <TextView android:id="@+id/note_des" android:text="@string/note" android:layout_centerVertical="true" style="@style/confirm_name" />
+                    <TextView android:ellipsize="middle" android:gravity="right" android:id="@+id/tv_note" android:layout_marginLeft="10.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/note_des" android:layout_alignParentRight="true" style="@style/confirm_value" />
+                </RelativeLayout>
+                <com.tron.wallet.business.confirm.fg.component.GlobalFeeResourceView android:id="@+id/resource_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" android:layout_below="@id/rl_note" android:layout_marginHorizontal="@dimen/dp_20" app:showConfirmButton="false" />
+            </RelativeLayout>
+        </ScrollView>
+        <com.tron.wallet.business.confirm.fg.component.GlobalConfirmButton android:id="@+id/btn_asset_confirm" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

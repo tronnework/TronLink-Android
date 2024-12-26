@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_window" android:background="@drawable/roundborder_white_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true" android:layout_marginHorizontal="15.0dip">
+        <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:src="@mipmap/icon_download" />
+        <TextView android:textStyle="bold" android:id="@+id/tv_title" android:layout_marginTop="20.0dip" android:text="@string/discover_new_version" style="@style/text18_23" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/roundborder_white_30_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:id="@+id/progressbar_download" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="16.0dip" android:maxHeight="15.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/downloadapk_progressbar_bg" android:minHeight="15.0dip" style="?android:progressBarStyleHorizontal" />
+            <TextView android:id="@+id/tv_desc" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/upgrade_desc" android:layout_marginHorizontal="20.0dip" style="@style/text14_6d" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/et_password" android:layout_marginHorizontal="20.0dip">
+                <TextView android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/roundborder_ebedf0_8_stroke" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:text="@string/cancle" android:layout_weight="1.0" style="@style/text14_23" />
+                <TextView android:gravity="center" android:id="@+id/tv_retry" android:background="@drawable/roundborder_232c41" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/upgrade_retry" android:layout_weight="1.0" style="@style/text14_ff" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip">
+            <TextView android:text="@string/update_slow" style="@style/text13_23" />
+            <TextView android:id="@+id/tv_switch_line" android:text="@string/switch_singapore_line" style="@style/text13_3c" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

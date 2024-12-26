@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/item_layout" android:background="@drawable/selector_item_select_token_f5" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_12" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="61.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.CircularImageDraweeView android:id="@+id/token_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:actualImageScaleType="centerCrop" app:failureImage="@mipmap/ic_token_default" app:failureImageScaleType="centerCrop" app:placeholderImage="@mipmap/ic_token_default" app:placeholderImageScaleType="centerCrop" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/token_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:id="@+id/tv_token_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ELF" android:layout_toRightOf="@id/token_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_9B" android:id="@+id/tv_token_address" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="u687fisytndhs85765JUY578Gtydnty" android:layout_toRightOf="@id/token_icon" />
+    </LinearLayout>
+    <CheckBox android:id="@+id/checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/CheckBox" />
+</RelativeLayout>

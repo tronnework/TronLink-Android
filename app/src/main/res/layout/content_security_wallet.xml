@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <RelativeLayout android:id="@+id/security_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_security_title" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/create_security_icon" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:layout_marginLeft="6.0dip" android:text="@string/create_wallet_security_title_1" android:layout_toRightOf="@id/iv_security_title" android:layout_centerVertical="true" style="@style/text14_23" />
+        </RelativeLayout>
+        <TextView android:id="@+id/security_content" android:layout_marginTop="6.0dip" android:text="@string/create_wallet_security_content_1" android:layout_centerVertical="true" style="@style/text14_6d" />
+        <View android:id="@+id/line" android:background="@color/gray_eb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+        <TextView android:textStyle="bold" android:layout_marginTop="20.0dip" android:text="@string/create_wallet_security_title_2" android:layout_centerVertical="true" style="@style/text14_23" />
+        <TextView android:id="@+id/security_content_2" android:layout_marginTop="8.0dip" android:text="@string/create_wallet_security_content_2" android:layout_centerVertical="true" style="@style/text14_6d" />
+        <TextView android:textStyle="bold" android:layout_marginTop="30.0dip" android:text="@string/create_wallet_security_title_3" android:layout_centerVertical="true" style="@style/text14_23" />
+        <TextView android:id="@+id/security_content_3" android:layout_marginTop="8.0dip" android:text="@string/create_wallet_security_content_3" android:layout_centerVertical="true" android:lineSpacingExtra="8.0dip" style="@style/text14_6d" />
+        <TextView android:textStyle="bold" android:layout_marginTop="30.0dip" android:text="@string/create_wallet_security_title_4" android:layout_centerVertical="true" style="@style/text14_23" />
+        <TextView android:id="@+id/security_content_4" android:layout_marginTop="8.0dip" android:text="@string/create_wallet_security_content_4" android:layout_centerVertical="true" style="@style/text14_6d" />
+    </LinearLayout>
+</RelativeLayout>

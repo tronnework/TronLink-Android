@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/li_date" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_gravity="center_vertical" android:id="@+id/tv_date_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="2022.10.22" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_item" android:background="@drawable/item_bookmark_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="4.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" fresco:failureImage="@mipmap/ic_dapp_item_place_holder" fresco:placeholderImage="@mipmap/ic_dapp_item_place_holder" fresco:retryImage="@mipmap/ic_browser_default_icon" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="6.0dip" android:layout_toLeftOf="@id/tv_time" android:layout_toRightOf="@id/image" android:layout_centerVertical="true">
+            <TextView android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Just lend" android:lines="1" style="@style/text14_23" />
+            <TextView android:ellipsize="end" android:id="@+id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Lending platform on TRON" android:lines="1" android:singleLine="true" style="@style/text12_9b" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/gray_9B" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:scaleType="fitCenter" android:text="12:00" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

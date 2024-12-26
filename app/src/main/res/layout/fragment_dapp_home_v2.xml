@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff1f2f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/frame_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@+id/iv_indicator" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="60.0dip" android:layout_marginBottom="20.0dip" android:src="@mipmap/ic_tab_indicator" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

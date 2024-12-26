@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_batch_vote" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@+id/share_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_as_url" style="@style/text16_02" />
+    <TextView android:gravity="center" android:id="@+id/share_img" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/share_as_image" style="@style/text16_02" />
+    <View android:background="@color/black_02_04" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="24.0dip" />
+    <TextView android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="@string/cancel" style="@style/text16_666666" />
+</LinearLayout>

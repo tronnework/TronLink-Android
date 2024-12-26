@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_dot" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/black_dot_23" android:layout_alignTop="@id/tv_name" android:layout_alignBottom="@id/tv_name" />
+    <TextView android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="导入-1" android:layout_toRightOf="@id/iv_dot" style="@style/text14_23" />
+    <TextView android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="(TNPdqto8HiuMzoG7Vv9wyyYhWzCojLeHAF)" android:layout_below="@id/tv_name" style="@style/text14_6d" />
+</RelativeLayout>

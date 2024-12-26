@@ -1,0 +1,277 @@
+[
+  {
+    "type": "Balance",
+    "list": [
+      {
+        "id": "1",
+        "name": "TransferContract",
+        "display_name_zh":"TRX 转账",
+        "display_name_en":"Transfer TRX",
+        "type":0
+      },
+      {
+        "id": "11",
+        "name": "FreezeBalanceContract",
+        "display_name_zh":"质押资产1.0",
+        "display_name_en":"Stake Asset in Stake 1.0",
+        "type":0
+      },
+      {
+        "id": "12",
+        "name": "UnfreezeBalanceContract",
+        "display_name_zh":"解锁资产1.0",
+        "display_name_en":"Unstake Asset in Stake 1.0",
+        "type":0
+      },
+      {
+        "id": "54",
+        "name": "FreezeBalanceV2Contract",
+        "display_name_zh":"质押资产2.0",
+        "display_name_en":"Stake Asset in Stake 2.0",
+        "type":0
+      },
+      {
+        "id": "55",
+        "name": "UnfreezeBalanceV2Contract",
+        "display_name_zh":"解锁资产2.0",
+        "display_name_en":"Unstake Asset in Stake 2.0",
+        "type":0
+      },
+      {
+        "id": "56",
+        "name": "WithdrawExpireUnfreezeContract",
+        "display_name_zh":"提取资产",
+        "display_name_en":"Withdraw Asset",
+        "type":0
+      },
+      {
+        "id": "59",
+        "name": "CancelAllUnfreezeV2Contract",
+        "display_name_zh":"取消解锁资产",
+        "display_name_en":"Cancel Unstake",
+        "type":0
+      }
+    ]
+  },
+  {
+    "type": "Resources",
+    "list": [
+      {
+        "id": "57",
+        "name": "DelegateResourceContract",
+        "display_name_zh":"代理资源",
+        "display_name_en":"Delegate Resources",
+        "type":1
+      },
+      {
+        "id": "58",
+        "name": "UnDelegateResourceContract",
+        "display_name_zh":"回收资源",
+        "display_name_en":"Reclaim Resources",
+        "type":1
+      }
+    ]
+  },
+  {
+    "type": "Account",
+    "list": [
+      {
+        "id": "0",
+        "name": "AccountCreateContract",
+        "display_name_zh":"激活账户",
+        "display_name_en":"Create Account",
+        "type":1
+      },
+      {
+        "id": "10",
+        "name": "AccountUpdateContract",
+        "display_name_zh":"修改账户名称",
+        "display_name_en":"Update Account Name",
+        "type":1
+      },
+      {
+        "id": "46",
+        "name": "AccountPermissionUpdateContract",
+        "display_name_zh":"更新账户权限",
+        "display_name_en":"Update Account Permissions",
+        "type":1
+      }
+    ]
+  },
+  {
+    "type": "Trc10Token",
+    "list": [
+      {
+        "id": "2",
+        "name": "TransferAssetContract",
+        "display_name_zh":"TRC10 通证转账",
+        "display_name_en":"Transfer TRC10 Tokens",
+        "type":2
+      },
+      {
+        "id": "9",
+        "name": "ParticipateAssetIssueContract",
+        "display_name_zh":"购买 TRC10 通证",
+        "display_name_en":"Participate in TRC10 Issuance",
+        "type":2
+      },
+      {
+        "id": "6",
+        "name": "AssetIssueContract",
+        "display_name_zh":"发行 TRC10 通证",
+        "display_name_en":"Issue TRC10 Tokens",
+        "type":2
+      },
+      {
+        "id": "14",
+        "name": "UnfreezeAssetContract",
+        "display_name_zh":"TRC10 锁仓提取",
+        "display_name_en":"Unstake TRC10",
+        "type":2
+      },
+      {
+        "id": "15",
+        "name": "UpdateAssetContract",
+        "display_name_zh":"更新 TRC10 通证参数",
+        "display_name_en":"Update TRC10 Parameters",
+        "type":2
+      }
+    ]
+  },
+  {
+    "type": "SmartContract",
+    "list": [
+      {
+        "id": "31",
+        "name": "TriggerSmartContract",
+        "display_name_zh":"触发智能合约（TRC20/TRC721 转账）",
+        "display_name_en":"Trigger Smart Contract (TRC20/TRC721 Transfer)",
+        "type":3
+      },
+      {
+        "id": "30",
+        "name": "CreateSmartContract",
+        "display_name_zh":"创建智能合约",
+        "display_name_en":"Create Smart Contract",
+        "type":3
+      },
+      {
+        "id": "33",
+        "name": "UpdateSettingContract",
+        "display_name_zh":"更新合约参数",
+        "display_name_en":"Update Contract Parameters",
+        "type":3
+      },
+      {
+        "id": "45",
+        "name": "UpdateEnergyLimitContract",
+        "display_name_zh":"更新合约能量限制",
+        "display_name_en":"Update Contract Energy Limit",
+        "type":3
+      },
+      {
+        "id": "48",
+        "name": "ClearABIContract",
+        "display_name_zh":"清除合约ABI",
+        "display_name_en":"Clear Contract ABI",
+        "type":3
+      }
+    ]
+  },
+
+  {
+    "type": "Representatives",
+    "list": [
+      {
+        "id": "4",
+        "name": "VoteWitnessContract",
+        "display_name_zh":"投票",
+        "display_name_en":"Vote",
+        "type":4
+      },
+      {
+        "id": "13",
+        "name": "WithdrawBalanceContract",
+        "display_name_zh":"提取奖励",
+        "display_name_en":"Withdraw Rewards",
+        "type":4
+      },
+      {
+        "id": "16",
+        "name": "ProposalCreateContract",
+        "display_name_zh":"创建提议",
+        "display_name_en":"Create Proposal",
+        "type":4
+      },
+      {
+        "id": "17",
+        "name": "ProposalApproveContract",
+        "display_name_zh":"赞成提议",
+        "display_name_en":"Approve Proposal",
+        "type":4
+      },
+      {
+        "id": "18",
+        "name": "ProposalDeleteContract",
+        "display_name_zh":"撤销提议",
+        "display_name_en":"Cancel Proposal",
+        "type":4
+      },
+      {
+        "id": "5",
+        "name": "WitnessCreateContract",
+        "display_name_zh":"申请成为超级代表候选人",
+        "display_name_en":"Apply to Become an SR Candidate",
+        "type":4
+      },
+      {
+        "id": "8",
+        "name": "WitnessUpdateContract",
+        "display_name_zh":"更新超级代表候选人信息",
+        "display_name_en":"Update SR Candidates",
+        "type":4
+      },
+      {
+        "id": "49",
+        "name": "UpdateBrokerageContract",
+        "display_name_zh":"更新超级代表佣金比例",
+        "display_name_en":"Update SR Commission Ratio",
+        "type":4
+      }
+    ]
+  },
+
+  {
+    "type": "Bancor",
+    "list": [
+      {
+        "id": "44",
+        "name": "ExchangeTransactionContract",
+        "display_name_zh":"执行 Bancor 交易",
+        "display_name_en":"Execute Bancor Transaction",
+        "type":5
+      },
+      {
+        "id": "41",
+        "name": "ExchangeCreateContract",
+        "display_name_zh":"创建 Bancor 交易",
+        "display_name_en":"Create Bancor Transaction",
+        "type":5
+      },
+      {
+        "id": "42",
+        "name": "ExchangeInjectContract",
+        "display_name_zh":"Bancor 交易注资",
+        "display_name_en":"Inject Assets into Bancor Transaction",
+        "type":5
+      },
+      {
+        "id": "43",
+        "name": "ExchangeWithdrawContract",
+        "display_name_zh":"Bancor 交易撤资",
+        "display_name_en":"Withdraw Assets from Bancor Transaction",
+        "type":5
+      }
+    ]
+  }
+]

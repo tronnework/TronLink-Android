@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:paddingTop="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_input_error" android:scaleType="fitCenter" />
+    <TextView android:id="@+id/tv_error" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.0dip" android:text="--" android:layout_toRightOf="@id/iv" style="@style/text12_ec" />
+</RelativeLayout>

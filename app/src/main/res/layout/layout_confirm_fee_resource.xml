@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_resource_consume_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:id="@+id/tv_resource_consume_title" android:text="@string/estimate_fee_user_consumed" android:layout_centerVertical="true" style="@style/confirm_name" />
+            <ImageView android:id="@+id/iv_tips" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_toRightOf="@id/tv_resource_consume_title" android:layout_centerVertical="true" style="@style/confirm_question_tips" />
+            <ImageView android:id="@+id/iv_fee_loading" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_resource_all" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_contact_energy_not_enough_tip" android:visibility="gone" android:layout_marginTop="12.0dip" android:text="@string/not_enough_energy_of_contract_creator_tip" style="@style/text12_ffa928" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_f7f8fa" android:paddingTop="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:id="@+id/rl_resource_consume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="@dimen/dp_12">
+                    <TextView android:id="@+id/tv_resource_consume_left" android:text="@string/transaction_resource_consumed" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <ImageView android:id="@+id/iv_tips_resource" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/ic_confirm_resources_tips" android:layout_toRightOf="@id/tv_resource_consume_left" android:layout_centerVertical="true" />
+                    <RelativeLayout android:gravity="center|right" android:id="@+id/rl_resource_consume_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_tips_resource" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:gravity="center|right" android:id="@+id/tv_consume_resource_bandwidth" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toLeftOf="@id/tv_consume_resource_mid" style="@style/text14_02_100" />
+                        <TextView android:id="@+id/tv_consume_resource_mid" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="+" android:layout_toLeftOf="@id/tv_consume_resource_energy" style="@style/text14_02_100" />
+                        <com.tron.wallet.common.components.DashUnderLineTextView android:gravity="center|right" android:id="@+id/tv_consume_resource_energy" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_alignParentRight="true" style="@style/text14_02_100" />
+                        <com.tron.wallet.common.components.DashUnderLineTextView android:gravity="center|right" android:id="@+id/tv_consume_resource_energy_under" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="" android:layout_below="@id/tv_consume_resource_energy" android:layout_alignParentRight="true" style="@style/text14_02_100" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_fee" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip">
+                    <TextView android:id="@+id/tv_fee_title" android:layout_marginTop="1.0dip" android:text="TRX" android:layout_alignParentLeft="true" style="@style/text12_02_50" />
+                    <ImageView android:id="@+id/iv_tips_fee" android:padding="4.0dip" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/ic_confirm_resources_tips" android:layout_toRightOf="@id/tv_fee_title" />
+                    <TextView android:gravity="right" android:id="@+id/tv_fee" android:layout_width="fill_parent" android:text="--TRX" android:layout_toLeftOf="@id/iv_arrow_right" android:layout_toRightOf="@id/iv_tips_fee" style="@style/text14_02_100" />
+                    <ImageView android:id="@+id/iv_arrow_right" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_arrow_down" android:scaleType="center" android:layout_alignParentRight="true" />
+                    <TextView android:id="@+id/tv_fee_price" android:layout_marginTop="3.0dip" android:layout_marginRight="24.0dip" android:text="--" android:layout_below="@id/tv_fee_title" android:layout_alignParentRight="true" style="@style/text12_6d" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="right" android:id="@+id/ll_other_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="@dimen/dp_4" android:src="@mipmap/ic_warn_red" android:layout_toLeftOf="@id/tv_error_text" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_error_text" android:layout_width="wrap_content" android:layout_marginRight="@dimen/dp_12" android:layout_marginBottom="1.0dip" android:text="@string/low_balance" style="@style/text12_ec" />
+                </LinearLayout>
+                <com.tron.wallet.common.components.FeeResourceDetailView android:id="@+id/resource_info_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_total_consumed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:id="@+id/tv_total_consumed" android:text="@string/fee_to_view_total_consumed" android:layout_centerVertical="true" style="@style/text14_6d" />
+                <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="2.0dip" android:src="@mipmap/ic_resources_right_arraw" android:layout_toRightOf="@id/tv_total_consumed" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

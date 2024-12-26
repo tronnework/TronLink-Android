@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root_view" android:background="@drawable/round_corner_23_stroke" android:paddingLeft="15.0dip" android:paddingTop="@dimen/dp_12" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_trans_type" android:layout_height="fill_parent" android:text="@string/Transfer" style="@style/text14_23" />
+            <TextView android:textStyle="bold" android:gravity="center|right" android:layout_gravity="right" android:id="@+id/tv_trans_content" android:layout_width="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="111111" android:maxLines="2" style="@style/text14_23" />
+        </LinearLayout>
+        <View android:background="@color/black_23_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" />
+        <RelativeLayout android:id="@+id/rl_originator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_12">
+            <TextView android:ellipsize="none" android:id="@+id/tv_initiator" android:text="@string/initiating_address" android:singleLine="true" style="@style/text12_6d" />
+            <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/transaction_from" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="账户名称" android:layout_toRightOf="@id/tv_initiator" style="@style/text12_23" />
+            <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_sub_from" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="TVpaQJaYGnnNtV23sgyAERxf2xTnaKE31z" android:drawableRight="@mipmap/detail_copy" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/tv_initiator" android:layout_below="@id/transaction_from" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/ll_receive" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:ellipsize="none" android:id="@+id/tv_receivables" android:text="@string/receivables" android:singleLine="true" style="@style/text12_6d" />
+            <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/transaction_to" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="账户名称" android:layout_toRightOf="@id/tv_receivables" style="@style/text12_23" />
+            <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_sub_to" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="TVpaQJaYGnnNtV23sgyAERxf2xTnaKE31z" android:singleLine="true" android:drawableRight="@mipmap/detail_copy" android:drawablePadding="5.0dip" android:layout_toLeftOf="@id/transaction_action" android:layout_toRightOf="@id/tv_receivables" android:layout_below="@id/transaction_to" android:layout_centerVertical="true" style="@style/text12_23" />
+            <Button android:textColor="@color/white" android:id="@+id/transaction_action" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="20.0dip" android:layout_marginLeft="@dimen/dp_10" android:text="@string/view" android:layout_alignParentRight="true" android:textAllCaps="false" style="@style/bt44_14_ripple_black" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/ll_note" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_12">
+            <TextView android:ellipsize="none" android:id="@+id/tv_title" android:text="@string/note2" android:singleLine="true" style="@style/text12_6d" />
+            <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_note" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="--" android:layout_toLeftOf="@id/tv_note_more" android:layout_toRightOf="@id/tv_title" style="@style/text12_23" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/blue_13" android:gravity="center" android:id="@+id/tv_note_more" android:background="@drawable/roundborder_blue_radius_14" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:text="@string/view" android:layout_alignParentRight="true" android:textAllCaps="false" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/ll_type" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_12">
+            <TextView android:ellipsize="none" android:id="@+id/tv_type" android:text="@string/resource_type_withdot" android:singleLine="true" style="@style/text12_6d" />
+            <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/resource_type" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="账户名称" android:layout_toRightOf="@id/tv_type" style="@style/text12_23" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_countdown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:ellipsize="none" android:text="@string/time_remain" android:singleLine="true" android:layout_weight="1.0" style="@style/text12_6d" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@+id/time_remain" android:visibility="gone" android:text="0S" android:layout_centerVertical="true" style="@style/text12_23" />
+                <com.tron.wallet.common.components.countdownview.CountdownView android:layout_gravity="center_horizontal" android:id="@+id/cv_countdownView" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:isConvertDaysToHours="true" app:isShowDay="false" app:isShowHour="true" app:isShowMillisecond="false" app:isShowMinute="true" app:isShowSecond="true" app:suffixGravity="center" app:suffixHour="H" app:suffixHourLeftMargin="2.0dip" app:suffixHourRightMargin="5.0dip" app:suffixMinute="M" app:suffixMinuteLeftMargin="2.0dip" app:suffixMinuteRightMargin="5.0dip" app:suffixSecond="S" app:suffixSecondLeftMargin="2.0dip" app:suffixTextColor="@color/black_02" app:suffixTextSize="12.0dip" app:timeTextColor="@color/black_02" app:timeTextSize="12.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_transaction_success_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:text="@string/tran_success_time" android:singleLine="true" android:layout_weight="1.0" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="right" android:id="@+id/transaction_time" android:layout_width="150.0dip" android:layout_marginLeft="2.0dip" android:maxWidth="200.0dip" android:text="" android:singleLine="true" android:drawablePadding="5.0dip" style="@style/text12_23" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/ll_hash" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+            <TextView android:id="@+id/tv_hash_title" android:text="@string/transaction_hash" android:singleLine="true" style="@style/text12_6d" />
+            <TextView android:textColor="@color/blue_13" android:ellipsize="middle" android:gravity="right" android:id="@+id/transaction_hash" android:layout_width="wrap_content" android:layout_marginLeft="2.0dip" android:maxWidth="200.0dip" android:text="" android:singleLine="true" android:drawableRight="@mipmap/detail_copy" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/tv_hash_title" android:layout_alignParentRight="true" style="@style/text12_23" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/black_23_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/dp_12" android:layout_marginBottom="@dimen/dp_12" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_1" android:text="@string/sign_progress" style="@style/text12_6d" />
+            <TextView android:id="@+id/current_sign_count" android:layout_marginLeft="5.0dip" android:text="2" android:layout_toRightOf="@id/tv_1" style="@style/text12_13" />
+            <TextView android:id="@+id/all_sign_count" android:text="/5" android:layout_toRightOf="@id/current_sign_count" style="@style/text12_6d" />
+            <TextView android:ellipsize="end" android:id="@+id/need_sign_count" android:layout_height="0.0dip" android:text="@string/effect_5_vote" android:maxLines="2" android:layout_below="@id/current_sign_count" android:layout_alignLeft="@id/tv_1" style="@style/text11_99" />
+            <RelativeLayout android:id="@+id/rl_progress_state" android:layout_width="25.0dip" android:layout_height="@dimen/dp_20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/ic_progress" android:background="@mipmap/ic_expand_shrink" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="12.0dip" android:progressDrawable="@drawable/progress_bg_deal_sign" style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_sign_address" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" />
+        <Button android:id="@+id/bt_sign" android:visibility="gone" android:layout_marginTop="30.0dip" android:layout_marginBottom="15.0dip" android:text="@string/sign" style="@style/bt44_14_ripple_black" />
+        <View android:id="@+id/sign_failure" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="26.0dip" />
+    </LinearLayout>
+</LinearLayout>

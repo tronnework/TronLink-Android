@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/roundborder_ffffff_radius_16" android:layout_width="fill_parent" android:layout_height="550.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="425.0dip" android:layout_marginTop="40.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@mipmap/ic_stake_tron" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="10.0dip" android:text="@string/trc_stake_unstake_instructions" style="@style/text14_02.1" />
+            <TextView android:id="@+id/content" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="gone" android:text="@string/tron_power_doc3" style="@style/text14_02.1" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black_50" android:id="@+id/doc1" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="15.0dip" android:text="@string/tron_power_doc3" />
+            <RelativeLayout android:id="@+id/rl_content2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@+id/line2" android:layout_marginLeft="35.0dip" android:layout_marginRight="5.0dip" style="@style/line5" />
+                <ImageView android:id="@+id/circle_2" android:background="@drawable/circle_135dcd" android:layout_width="4.0dip" android:layout_height="4.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.0dip" android:layout_below="@id/line2" />
+                <TextView android:id="@+id/doc2" android:visibility="visible" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="" android:layout_toRightOf="@id/circle_2" style="@style/text14_02.1" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rl_content_spe" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_content0_spe" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/circle_0_spe" android:visibility="gone" android:layout_marginTop="19.0dip" style="@style/instructions_circle_style" />
+                    <TextView android:id="@+id/doc0_spe" android:layout_marginTop="10.0dip" android:text="@string/instruction_tron_power1" android:layout_toRightOf="@id/circle_0_spe" style="@style/instructions_tv_style" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_content1_spe" android:visibility="visible" style="@style/instructions_content_style">
+                    <View android:id="@+id/line1_spe" android:visibility="gone" style="@style/instructions_line_style" />
+                    <ImageView android:id="@+id/circle_1_spe" android:visibility="gone" android:layout_below="@id/line1_spe" style="@style/instructions_circle_style" />
+                    <TextView android:id="@+id/doc1_spe" android:text="@string/instruction_tron_power2" android:layout_toRightOf="@id/circle_1_spe" style="@style/instructions_tv_style" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_content2_spe" android:visibility="visible" style="@style/instructions_content_style">
+                    <View android:id="@+id/line2_spe" android:visibility="gone" style="@style/instructions_line_style" />
+                    <ImageView android:id="@+id/circle_2_spe" android:visibility="gone" android:layout_below="@id/line2_spe" style="@style/instructions_circle_style" />
+                    <TextView android:id="@+id/doc2_spe" android:text="@string/instruction_tron_power3" android:layout_toRightOf="@id/circle_2_spe" style="@style/instructions_tv_style" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_content3_spe" android:visibility="visible" style="@style/instructions_content_style">
+                    <View android:id="@+id/line3_spe" android:visibility="gone" style="@style/instructions_line_style" />
+                    <ImageView android:id="@+id/circle_3_spe" android:visibility="gone" android:layout_below="@id/line3_spe" style="@style/instructions_circle_style" />
+                    <TextView android:id="@+id/doc3_spe" android:text="@string/instruction_tron_power4" android:layout_toRightOf="@id/circle_3_spe" style="@style/instructions_tv_style" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_content4_spe" android:visibility="visible" style="@style/instructions_content_style">
+                    <View android:id="@+id/line4_spe" android:visibility="gone" style="@style/instructions_line_style" />
+                    <ImageView android:id="@+id/circle_4_spe" android:visibility="gone" android:layout_below="@id/line4_spe" style="@style/instructions_circle_style" />
+                    <TextView android:id="@+id/doc4_spe" android:text="@string/instruction_tron_power5" android:layout_toRightOf="@id/circle_4_spe" style="@style/instructions_tv_style" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_content5_spe" android:visibility="gone" style="@style/instructions_content_style">
+                    <View android:id="@+id/line5_spe" android:visibility="gone" style="@style/instructions_line_style" />
+                    <ImageView android:id="@+id/circle_5_spe" android:visibility="gone" android:layout_below="@id/line5_spe" style="@style/instructions_circle_style" />
+                    <TextView android:id="@+id/doc5_spe" android:text="@string/instruction_tron_power6" android:layout_toRightOf="@id/circle_5_spe" style="@style/instructions_tv_style" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:enabled="true" android:id="@+id/btn_know_it" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/i_know_exit" style="@style/bt44_14_ripple_black" />
+</LinearLayout>

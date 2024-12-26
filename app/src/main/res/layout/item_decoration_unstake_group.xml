@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_group_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_icon_divider" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/icon_unstake_item_group_self" android:layout_alignTop="@id/tv_group_divider" android:layout_alignBottom="@id/tv_group_divider" />
+    <TextView android:id="@+id/tv_group_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="stake for self" android:layout_toRightOf="@id/iv_icon_divider" android:layout_centerVertical="true" style="@style/text16_232c" />
+</RelativeLayout>

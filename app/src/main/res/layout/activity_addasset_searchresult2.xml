@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/search_header" layout="@layout/search_asset_header_new" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_asset_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_below="@id/search_header">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_assets_result_menu" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_marginLeft="15.0dip" android:text="@string/filter" style="@style/text12_6d" />
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroupId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+                <RadioButton android:id="@+id/button_all" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/all" android:drawablePadding="4.0dip" style="@style/CustomRadioTheme" />
+                <RadioButton android:id="@+id/button_721" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/TRC721" android:drawablePadding="4.0dip" style="@style/CustomRadioTheme" />
+                <RadioButton android:id="@+id/button_20" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/TRC20" android:drawablePadding="4.0dip" style="@style/CustomRadioTheme" />
+                <RadioButton android:id="@+id/button_10" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/TRC10" android:drawablePadding="4.0dip" style="@style/CustomRadioTheme" />
+            </RadioGroup>
+            <View android:layout_marginTop="16.0dip" android:layout_below="@id/radioGroupId" style="@style/line_232c41_5" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_assets_result" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_header" />
+        <ImageView android:id="@+id/place_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_search_asset_placeholder" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_noresult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+            <com.tron.wallet.common.components.NoNetView android:id="@+id/no_data_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="90.0dip" app:button_background="@drawable/bg_bt_blue_shadow" app:button_text="@string/token_record" app:button_text_color="@color/white" app:icon="@mipmap/icon_search_asset_no_data" app:icon_height="120.0dip" app:icon_width="120.0dip" app:no_net_text="@string/no_token_search" app:reloadable="true" app:show_loading_anim="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/net_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="156.0dip" app:button_text="@string/reload" app:icon="@mipmap/ic_no_net_new" app:icon_height="86.0dip" app:icon_width="190.0dip" app:no_net_text="@string/net_unavailable" app:reload_padding_top="20.0dip" app:reloadable="true" app:show_loading_anim="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top_result" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_header">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_hot_token" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/icon_top" />
+            <TextView android:textStyle="bold" android:layout_marginLeft="12.0dip" android:text="@string/top_tokens" style="@style/text16_02" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_top_tokens" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="22.0dip" android:layout_above="@id/bt_next" />
+    <RelativeLayout android:id="@+id/rl_no_data" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="22.0dip" android:layout_above="@id/bt_next">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_nodata" android:visibility="visible" android:layout_width="119.0dip" android:layout_height="85.0dip" android:src="@mipmap/ic_no_data_new" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/gray_C2" android:gravity="center" android:id="@+id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="16.0dip" android:text="@string/nodata" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:enabled="true" android:id="@+id/bt_next" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/add_address_button" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black_8" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="55.0dip" android:src="@mipmap/about_logo" />
+    <TextView android:textStyle="bold" android:textColor="@color/black_23" android:layout_gravity="center_horizontal" android:layout_marginTop="10.0dip" android:text="@string/app_name" style="@style/text20_02" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@+id/tv_version" android:layout_marginTop="3.0dip" android:text="" style="@style/text14_6d" />
+    <RelativeLayout android:id="@+id/rl_new_version_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/blue_3c" android:id="@+id/tv_version_tip" android:background="@drawable/bg_new_vesion_tips" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_version_tips" android:drawableLeft="@mipmap/new_version_tag" android:drawablePadding="4.0dip" android:layout_centerInParent="true" android:paddingHorizontal="12.0dip" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/user_agreement" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" app:hov_icon_res="@mipmap/right_arrow_new" app:hov_title="@string/user_agreement" app:hov_title_color="@color/black_23" app:hov_typeface_bold="false" app:hov_underline="true" style="@style/HorizontalOptionView" />
+            <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/log" android:layout_height="60.0dip" app:hov_icon_res="@mipmap/right_arrow_new" app:hov_title="@string/version_log" app:hov_title_color="@color/black_23" app:hov_typeface_bold="false" style="@style/HorizontalOptionView" />
+            <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/update" android:layout_height="60.0dip" app:hov_icon_res="@mipmap/right_arrow_new" app:hov_title="@string/update" app:hov_title_color="@color/black_23" app:hov_typeface_bold="false" app:hov_underline="false" style="@style/HorizontalOptionView" />
+            <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+            <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/website" android:layout_height="60.0dip" app:hov_icon_res="@mipmap/right_arrow_new" app:hov_title="@string/website" app:hov_title_color="@color/black_23" app:hov_typeface_bold="false" style="@style/HorizontalOptionView" />
+            <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/telegram" android:layout_height="60.0dip" app:hov_icon_res="@mipmap/right_arrow_new" app:hov_title="@string/telegram_string" app:hov_title_color="@color/black_23" app:hov_typeface_bold="false" style="@style/HorizontalOptionView" />
+            <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/twitter" android:layout_height="60.0dip" app:hov_icon_res="@mipmap/right_arrow_new" app:hov_title="@string/twitter_string" app:hov_title_color="@color/black_23" app:hov_typeface_bold="false" style="@style/HorizontalOptionView" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black_23" android:id="@+id/tv_clientId" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="" android:textIsSelectable="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_above="@id/fr_bottom_bar">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/li_tablayout" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@+id/iv_browser_back" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="15.0dip" android:layout_width="40.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_browser_back" android:scaleType="centerInside" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            <com.tron.wallet.common.components.xtablayout.XTabLayoutV2 android:id="@+id/xTablayout" android:paddingLeft="5.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/iv_browser_back" app:xTabContentGravity="0" app:xTabDividerGravity="bottom" app:xTabDividerWidthWidthText="true" app:xTabGravity="1" app:xTabIndicatorColor="@color/blue_3c" app:xTabIndicatorHeight="2.0dip" app:xTabMode="fixed" app:xTabSelectedTextColor="@color/black_23" app:xTabSelectedTextSize="16.0sp" app:xTabTextBackground="@color/transparent" app:xTabTextColor="@color/black_6d" app:xTabTextSelectedBold="false" app:xTabTextSize="14.0sp" />
+        </RelativeLayout>
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/vp_content" android:background="@color/gray_F7F" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/li_tablayout" android:nestedScrollingEnabled="false" />
+    </RelativeLayout>
+    <com.tron.wallet.common.components.browser.BrowserTabBottomToolbar android:id="@+id/fr_bottom_bar" android:background="@color/white" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/li_tab_manager" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/li_browser_clear" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_browser_clear" android:layout_width="@dimen/dp_ic_btn" android:layout_height="@dimen/dp_ic_btn" android:src="@mipmap/ic_browser_clear" android:scaleType="fitCenter" />
+                    <TextView android:id="@+id/tv_browser_clear" android:visibility="gone" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/clear_all_tab" style="@style/text14_ff" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@+id/iv_browser_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_browser_new_tab" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/li_history_manager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/li_browser_history_clear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_record_clear" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_browser_history_clear" android:layout_width="@dimen/dp_ic_btn" android:layout_height="@dimen/dp_ic_btn" android:src="@mipmap/ic_browser_clear" android:scaleType="fitCenter" />
+                    <TextView android:id="@+id/tv_browser_history_clear" android:visibility="gone" android:text="@string/clear_all_history" style="@style/text14_ff" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.tron.wallet.common.components.browser.BrowserTabBottomToolbar>
+</RelativeLayout>

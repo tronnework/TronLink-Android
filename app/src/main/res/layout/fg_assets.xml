@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_40" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/wallet_name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" layout="@layout/asset_wallet_name_layout" />
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayout android:id="@+id/rc_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/wallet_name_layout" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:elevation="0.0dip">
+                    <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_scrollFlags="scroll|exitUntilCollapsed">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+                    <View android:id="@+id/divider" android:background="@color/gray_b3_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/ll_home_assets">
+                        <com.tron.wallet.common.components.xtablayout.XTabLayout android:id="@+id/ll_tab" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerVertical="true" cube_ptr:xTabIndicatorColor="@color/black_23" cube_ptr:xTabIndicatorHeight="2.0dip" cube_ptr:xTabIndicatorWidth="18.0dip" cube_ptr:xTabMinWidth="50.0dip" cube_ptr:xTabMode="scrollable" cube_ptr:xTabPaddingBottom="2.0dip" cube_ptr:xTabSelectedTextColor="@color/black_23" cube_ptr:xTabSelectedTextSize="14.0dip" cube_ptr:xTabTextColor="@color/black_6d" cube_ptr:xTabTextSelectedBold="true" cube_ptr:xTabTextSize="14.0dip" />
+                        <RelativeLayout android:id="@+id/rl_btn_container" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_toRightOf="@id/ll_tab" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_sort" android:background="@drawable/bg_asset_sort_selector" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/iv_add_assets" android:layout_centerVertical="true">
+                                <ImageView android:id="@+id/iv_sort" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/ic_sort_asset_new" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+                                <TextView android:textSize="14.0dip" android:textColor="@color/black_02" android:gravity="center" android:id="@+id/tv_sort_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/sort_by_preference" android:singleLine="true" android:layout_toRightOf="@id/iv_sort" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <ImageView android:id="@+id/iv_add_assets" android:layout_width="20.0dip" android:layout_height="@dimen/dp_20" android:src="@mipmap/asset_add_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/ll_new_assets_count" android:background="@color/transparent" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                                <com.tron.wallet.common.components.BadgeButton android:id="@+id/text_new_assets_count" android:layout_height="wrap_content" cube_ptr:btnBadgeColor="@color/orange_FF" cube_ptr:btnBadgeHeight="10.0dip" cube_ptr:btnBadgeText="" cube_ptr:btnTextSize="2.0dip" cube_ptr:btnType="1" style="@style/BadgeButton.Normal" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager_content" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </FrameLayout>
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayout>
+    <include android:id="@+id/ll_mne_backup" android:visibility="gone" layout="@layout/ll_signdeal_tip" />
+    <include android:id="@+id/ll_multi_sign" android:visibility="gone" layout="@layout/ll_signdeal_tip" />
+    <include android:id="@+id/ll_multi_permission" android:visibility="gone" layout="@layout/ll_signdeal_tip" />
+    <include android:id="@+id/ll_sec_ask" android:visibility="gone" layout="@layout/ll_signdeal_tip" />
+</RelativeLayout>

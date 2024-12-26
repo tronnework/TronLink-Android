@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/rl_password" android:background="@drawable/border_ffffff_30" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@+id/rl_top_two" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="67.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/iv_close_two" android:paddingLeft="14.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent">
+                        <ImageView style="@style/imagex" />
+                    </LinearLayout>
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:id="@+id/v_middle_two" style="@style/line3" />
+                <RelativeLayout android:id="@+id/rl_first" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:id="@+id/tv_left_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_amount" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_second" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#80021c31" android:id="@+id/tv_left_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voted" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:ellipsize="middle" android:id="@+id/tv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_third" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/black_02_50" android:gravity="bottom" android:id="@+id/tv_left_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_available" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/black_02_50" android:ellipsize="middle" android:gravity="bottom" android:id="@+id/tv_resource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:maxWidth="150.0dip" android:text="- -" android:singleLine="true" android:layout_toRightOf="@id/tv_left_available" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/blue_13" android:ellipsize="middle" android:gravity="bottom|center|right" android:id="@+id/tv_address" android:paddingLeft="15.0dip" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="@string/vote_get_vote" android:singleLine="true" android:drawableRight="@mipmap/iv_right_arrow_blue" android:drawablePadding="@dimen/dp_4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" app:text_Error="">
+                    <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <EditText android:id="@+id/et_vote_amount" android:background="@null" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:hint="@string/vote_input_hint" android:layout_toLeftOf="@id/tv_cancel_all" android:inputType="number" style="@style/et50_ee" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:gravity="center" android:id="@+id/tv_cancel_all" android:paddingLeft="10.0dip" android:paddingRight="16.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/all" android:layout_alignTop="@id/et_new_password" android:layout_alignBottom="@id/et_new_password" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                <LinearLayout android:id="@+id/ll_cancel_vote_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="3.0dip" android:src="@mipmap/error_icon" />
+                    <TextView android:id="@+id/tv_no_bandwidth" android:layout_marginLeft="5.0dip" android:layout_marginRight="20.0dip" android:text="@string/vote_not_enough_vote" style="@style/text14_FF46" />
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/rl_estimated" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black_02_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_estimated" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:ellipsize="middle" android:id="@+id/tv_estimated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="8%" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip" layout="@layout/batch_vote_footer_resource" />
+                <Button android:enabled="false" android:id="@+id/bt_send" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="5.0dip" android:layout_marginBottom="@dimen/dp_10" android:text="@string/vote_confirm" android:textAllCaps="false" android:layout_marginHorizontal="5.0dip" style="@style/bt40_16" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/gray_99_50" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginBottom="14.0dip" android:text="@string/new_vote_will_cover" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

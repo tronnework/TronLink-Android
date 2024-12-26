@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@drawable/roundborder_f7f8fa_8" android:paddingLeft="15.0dip" android:paddingTop="16.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="15.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold|italic" android:textColor="@color/green_57" android:gravity="center_vertical" android:id="@+id/tv_ranking" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="18.0dip" android:text="No.1 " android:layout_centerVertical="true" android:paddingHorizontal="3.0dip" style="@style/text14_ff" />
+            <TextView android:ellipsize="end" android:id="@+id/tv_witness_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxWidth="120.0dip" android:text="" android:maxLines="1" android:layout_toRightOf="@id/tv_ranking" android:layout_centerVertical="true" style="@style/text14_23" />
+            <ImageView android:id="@+id/iv_vote_apr_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_4dp" android:src="@mipmap/icon_vote_apr_tips" android:layout_toRightOf="@id/tv_witness_name" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_apr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:drawablePadding="@dimen/dp_4" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_23" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12">
+            <TextView android:id="@+id/votes_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/votes_count" style="@style/text12_9b" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_votes_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="2,222" android:layout_toRightOf="@id/votes_title" android:layout_centerVertical="true" style="@style/text12_23" />
+            <TextView android:id="@+id/apr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/votes_item_apr_estimate" android:layout_alignParentRight="true" style="@style/text12_9b" />
+        </RelativeLayout>
+        <View android:id="@+id/dash_divider" android:background="@mipmap/dash_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/dp_12" />
+        <RelativeLayout android:id="@+id/rl_flag_already_voted" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:id="@+id/already_voted_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/votes" android:layout_centerVertical="true" style="@style/text12_23" />
+            <RelativeLayout android:id="@+id/rl_input" android:background="@drawable/shape_bg_border_c2" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="146.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingVertical="5.0dip">
+                <ImageView android:id="@+id/vote_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@mipmap/vote_minus" android:layout_alignParentLeft="true" />
+                <com.tron.wallet.common.components.CurrencyEditText android:gravity="center" android:id="@+id/et_input" android:layout_width="fill_parent" android:layout_toLeftOf="@id/vote_plus" android:layout_toRightOf="@id/vote_minus" android:layout_centerInParent="true" android:inputType="number" style="@style/et12_23_gray_f6f7fB" />
+                <ImageView android:id="@+id/vote_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@mipmap/vote_plus" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:id="@+id/tv_max" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:text="@string/stake_max" android:layout_toLeftOf="@id/rl_input" android:layout_centerVertical="true" android:paddingVertical="10.0dip" style="@style/text12_3c" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_vote_tips_bottom" android:visibility="gone" android:layout_marginTop="12.0dip" android:text="@string/vote_detail_be_covered" android:layout_below="@id/ll_content" android:layout_centerHorizontal="true" style="@style/text12_6d" />
+</RelativeLayout>

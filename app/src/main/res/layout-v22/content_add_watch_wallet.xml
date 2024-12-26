@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@+id/scroll_add_watch_wallet" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/li_add_watch_wallet" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tron.wallet.common.components.CommonTitleDescriptionEditView android:textSize="@dimen/sp_14" android:id="@+id/add_watch_address" android:layout_height="73.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/dp_10" android:hint="@string/enter_watch_address" android:lines="1" android:singleLine="true" android:imeOptions="actionDone" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="2.0sp" android:autoSizeMinTextSize="12.0sp" android:autoSizeMaxTextSize="20.0sp" app:hint_description="" app:hint_description_text_size="12.0sp" app:hint_title="@string/address" style="@style/common_title_desc_edit_text" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_address_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="-2.0dip">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_input_error" />
+            <TextView android:layout_gravity="center_vertical" android:id="@+id/tv_address_error" android:text="@string/invalid_wallet_address" style="@style/text12_ec" />
+        </LinearLayout>
+        <com.tron.wallet.common.components.CommonTitleDescriptionEditView android:textSize="@dimen/sp_14" android:id="@+id/add_watch_name" android:layout_height="73.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:hint="" android:autoSizeTextType="none" app:edit_empty_right_image="@mipmap/delete_gray" app:edit_right_image="@mipmap/delete_gray" app:edit_right_image_unacitive="@mipmap/delete_gray" app:hint_description="" app:hint_description_text_size="12.0sp" app:hint_title="@string/tron_tvname" style="@style/common_title_desc_edit_text" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_name_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="-2.0dip">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_input_error" />
+            <TextView android:id="@+id/tv_name_error" android:layout_marginLeft="4.0dip" android:text="@string/error_name3" style="@style/text12_ec" />
+        </LinearLayout>
+        <View android:id="@+id/empty_placeholder" android:layout_width="fill_parent" android:layout_height="180.0dip" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

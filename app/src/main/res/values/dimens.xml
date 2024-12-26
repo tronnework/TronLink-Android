@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="app_bar_height">160.0dip</dimen>
+  <dimen name="clock_face_margin_start">64.0dip</dimen>
+  <dimen name="def_height">50.0dip</dimen>
+  <dimen name="design_bottom_navigation_label_padding">10.0dip</dimen>
+  <dimen name="dp_10">10.0dip</dimen>
+  <dimen name="dp_12">12.0dip</dimen>
+  <dimen name="dp_20">20.0dip</dimen>
+  <dimen name="dp_4">4.0dip</dimen>
+  <dimen name="dp_40">40.0dip</dimen>
+  <dimen name="dp_72">72.0dip</dimen>
+  <dimen name="dp_80">80.0dip</dimen>
+  <dimen name="dp_ic_btn">24.0dip</dimen>
+  <dimen name="dp_ic_list">20.0dip</dimen>
+  <dimen name="dp_ic_middle">16.0dip</dimen>
+  <dimen name="dp_ic_mini">12.0dip</dimen>
+  <dimen name="dp_ic_title">60.0dip</dimen>
+  <dimen name="margin_4dp">4.0dip</dimen>
+  <dimen name="sp_12">12.0sp</dimen>
+  <dimen name="sp_14">14.0sp</dimen>
+  <dimen name="sp_16">16.0sp</dimen>
+  <dimen name="test_navigation_bar_active_item_max_width">168.0dip</dimen>
+  <dimen name="test_navigation_bar_active_item_min_width">96.0dip</dimen>
+  <dimen name="test_navigation_bar_active_text_size">14.0sp</dimen>
+  <dimen name="test_navigation_bar_elevation">8.0dip</dimen>
+  <dimen name="test_navigation_bar_height">56.0dip</dimen>
+  <dimen name="test_navigation_bar_icon_size">24.0dip</dimen>
+  <dimen name="test_navigation_bar_item_max_width">96.0dip</dimen>
+  <dimen name="test_navigation_bar_item_min_width">56.0dip</dimen>
+  <dimen name="test_navigation_bar_label_padding">10.0dip</dimen>
+  <dimen name="test_navigation_bar_shadow_height">1.0dip</dimen>
+  <dimen name="test_navigation_bar_text_size">12.0sp</dimen>
+  <dimen name="text_margin">16.0dip</dimen>
+</resources>

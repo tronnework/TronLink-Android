@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/ripple_white" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="73.0dip" android:layout_marginTop="@dimen/dp_20">
+        <TextView android:id="@+id/auto_title" android:text="@string/auto_select" android:layout_alignParentTop="true" style="@style/text14_02_4" />
+        <TextView android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="" android:layout_below="@id/auto_title" android:layout_alignParentLeft="true" style="@style/text12_9b" />
+        <com.tron.wallet.common.components.SwitchButton android:id="@+id/switch_button" android:layout_width="38.0dip" android:layout_height="24.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" app:sb_background="#ffe4e4e6" app:sb_checked_color="@color/blue_3c" app:sb_checkedbutton_color="@color/white" app:sb_checkline_color="@color/blue_3c" app:sb_shadow_radius="0.0dip" app:sb_show_indicator="false" app:sb_uncheck_color="#ffe4e4e6" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_choose_server" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip" style="@style/line_gray_eb" />
+        <TextView android:textStyle="bold" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:text="@string/switch_server_title" style="@style/text14_02" />
+        <RelativeLayout android:id="@+id/usa_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+            <TextView android:textStyle="normal" android:id="@+id/tv_node_name" android:text="@string/server_usa" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/text14_02" />
+            <TextView android:id="@+id/delaytime1" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" android:text="@string/connecting" android:layout_toLeftOf="@id/iv_select1" android:layout_centerVertical="true" style="@style/text14_6d" />
+            <ImageView android:id="@+id/iv_select1" android:background="@mipmap/ic_check_selected" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:layout_alignParentBottom="true" style="@style/line_gray_eb" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/sigapor_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+            <TextView android:textStyle="normal" android:id="@+id/tv_node_name2" android:text="@string/server_sigapore" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/text14_02" />
+            <TextView android:id="@+id/delaytime2" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="6.0dip" android:text="@string/connecting" android:layout_toLeftOf="@id/iv_select2" android:layout_centerVertical="true" style="@style/text14_6d" />
+            <ImageView android:id="@+id/iv_select2" android:background="@mipmap/ic_check_unselect" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:layout_alignParentBottom="true" style="@style/line_gray_eb" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

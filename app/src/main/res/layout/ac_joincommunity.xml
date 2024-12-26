@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/rl_1" android:background="@drawable/ripple_add_shadow_single" android:paddingTop="26.0dip" android:layout_width="fill_parent" android:layout_height="150.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="14.0dip" android:src="@mipmap/telegram" android:layout_centerVertical="true" />
+                <TextView android:textStyle="bold" android:text="@string/group_telegram" android:layout_centerVertical="true" style="@style/text16_02" />
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_en_arrow" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textStyle="normal" android:id="@+id/tv_en_1" android:text="@string/group_english" style="@style/text14_02" />
+                <RelativeLayout android:id="@+id/rl_en_copy" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_en_1">
+                    <TextView android:id="@+id/tv_en" android:layout_marginTop="4.0dip" android:text="" android:layout_centerVertical="true" style="@style/text14_02_40" />
+                    <ImageView android:background="@mipmap/copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/tv_en" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="31.0dip" android:src="@mipmap/ic_shape" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:visibility="gone" android:layout_marginLeft="31.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="31.0dip" android:layout_marginBottom="20.0dip" style="@style/line4" />
+            <RelativeLayout android:id="@+id/rl_zh_arrow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip">
+                <TextView android:textStyle="normal" android:id="@+id/tv_zh_1" android:text="@string/group_chinese" style="@style/text14_02" />
+                <RelativeLayout android:id="@+id/rl_zh_copy" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_zh_1">
+                    <TextView android:id="@+id/tv_zh" android:layout_marginTop="4.0dip" android:text="" android:layout_centerVertical="true" style="@style/text14_02_40" />
+                    <ImageView android:background="@mipmap/copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/tv_zh" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="31.0dip" android:src="@mipmap/ic_shape" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/ripple_add_shadow_single" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="-20.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="14.0dip" android:src="@mipmap/twitter" android:layout_centerVertical="true" />
+                <TextView android:textStyle="bold" android:text="@string/twitter" android:layout_centerVertical="true" style="@style/text16_02" />
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_twitter_arrow" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textStyle="normal" android:id="@+id/tv_twitter_1" android:text="@string/twitter1" style="@style/text14_02" />
+                <RelativeLayout android:id="@+id/rl_twitter_copy" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_twitter_1">
+                    <TextView android:id="@+id/tv_twitter" android:layout_marginTop="4.0dip" android:text="" android:layout_centerVertical="true" style="@style/text14_02_40" />
+                    <ImageView android:background="@mipmap/copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/tv_twitter" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:layout_width="23.0dip" android:layout_height="23.0dip" android:layout_marginRight="31.0dip" android:src="@mipmap/ic_shape" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/ripple_add_shadow_single" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="-20.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="14.0dip" android:src="@mipmap/wechat" android:layout_centerVertical="true" />
+                <TextView android:textStyle="bold" android:text="@string/wechat" android:layout_centerVertical="true" style="@style/text16_02" />
+            </LinearLayout>
+            <RelativeLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_marginTop="20.0dip">
+                <TextView android:textStyle="normal" android:id="@+id/tv_wechat_1" android:text="@string/official_wechat" style="@style/text14_02" />
+                <RelativeLayout android:id="@+id/rl_wechat_copy" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_wechat_1">
+                    <TextView android:id="@+id/tv_wechat" android:layout_marginTop="4.0dip" android:text="" android:layout_centerVertical="true" style="@style/text14_02_40" />
+                    <ImageView android:background="@mipmap/copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_toRightOf="@id/tv_wechat" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_net_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:no_net_text="net_unavailable" />
+</RelativeLayout>

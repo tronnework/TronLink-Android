@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/no_device_layout" android:background="@drawable/roundborder_cdd1da_8" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/title" android:layout_marginHorizontal="15.0dip" android:layout_marginVertical="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/equipment_add" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/ledger_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/gray_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/no_device" android:layout_toRightOf="@id/equipment_add" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

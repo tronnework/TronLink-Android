@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_btn_go">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@+id/top_card" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                <ImageView android:id="@+id/icon_cold_pair_explain" android:background="@mipmap/icon_cold_pair_explain" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentTop="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/icon_cold_pair_explain" android:layout_alignParentTop="true">
+                    <TextView android:id="@+id/tv_wallet_name" android:text="" android:layout_alignParentTop="true" style="@style/text14_02.1" />
+                    <TextView android:id="@+id/tv_wallet_address" android:text="" android:layout_below="@id/tv_wallet_name" style="@style/text12_6d" />
+                </RelativeLayout>
+                <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textStyle="bold" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/title_cold_pair_explain_1" style="@style/text14_02.1" />
+            <RelativeLayout android:background="@color/gray_F7F8" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="20.0dip">
+                <TextView android:text="@string/why_pair_text" style="@style/text12_6d" />
+            </RelativeLayout>
+            <TextView android:textStyle="bold" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/title_cold_pair_explain_2" style="@style/text14_02.1" />
+            <RelativeLayout android:background="@color/gray_F7F8" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="20.0dip">
+                <TextView android:text="@string/how_pair_text" style="@style/text12_6d" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/ll_btn_go" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_go" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/watch_wallet_request_pair_text" style="@style/bt44_14_ripple_black" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/backup_pri_tip" />
+            <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_pri" android:layout_width="fill_parent" android:layout_height="275.0dip" android:layout_marginTop="20.0dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@+id/item_backup_tip1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/item_backup_tip1" />
+    <include android:id="@+id/item_backup_tip2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/item_backup_tip2" />
+    <Button android:enabled="false" android:id="@+id/btn_done" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/backup_already" android:textAllCaps="false" style="@style/bt44_14_ripple_black_round_8" />
+</LinearLayout>

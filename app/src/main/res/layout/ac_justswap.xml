@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:enabled="true" android:textSize="16.0dip" android:textColor="@color/white" android:id="@+id/confirm" android:background="@drawable/selector_write_mnemonic_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="20.0dip" android:text="@string/select_token" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="40.0dip" android:layout_below="@id/confirm">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/roundborder_dbdbdb" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="@string/alltransfer36" style="@style/text16_02" />
+        <TextView android:textSize="16.0dip" android:id="@+id/tv_token_name" android:layout_marginLeft="40.0dip" android:text="" style="@style/text12_13" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/name">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/roundborder_dbdbdb" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="@string/contract_address" style="@style/text16_02" />
+        <TextView android:text="：" style="@style/text16_02" />
+        <TextView android:textSize="16.0dip" android:ellipsize="middle" android:id="@+id/tv_token_address" android:layout_width="130.0dip" android:layout_marginLeft="40.0dip" android:text="" android:singleLine="true" style="@style/text12_13" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/ll_address">
+        <View android:layout_gravity="center_vertical" android:background="@drawable/roundborder_dbdbdb" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="10.0dip" />
+        <TextView android:layout_marginLeft="10.0dip" android:text="底池" style="@style/text16_02" />
+        <TextView android:text="：" style="@style/text16_02" />
+        <TextView android:textSize="16.0dip" android:ellipsize="middle" android:layout_width="130.0dip" android:layout_marginLeft="40.0dip" android:text="" android:singleLine="true" style="@style/text12_13" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:background="@mipmap/bg_rectangle_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_buy" android:background="@mipmap/bg_btn_rectangle_blue" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_marginTop="25.0dip" android:text="买入" android:layout_weight="1.0" android:backgroundTint="@color/yellow_ee" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_sell" android:background="@mipmap/bg_btn_rectangle_blue" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_marginTop="25.0dip" android:text="卖出" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_confirm" android:background="@color/black_0E_40" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.core.widget.NestedScrollView android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/rl_password" android:background="@drawable/border_ffffff_30" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@+id/rl_top_two" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="67.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/iv_close_two" android:paddingLeft="14.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent">
+                            <ImageView style="@style/imagex" />
+                        </LinearLayout>
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_50" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <View android:id="@+id/v_middle_two" style="@style/line3" />
+                    <RelativeLayout android:id="@+id/rl_second" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="#80021c31" android:id="@+id/tv_left_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用TRX数量：" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:ellipsize="middle" android:id="@+id/tv_trx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="" android:singleLine="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_third" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#80021c31" android:id="@+id/tv_left_available" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用Token数量：" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:ellipsize="middle" android:id="@+id/tv_token" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="" android:singleLine="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" app:text_Error="xxasdfaljsdfljaxxx">
+                        <EditText android:id="@+id/et_new_password" android:hint="请输入购买数量" android:inputType="number" style="@style/et50_ee" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:gravity="center" android:id="@+id/tv_cancel_all" android:paddingLeft="10.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/all" android:layout_alignTop="@id/et_new_password" android:layout_alignBottom="@id/et_new_password" android:layout_alignParentRight="true" />
+                    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                    <LinearLayout android:id="@+id/ll_cancel_vote_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="3.0dip" android:src="@mipmap/error_icon" />
+                        <TextView android:id="@+id/tv_no_bandwidth" android:layout_marginLeft="5.0dip" android:layout_marginRight="20.0dip" android:text="数量不足" style="@style/text14_FF46" />
+                    </LinearLayout>
+                    <Button android:enabled="true" android:id="@+id/bt_send" android:layout_marginTop="50.0dip" android:text="@string/vote_confirm" android:textAllCaps="false" style="@style/bt40_16" />
+                </LinearLayout>
+            </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

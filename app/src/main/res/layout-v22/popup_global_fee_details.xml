@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/ripple_white_corner" android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingRight="20.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip" android:paddingHorizontal="20.0dip" android:paddingVertical="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@+id/title" android:text="@string/transaction_resource_consumed_title" style="@style/text18_23" />
+    <androidx.core.widget.NestedScrollView android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="24.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left" android:id="@+id/tv_info" android:text="@string/transaction_resource_consumed_intro" android:lineSpacingExtra="3.0dip" style="@style/text14_6d" />
+            <TextView android:textStyle="bold" android:gravity="left" android:id="@+id/tv_info_title" android:layout_marginTop="24.0dip" android:text="@string/transaction_resource_consumed_intro_title" style="@style/text14_23" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_f7f8fa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <RelativeLayout android:id="@+id/rl_resource_consume" android:background="@drawable/roundborder_eb_4_top_half" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_resource_consume_left" android:text="@string/transaction_resource_consumed_1" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <ImageView android:id="@+id/iv_tips" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/ic_confirm_resources_tips" android:layout_toRightOf="@id/tv_resource_consume_left" android:layout_centerVertical="true" />
+                    <RelativeLayout android:gravity="center|right" android:id="@+id/rl_resource_consume_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_tips" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:gravity="center|right" android:id="@+id/tv_consume_resource_bandwidth" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toLeftOf="@id/tv_consume_resource_mid" style="@style/text12_02" />
+                        <TextView android:id="@+id/tv_consume_resource_mid" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="+" android:layout_toLeftOf="@id/tv_consume_resource_energy" style="@style/text12_02" />
+                        <com.tron.wallet.common.components.DashUnderLineTextView android:gravity="center|right" android:id="@+id/tv_consume_resource_energy" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_alignParentRight="true" style="@style/text12_02" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_resource_user" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_resource_user" android:text="@string/transaction_resource_user" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <RelativeLayout android:gravity="center|right" android:id="@+id/rl_resource_consume_user" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_resource_user" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:gravity="center|right" android:id="@+id/tv_consume_user_bandwidth" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toLeftOf="@id/tv_consume_user_mid" style="@style/text12_02" />
+                        <TextView android:id="@+id/tv_consume_user_mid" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="+" android:layout_toLeftOf="@id/tv_consume_user_energy" style="@style/text12_02" />
+                        <com.tron.wallet.common.components.DashUnderLineTextView android:gravity="center|right" android:id="@+id/tv_consume_user_energy" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_alignParentRight="true" style="@style/text12_02" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_resource_creator" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:paddingHorizontal="12.0dip">
+                    <TextView android:id="@+id/tv_resource_creator" android:text="@string/transaction_resource_creator" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <TextView android:gravity="center|right" android:id="@+id/tv_consume_creator_energy" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toRightOf="@id/tv_resource_creator" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_02" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_f7f8fa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <RelativeLayout android:id="@+id/rl_fee_consume" android:background="@drawable/roundborder_eb_4_top_half" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_fee_consume_left" android:text="@string/transaction_resource_fees" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <ImageView android:id="@+id/iv_fee_tips" android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:src="@mipmap/ic_confirm_resources_tips" android:layout_toRightOf="@id/tv_fee_consume_left" android:layout_centerVertical="true" />
+                    <TextView android:gravity="center|right" android:id="@+id/tv_consumed_fee_total" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toRightOf="@id/iv_fee_tips" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_02" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_fee_active" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="12.0dip">
+                    <TextView android:id="@+id/tv_fee_active" android:text="@string/active_address" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <TextView android:gravity="center|right" android:id="@+id/tv_fee_active_value" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toRightOf="@id/tv_fee_active" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_02" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_fee_multi" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="12.0dip">
+                    <TextView android:id="@+id/tv_fee_multi" android:text="@string/multisign_transaction" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <TextView android:gravity="center|right" android:id="@+id/tv_fee_multi_value" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toRightOf="@id/tv_fee_multi" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_02" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_fee_memo" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="12.0dip">
+                    <TextView android:id="@+id/tv_fee_memo" android:text="@string/note" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <TextView android:gravity="center|right" android:id="@+id/tv_fee_memo_value" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toRightOf="@id/tv_fee_memo" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_02" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_fee_by_contract" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="12.0dip">
+                    <TextView android:id="@+id/tv_fee_by_contract" android:text="--" android:layout_centerVertical="true" style="@style/text12_6d" />
+                    <TextView android:gravity="center|right" android:id="@+id/tv_fee_by_contact_value" android:layout_marginLeft="2.0dip" android:text="--" android:maxLines="1" android:layout_toRightOf="@id/tv_fee_by_contract" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_02" />
+                </RelativeLayout>
+                <View android:id="@+id/ll_fee_bottom" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <Button android:id="@+id/btn_confirm" android:text="@string/transaction_resource_detail_ok" style="@style/bt44_14_ripple_black" />
+    </LinearLayout>
+</LinearLayout>

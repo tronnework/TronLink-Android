@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@+id/progress_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/loading_animlist" />
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayoutV2 android:id="@+id/pull_to_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom_bar" android:layout_below="@id/rl_scam" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/rc_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:elevation="0.0dip">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+                    <FrameLayout android:id="@+id/token_detail_header" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <include android:layout_gravity="center_vertical" android:id="@+id/item_token_detail_bottom" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/item_token_detail_bottom" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayoutV2>
+    <LinearLayout android:id="@+id/ll_bottom_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_transfer_layout" android:padding="12.0dip" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_transfer2" android:background="@drawable/selector_bg_black_round_8" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_asset" style="@style/text12_6d" />
+                <ImageView android:layout_gravity="center" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:src="@mipmap/ic_token_send_white" />
+            </LinearLayout>
+            <include android:id="@+id/ll_menu_line1" android:visibility="gone" layout="@layout/ll_blue_dashed" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_receive2" android:background="@drawable/selector_bg_white_round_6" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="14.0dip" android:textColor="@color/black_02" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receive_asset" style="@style/text12_6d" />
+                <ImageView android:layout_gravity="center" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:src="@mipmap/ic_token_receive_black" />
+            </LinearLayout>
+            <include android:id="@+id/ll_menu_line2" android:visibility="gone" layout="@layout/ll_blue_dashed" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_market" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="1.0dip" android:src="@mipmap/icon_market" />
+                <TextView android:textSize="14.0dip" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/jys" style="@style/text12_6d" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_deposit" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@+id/iv_type" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="1.0dip" android:src="@mipmap/ic_token_deposit" />
+                <TextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/deposit" style="@style/text12_6d" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tron.wallet.common.components.ItemWarningTagView android:id="@+id/rl_scam" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:warning_tag_icon="@mipmap/ic_scam_waring_icon" />
+    <include android:id="@+id/loadingview" android:visibility="gone" layout="@layout/progress_page_translucent" />
+</RelativeLayout>

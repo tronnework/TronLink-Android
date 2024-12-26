@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/black_02_04" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_to_be_imported" style="@style/text16_02" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_change_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change_import_address" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_13" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <include android:id="@+id/address_item_container" layout="@layout/item_choose_address" />
+            <ImageView android:id="@+id/iv_loading" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_ledger_loading" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="16.0dip" android:text="@string/setting_name_import" />
+        <EditText android:textSize="@dimen/sp_14" android:textColor="@color/black_02" android:id="@+id/et_name" android:background="@drawable/roundborder_f5f6f7_10" android:paddingLeft="16.0dip" android:paddingTop="21.0dip" android:paddingRight="16.0dip" android:paddingBottom="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:hint="@string/characters" android:maxLines="1" />
+        <include android:id="@+id/error_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" layout="@layout/item_errorview" />
+        <Button android:enabled="false" android:layout_gravity="center_horizontal" android:id="@+id/btn_next" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/dp_20" android:text="@string/next_step" style="@style/bt44_14_ripple_black_round_8" />
+    </LinearLayout>
+    <include android:id="@+id/view_load_fail" android:visibility="gone" layout="@layout/ledger_no_device" />
+</RelativeLayout>

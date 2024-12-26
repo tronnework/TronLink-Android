@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/time_line_layout" android:paddingLeft="58.0dip" android:paddingRight="58.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/step_one" android:background="@mipmap/step_one_ing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+        <View android:id="@+id/step_line_one" android:background="@color/gray_9B" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/step_two" android:layout_toRightOf="@id/step_one" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/step_two" android:background="@mipmap/step_two_un_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <View android:id="@+id/step_line_two" android:background="@color/gray_9B" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/step_three" android:layout_toRightOf="@id/step_two" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/step_three" android:background="@mipmap/step_three_un_finish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="34.0dip" android:layout_below="@id/time_line_layout">
+        <TextView android:gravity="center" android:id="@+id/step_text_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="66.0dip" android:text="@string/time_line_step_one" android:layout_alignParentLeft="true" style="@style/text11_23" />
+        <TextView android:gravity="center" android:id="@+id/step_text_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="66.0dip" android:text="@string/time_line_step_two" android:layout_centerHorizontal="true" style="@style/text11_23" />
+        <TextView android:gravity="center" android:id="@+id/step_text_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="66.0dip" android:text="@string/create_wallet_success" android:layout_alignParentRight="true" style="@style/text11_23" />
+    </RelativeLayout>
+</RelativeLayout>

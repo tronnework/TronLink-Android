@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_main" android:background="@drawable/bg_item_dapp_search" android:clickable="true" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_inner" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/ll_logo" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.tron.wallet.common.components.TokenLogoDraweeView android:id="@+id/iv_logo" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_alignParentLeft="true" fresco:actualImageScaleType="fitCenter" fresco:failureImage="@mipmap/ic_browser_default_icon" fresco:failureImageScaleType="fitXY" fresco:placeholderImage="@mipmap/ic_browser_default_icon" fresco:placeholderImageScaleType="fitXY" fresco:retryImage="@mipmap/ic_browser_default_icon" fresco:retryImageScaleType="fitXY" fresco:roundedCornerRadius="8.0dip" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_arrows" android:layout_width="@dimen/dp_ic_mini" android:layout_height="@dimen/dp_ic_mini" android:src="@mipmap/icon_dapp_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/iv_arrows" android:layout_toRightOf="@id/ll_logo" android:layout_centerVertical="true">
+            <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@+id/name" android:layout_marginBottom="3.0dip" android:text="" android:singleLine="true" android:layout_centerVertical="true" style="@style/text14_23" />
+            <TextView android:ellipsize="middle" android:id="@+id/url" android:text="" android:singleLine="true" style="@style/text12_9b" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swap_view_token" />
+    <TextView android:enabled="true" android:textSize="@dimen/sp_12" android:textColor="@color/enabled_gray99_blue13" android:id="@+id/tv_token_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="USDT" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray_99_50" android:id="@+id/tv_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / " android:layout_toLeftOf="@id/tv_token_to" />
+    <TextView android:enabled="false" android:textSize="12.0sp" android:textColor="@color/enabled_gray99_blue13" android:id="@+id/tv_token_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRX" android:layout_toLeftOf="@id/tv_divider" />
+</RelativeLayout>

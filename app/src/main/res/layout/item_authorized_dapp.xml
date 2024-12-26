@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_authorized_url" android:layout_marginTop="16.0dip" android:text="abc.org" style="@style/text14_02_4" />
+    <ImageView android:id="@+id/iv_select" android:background="@mipmap/setting_unselect" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="18.0dip" android:layout_alignParentRight="true" />
+    <View android:layout_marginTop="15.0dip" android:layout_below="@id/tv_authorized_url" style="@style/line5" />
+</RelativeLayout>

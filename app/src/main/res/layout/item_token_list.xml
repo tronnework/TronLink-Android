@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/gray_f7" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/token_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRX" />
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/gray_99" android:id="@+id/token_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/top" android:background="@drawable/roundborder_white_16" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="220.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_title" android:layout_width="@dimen/dp_ic_title" android:layout_height="@dimen/dp_ic_title" android:src="@mipmap/ic_secure_warning" />
+            <TextView android:textStyle="bold" android:id="@+id/title" android:layout_marginTop="10.0dip" android:text="@string/secure_warning" style="@style/text18_23" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/ll_title" android:layout_centerHorizontal="true">
+            <ImageView android:visibility="gone" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_warning" />
+            <TextView android:gravity="center" android:id="@+id/tv_content" android:layout_marginLeft="4.0dip" android:text="@string/secure_third_input" style="@style/text14_6d" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/ll_content">
+            <Button android:id="@+id/btn_switch_input" android:text="@string/switch_input" style="@style/bt44_14_ripple_black" />
+            <Button android:textColor="@color/gray_9B" android:id="@+id/btn_continue" android:layout_marginTop="12.0dip" android:text="@string/know_secure_risk_continue" style="@style/bt44_14_ripple_02_8" />
+            <CheckBox android:textSize="12.0dip" android:textColor="@color/black_6d" android:layout_gravity="center_horizontal" android:id="@+id/ck" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:checked="false" android:button="@drawable/sel_checkbox_round" android:text="@string/know_not_ask_again" style="@style/CustomCheckboxTheme" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

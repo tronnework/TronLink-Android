@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.StakeHeaderView android:id="@+id/stake_header" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="48.0dip" />
+    <TextView android:id="@+id/tv_multi_warning" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/multi_controller_tips" android:layout_below="@id/stake_header" style="@style/text12_6d" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_multi_warning">
+        <include android:id="@+id/tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="15.0dip" layout="@layout/tab_with_percent_setting" />
+        <com.tron.wallet.common.components.DelegateResourceLockedView android:id="@+id/resource_lock_switch_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/tab" />
+        <TextView android:id="@+id/tv_desc" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:text="@string/delegate_resource_desc" android:layout_below="@id/resource_lock_switch_layout" style="@style/text12_6d" />
+    </RelativeLayout>
+    <TextView android:enabled="false" android:gravity="center" android:id="@+id/btn_next" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/resource_delegate" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+</RelativeLayout>

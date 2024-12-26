@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_item" android:background="@drawable/roundborder_cdd1da_r8_50" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/name_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_address_name" android:maxWidth="300.0dip" android:text="" android:singleLine="true" style="@style/text14_23" />
+            <ImageView android:id="@+id/iv_scam" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="14.0dip" android:src="@mipmap/ic_asset_scam" android:scaleType="centerInside" />
+        </LinearLayout>
+        <ImageView android:id="@+id/rl_address_edit" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="17.0dip" android:src="@mipmap/icon_address_arrow" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@+id/rl_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/name_layout">
+            <TextView android:id="@+id/tv_address" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:text="TTTTTTTTT" android:layout_alignParentLeft="true" style="@style/text12_9b" />
+            <RelativeLayout android:id="@+id/rl_address_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/tv_address">
+                <ImageView android:background="@mipmap/icon_copy_14_232c41" android:layout_width="14.0dip" android:layout_height="14.0dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@+id/iv_line_bottom" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/rl_address" style="@style/line_232c41_5" />
+        <TextView android:id="@+id/tv_description" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip" android:text="tttttt" android:layout_below="@id/iv_line_bottom" style="@style/text12_9b" />
+    </RelativeLayout>
+</LinearLayout>

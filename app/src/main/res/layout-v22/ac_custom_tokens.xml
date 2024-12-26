@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@+id/nest_scroll_view" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0" android:paddingHorizontal="15.0dip">
+        <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@+id/tv_details" android:text="@string/custom_tokens_detail" style="@style/text12_6d" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_token_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/tv_details">
+                <TextView android:textStyle="bold" android:text="@string/token_contract_address" android:layout_centerVertical="true" style="@style/text14_23" />
+                <ImageView android:paddingTop="4.0dip" android:layout_width="7.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/input_tip" android:scaleType="fitStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_token_address">
+                <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_token_address" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text_Error="@string/error">
+                    <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                        <com.tron.wallet.common.components.TrimEditText android:textSize="14.0dip" android:id="@+id/et_token_address" android:layout_height="40.0dip" android:text="" android:hint="@string/input_contract_address" android:lines="1" android:layout_toLeftOf="@id/iv_scan" android:inputType="text" style="@style/et48_ee_1" />
+                        <ImageView android:id="@+id/iv_scan" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/qr_scan_import_wallet" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </com.tron.wallet.common.components.ErrorEdiTextLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/ll_others" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/ll_edit_address">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_token_symbol" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:text="@string/token_symbol" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <ImageView android:paddingTop="4.0dip" android:layout_width="7.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/input_tip" android:scaleType="fitStart" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit_symbol" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_token_symbol">
+                    <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_token_symbol" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text_Error="@string/error">
+                        <RelativeLayout android:id="@+id/ll_et_token_symbol" android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <com.tron.wallet.common.components.TrimEditText android:textSize="14.0dip" android:id="@+id/et_token_symbol" android:background="@color/transparent" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:text="" android:lines="1" android:inputType="text" style="@style/et48_ee_1" />
+                        </RelativeLayout>
+                    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_token_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/ll_edit_symbol">
+                    <TextView android:textStyle="bold" android:text="@string/token_full_name" android:layout_centerVertical="true" style="@style/text14_23" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_token_name">
+                    <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_token_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:text_Error="@string/error">
+                        <RelativeLayout android:id="@+id/ll_et_token_name" android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <com.tron.wallet.common.components.TrimEditText android:textSize="14.0dip" android:id="@+id/et_token_name" android:background="@color/transparent" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:text="" android:lines="1" android:inputType="text" style="@style/et48_ee_1" />
+                        </RelativeLayout>
+                    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_token_decimal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/ll_edit_name">
+                    <TextView android:textStyle="bold" android:text="@string/token_decimal" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <ImageView android:paddingTop="4.0dip" android:layout_width="7.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/input_tip" android:scaleType="fitStart" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_edit_decimal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_token_decimal">
+                    <com.tron.wallet.common.components.ErrorEdiTextLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:text_Error="@string/error">
+                        <RelativeLayout android:background="@drawable/roundborder_f7f8fa_5" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <com.tron.wallet.common.components.TrimEditText android:enabled="false" android:textSize="14.0dip" android:textColor="@color/gray_9B" android:id="@+id/et_token_decimal" android:background="@color/transparent" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:text="0" android:lines="1" android:inputType="text" style="@style/et48_ee_1" />
+                        </RelativeLayout>
+                    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_token_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/ll_edit_decimal">
+                    <TextView android:textStyle="bold" android:text="@string/token_type" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <ImageView android:paddingTop="4.0dip" android:layout_width="7.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/input_tip" android:scaleType="fitStart" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_token_type">
+                    <com.tron.wallet.common.components.ErrorEdiTextLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:text_Error="@string/error">
+                        <RelativeLayout android:background="@drawable/roundborder_f7f8fa_5" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                            <com.tron.wallet.common.components.TrimEditText android:enabled="false" android:textSize="14.0dip" android:textColor="@color/gray_9B" android:id="@+id/et_token_type" android:background="@color/transparent" android:layout_height="40.0dip" android:layout_marginRight="16.0dip" android:text="TRC20" android:lines="1" android:inputType="text" style="@style/et48_ee_1" />
+                        </RelativeLayout>
+                    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:enabled="false" android:id="@+id/btn_next" android:visibility="visible" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/next_step" android:layout_marginHorizontal="15.0dip" style="@style/bt44_14_ripple_black" />
+</LinearLayout>

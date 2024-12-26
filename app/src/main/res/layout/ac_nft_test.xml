@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="66.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/rv_text" app:text_Error="">
+        <EditText android:id="@+id/et_address" android:hint="请输入地址" style="@style/et50_ee" />
+    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+    <com.tron.wallet.common.components.ErrorEdiTextLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/rv_text" app:text_Error="">
+        <EditText android:id="@+id/et_tokenid" android:hint="请输入TokenID" style="@style/et50_ee" />
+    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+    <Button android:id="@+id/bt_send" android:text="@string/send" android:layout_below="@id/eet_content" android:textAllCaps="false" style="@style/bt40_16" />
+    <com.tron.wallet.common.components.ErrorEdiTextLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="66.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/rv_text" app:text_Error="">
+        <EditText android:id="@+id/et_search" android:hint="请输入地址" style="@style/et50_ee" />
+    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+    <Button android:id="@+id/bt_search" android:text="查询" android:layout_below="@id/eet_content" android:textAllCaps="false" style="@style/bt40_16" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/orange_FF" android:id="@+id/tv_search" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="15.0dip" />
+    <Button android:id="@+id/bt_parse" android:text="解析mateData" android:layout_below="@id/eet_content" android:textAllCaps="false" style="@style/bt40_16" />
+</LinearLayout>

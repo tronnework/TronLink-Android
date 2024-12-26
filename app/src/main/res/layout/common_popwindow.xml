@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/roundborder_ffffff_10" android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingRight="20.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/text16_232c" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:weightSum="2.0">
+            <Button android:id="@+id/btn_cancel" android:layout_width="0.0dip" android:text="@string/cancel" android:layout_weight="1.0" style="@style/bt44_16_ripple_transparent_border" />
+            <Button android:id="@+id/btn_confirm" android:layout_width="0.0dip" android:layout_marginLeft="15.0dip" android:text="@string/turn_on_cold_mode" android:layout_weight="1.0" style="@style/bt44_14_ripple_black" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

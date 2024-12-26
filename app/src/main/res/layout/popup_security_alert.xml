@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_white_corner" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_alert" android:layout_width="@dimen/dp_ic_title" android:layout_height="@dimen/dp_ic_title" android:layout_marginTop="30.0dip" android:src="@mipmap/ic_security_alert" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="28.0dip" android:text="@string/safe_tip" android:layout_below="@id/iv_alert" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black_6d" android:gravity="center" android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/backup_tip" android:layout_below="@id/title" android:layout_centerHorizontal="true" android:lineSpacingExtra="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/info">
+        <Button android:id="@+id/btn_confirm" android:text="@string/immediate_backup" style="@style/bt44_14_ripple_black" />
+        <Button android:id="@+id/btn_cancel" android:layout_marginTop="10.0dip" android:text="@string/cancel" style="@style/bt44_16_ripple_transparent" />
+    </LinearLayout>
+</RelativeLayout>

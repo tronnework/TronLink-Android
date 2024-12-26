@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/top" android:background="@drawable/roundborder_ffffff_10" android:layout_width="310.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/black_50" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/et_password" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/gray_02_50" android:id="@+id/inner_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="45.0dip" android:text="@string/deleted2" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <EditText android:textSize="14.0dip" android:textColorHint="@color/gray_D0" android:gravity="center" android:id="@+id/et_password" android:background="@drawable/roundborder_021c31_5" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="20.0dip" android:hint="@string/et_input_password" android:layout_below="@id/inner_title" android:layout_centerHorizontal="true" android:inputType="textPassword" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="22.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="26.0dip" android:layout_below="@id/et_password">
+            <TextView android:gravity="center" android:id="@+id/tv_cancle" android:background="@drawable/roundborder_white_db_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/say_next_time" android:layout_weight="2.0" style="@style/bt44_16_ripple_transparent_border" />
+            <TextView android:gravity="center" android:id="@+id/tv_ok" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:text="@string/update_immediately" android:layout_weight="3.0" style="@style/bt44_14_ripple_black" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_40" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_40" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_result_import" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_above="@id/btn_done">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_icon" android:layout_width="60.0dip" android:layout_height="65.0dip" android:src="@mipmap/ic_unstake_result_success" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/export_complete" style="@style/text18_23" />
+            <TextView android:gravity="center" android:id="@+id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/export_result_subtitle" style="@style/text14_6d" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_failed_list" android:background="@color/gray_f9fbfd" android:padding="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_20" android:layout_below="@id/ll_title">
+            <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/export_failed_title" style="@style/text14_23" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_failed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_20" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_result_export" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_done" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_icon_import" android:layout_width="60.0dip" android:layout_height="65.0dip" android:src="@mipmap/ic_unstake_result_success" android:layout_above="@id/tv_title_import" android:layout_centerHorizontal="true" />
+        <TextView android:textStyle="bold" android:id="@+id/tv_title_import" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/export_file_saved" android:layout_above="@id/tv_subtitle_export" android:layout_centerHorizontal="true" style="@style/text18_23" />
+        <TextView android:gravity="center" android:id="@+id/tv_subtitle_export" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/import_result_subtitle" android:layout_centerInParent="true" style="@style/text14_6d" />
+    </RelativeLayout>
+    <Button android:id="@+id/btn_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" android:text="@string/btn_result_done" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+</RelativeLayout>

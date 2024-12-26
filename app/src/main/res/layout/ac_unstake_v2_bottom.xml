@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/roundborder_ffffff_8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_res_desc" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:text="@string/energy" style="@style/text12_6d" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+        <TextView android:id="@+id/tv_res_old" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:text="" style="@style/text12_6d" />
+        <ImageView android:id="@+id/arrow_top" android:background="@mipmap/icon_12_arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:id="@+id/tv_res_new" android:layout_marginLeft="4.0dip" android:layout_marginTop="12.0dip" android:text="" style="@style/text12_23" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="12.0dip" android:text="@string/stake_get_tron_power" android:layout_alignParentBottom="true" style="@style/text12_6d" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/tv_vote_old" android:layout_marginLeft="10.0dip" android:layout_marginBottom="12.0dip" android:text="" style="@style/text12_6d" />
+        <ImageView android:id="@+id/arrow_bottom" android:background="@mipmap/icon_12_arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" />
+        <TextView android:id="@+id/tv_vote_new" android:layout_marginLeft="4.0dip" android:layout_marginBottom="12.0dip" android:text="" style="@style/text12_23" />
+    </LinearLayout>
+</RelativeLayout>

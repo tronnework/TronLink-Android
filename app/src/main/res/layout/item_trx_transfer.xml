@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@+id/root" android:background="@color/transparent" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="82.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_inner" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/li_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_toLeftOf="@id/rl_right" android:layout_alignParentLeft="true">
+            <TextView android:textSize="14.0sp" android:ellipsize="middle" android:id="@+id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/text13_02" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black_23" android:ellipsize="middle" android:id="@+id/left_bracket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="(" android:singleLine="true" style="@style/text13_02" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black_6d" android:gravity="center" android:id="@+id/tv_contract_tag" android:background="@drawable/roundborder_eef0f3_r10" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="SC" android:fontFamily="@font/lato" />
+            <TextView android:textSize="14.0sp" android:ellipsize="middle" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="" android:singleLine="true" style="@style/text13_02" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/gray_9B" android:ellipsize="middle" android:id="@+id/short_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" style="@style/text13_02" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black_23" android:ellipsize="middle" android:id="@+id/right_bracket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=")" android:singleLine="true" style="@style/text13_02" />
+            <com.tron.wallet.common.components.TransactionScamStatusImageView android:id="@+id/iv_status_scam" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:src="@mipmap/ic_asset_scam" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@+id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="center|right" android:id="@+id/tv_count" android:layout_width="wrap_content" android:text="-1" android:maxLines="1" android:layout_alignRight="@id/li_pending" style="@style/text16_23" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@+id/li_pending" android:layout_width="wrap_content" android:layout_height="22.0dip" android:maxWidth="120.0dip" android:layout_below="@id/tv_count" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@+id/ll_pending" android:background="@drawable/roundborder_9ba4b6_11" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_alignParentRight="true">
+                    <com.tron.wallet.common.components.LoadingView android:layout_gravity="center_vertical" android:id="@+id/iv_pending" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_loading_item_token_state" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/black_6d" android:id="@+id/tv_pending" android:paddingLeft="2.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:maxWidth="100.0dip" android:text="@string/pending" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="@color/gray_9B" android:id="@+id/time" android:layout_marginTop="2.0dip" android:text="02、15、2022" android:layout_below="@id/li_address" style="@style/text13_99" />
+    </RelativeLayout>
+</RelativeLayout>

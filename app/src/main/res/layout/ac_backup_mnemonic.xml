@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tron.wallet.business.walletmanager.createwallet.view.TimelineView android:id="@+id/time_line_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+    <FrameLayout android:id="@+id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

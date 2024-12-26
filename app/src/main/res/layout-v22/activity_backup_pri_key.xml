@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black_6d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/backup_pri_tip" />
+            <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_pri" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="275.0dip" android:layout_marginTop="20.0dip" />
+            <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_sk" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_sk" app:soi_title="sk" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_more" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingVertical="10.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/black_23" android:text="@string/view_more_keys" style="@style/text14_23" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dp_ic_mini" android:layout_height="@dimen/dp_ic_mini" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_arrow_down_new" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_other_keys" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_ask" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_ask" app:soi_title="ask" />
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_nsk" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_nsk" app:soi_title="nsk" />
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_ak" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_ak" app:soi_title="ak" />
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_nk" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_nk" app:soi_title="nk" />
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_ovk" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_ovk" app:soi_title="ovk" />
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_ivk" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_priv_ivk" app:soi_title="ivk" />
+                <com.tron.wallet.common.components.BackupItemView android:id="@+id/back_addr" android:layout_width="fill_parent" android:layout_height="330.0dip" android:layout_marginTop="20.0dip" app:soi_hint="@string/back_pri_address" app:soi_title="@string/address" />
+            </LinearLayout>
+            <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/item_backup_tip2" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/item_backup_tip1" />
+    <Button android:enabled="false" android:id="@+id/btn_done" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/backup_already" android:textAllCaps="false" style="@style/bt44_14_ripple_black" />
+</LinearLayout>

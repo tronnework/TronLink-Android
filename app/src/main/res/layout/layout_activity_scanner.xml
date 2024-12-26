@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@+id/zxing_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_preview_scaling_strategy="centerCrop" app:zxing_scanner_layout="@layout/custom_barcode_scanner" app:zxing_use_texture_view="false" />
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@+id/ll_back" android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_back_white" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_gravity="right" android:id="@+id/tv_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/album" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

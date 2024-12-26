@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@+id/ll_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_marginHorizontal="@dimen/dp_20">
+        <ImageView android:id="@+id/iv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/error_icon" />
+        <TextView android:gravity="center" android:id="@+id/tv_error_bottom" style="@style/text14_FF46" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="20.0dip">
+        <Button android:id="@+id/btn_confirm" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip" style="@style/bt44_14_ripple_black" />
+        <TextView android:id="@+id/tv_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/text14_ff" />
+        <ImageView android:id="@+id/iv_fee_loading" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="0.0dip" android:scaleType="fitCenter" android:layout_toRightOf="@id/tv_btn_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/tag_bandwidth" android:id="@+id/tv_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/text12_23" />
+    <TextView android:id="@+id/tv_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/tv_amount" style="@style/text12_23" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black_6d" android:gravity="center" android:id="@+id/tv_contract_tag" android:background="@drawable/roundborder_eef0f3_r10" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="SC" android:layout_toRightOf="@id/tv_from" android:layout_below="@id/tv_amount" android:layout_alignBaseline="@id/tv_from" android:fontFamily="@font/lato" android:paddingHorizontal="8.0dip" />
+    <TextView android:id="@+id/tv_from_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="15.0dip" android:layout_toRightOf="@id/tv_contract_tag" android:layout_below="@id/tv_amount" style="@style/text12_23" />
+    <View android:id="@+id/divider" android:background="@color/black_23_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/tv_from" />
+</RelativeLayout>

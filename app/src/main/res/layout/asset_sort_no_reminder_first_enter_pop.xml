@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="210.0dip" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@+id/tv_sort_pop" android:background="@mipmap/bg_vote_first_enter" android:paddingLeft="14.0dip" android:paddingTop="21.0dip" android:paddingRight="26.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/asset_guide_not_reminded" />
+    <ImageView android:id="@+id/iv_close" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="17.0dip" android:src="@mipmap/ic_close" android:layout_alignParentRight="true" />
+</RelativeLayout>

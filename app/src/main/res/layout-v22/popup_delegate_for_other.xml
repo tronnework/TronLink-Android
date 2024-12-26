@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bg_white_24" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="252.0dip">
+        <RelativeLayout android:id="@+id/rl_title" android:clickable="true" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true">
+            <TextView android:textStyle="bold" android:id="@+id/tv_title" android:text="@string/stake_2_delegate" android:layout_centerInParent="true" style="@style/text18_23" />
+            <TextView android:textSize="10.0dip" android:gravity="center" android:id="@+id/tv_title_tag" android:background="@drawable/bg_resource_energy_tag" android:layout_width="32.0dip" android:layout_height="16.0dip" android:layout_marginLeft="8.0dip" android:text="@string/energy" android:layout_toRightOf="@id/tv_title" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_common_right" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginTop="22.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/icon_detail_relition_close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="@color/black_23" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" android:alpha="0.05" />
+        </RelativeLayout>
+        <com.tron.wallet.common.components.xtablayout.XTabLayout android:id="@+id/x_tab_layout" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/rl_title" android:layout_marginHorizontal="15.0dip" app:tabPaddingEnd="-2.0dip" app:tabPaddingStart="-2.0dip" app:xTabGravity="0" app:xTabIndicatorColor="@color/black_23" app:xTabIndicatorHeight="3.0dip" app:xTabIndicatorWidth="30.0dip" app:xTabMode="fixed" app:xTabSelectedTextColor="@color/black_23" app:xTabSelectedTextSize="16.0dip" app:xTabTextBackground="@color/transparent" app:xTabTextColor="@color/gray_6D778C" app:xTabTextSelectedBold="true" app:xTabTextSize="14.0dip" />
+        <androidx.viewpager.widget.ViewPager android:id="@+id/vp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/x_tab_layout" />
+    </RelativeLayout>
+</RelativeLayout>

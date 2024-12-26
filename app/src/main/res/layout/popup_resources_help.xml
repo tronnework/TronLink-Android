@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_white_corner" android:paddingLeft="24.0dip" android:paddingTop="30.0dip" android:paddingRight="24.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_alert" android:layout_width="@dimen/dp_ic_title" android:layout_height="@dimen/dp_ic_title" android:src="@mipmap/ic_tron_title" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/black_23" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="28.0dip" android:text="@string/resource_intro_title" android:layout_below="@id/iv_alert" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/black_23" android:gravity="left" android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/resource_intro" android:layout_below="@id/title" android:layout_centerHorizontal="true" android:lineSpacingExtra="3.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/info">
+        <Button android:id="@+id/btn_confirm" android:text="@string/permission_got_it" style="@style/bt44_14_ripple_black" />
+    </LinearLayout>
+</RelativeLayout>

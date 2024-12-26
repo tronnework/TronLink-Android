@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_transparent_gray" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true" app:placeholderImage="@mipmap/ic_dapp_item_place_holder" app:placeholderImageScaleType="centerInside" app:roundedCornerRadius="@dimen/dp_10" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_toRightOf="@id/image" android:layout_centerVertical="true">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Just lend" android:maxLines="1" style="@style/text14_23" />
+        <TextView android:ellipsize="end" android:id="@+id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="A TRON decentralised exchange that distributes 100% revenue to the community" android:maxLines="1" style="@style/text12_9b" />
+    </LinearLayout>
+    <View android:background="@color/gray_eef3fd" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/image" android:layout_alignLeft="@id/ll_text" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_80" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:gravity="center" android:id="@+id/et_change" android:layout_marginTop="40.0dip" android:hint="输入change" android:inputType="number" style="@style/et14_02" />
+    <EditText android:gravity="center" android:id="@+id/et_account_index" android:layout_marginTop="40.0dip" android:hint="输入accountIndex" android:layout_below="@id/et_change" android:inputType="number" style="@style/et14_02" />
+    <Button android:id="@+id/bt_create" android:text="公钥生成" android:layout_below="@id/et_account_index" style="@style/bt40_16" />
+    <Button android:id="@+id/bt_default_create" android:text="助记词生成" android:layout_below="@id/bt_create" style="@style/bt40_16" />
+    <TextView android:id="@+id/tv_address" android:layout_marginTop="20.0dip" android:text="地址：" android:layout_below="@id/bt_default_create" android:layout_centerHorizontal="true" style="@style/text16_02_1" />
+    <TextView android:id="@+id/tv_address2" android:layout_marginTop="20.0dip" android:text="地址：" android:layout_below="@id/tv_address" android:layout_centerHorizontal="true" style="@style/text16_02_1" />
+    <Button android:id="@+id/bt_10000" android:text="万次验证" android:layout_alignParentBottom="true" style="@style/bt40_16" />
+</RelativeLayout>

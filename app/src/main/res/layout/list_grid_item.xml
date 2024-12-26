@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/fr_root" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_titlebar" android:background="@drawable/bg_item_tab_title_bar" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <ImageView android:id="@+id/iv_tab_close" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_browser_tab_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_tab_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="9.0dip" android:layout_centerVertical="true" fresco:placeholderImage="@mipmap/ic_browser_default_icon" fresco:placeholderImageScaleType="fitXY" />
+            <TextView android:ellipsize="end" android:gravity="left" android:id="@+id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:text="@string/browser_subtitle" android:lines="1" android:layout_toLeftOf="@id/iv_tab_close" android:layout_toRightOf="@id/iv_tab_icon" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_tab_snapshot" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_marginTop="0.0dip" android:scaleType="matrix" android:layout_below="@id/rl_titlebar" android:layout_centerHorizontal="true" fresco:roundBottomLeft="true" fresco:roundBottomRight="true" fresco:roundTopLeft="false" fresco:roundTopRight="false" fresco:roundWithOverlayColor="@color/blue_0F" fresco:roundedCornerRadius="8.0dip" fresco:roundingBorderColor="@color/red_EC" />
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_tabs_mark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_tab_bg_marker" android:scaleType="fitXY" />
+</FrameLayout>

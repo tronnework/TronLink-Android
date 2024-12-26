@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@+id/iv_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_send" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/asset_send" android:layout_below="@id/iv_icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_new_added" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="21.0dip" android:src="@mipmap/ic_market_new" app:layout_constraintCircle="@id/rl_content" app:layout_constraintCircleAngle="40" app:layout_constraintCircleRadius="30.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

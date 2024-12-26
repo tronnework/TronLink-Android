@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:src="@mipmap/iv_loading_unstake" android:scaleType="fitStart" />
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="2.0dip" android:scrollbarStyle="insideOverlay" android:id="@+id/rv_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" app:description_text_color="@color/gray_9B" app:icon="@mipmap/ic_no_data_new" app:no_net_text="@string/no_data_unstaking_resources" app:reloadable="false" />
+</RelativeLayout>

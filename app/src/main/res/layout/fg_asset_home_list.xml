@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.core.widget.NestedScrollView android:id="@+id/ll_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.tron.wallet.common.components.NoNetView android:id="@+id/net_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" app:button_text="@string/reload" app:icon="@mipmap/ic_no_net_new" app:icon_height="86.0dip" app:icon_width="190.0dip" app:no_net_text="@string/net_unavailable" app:reload_padding_top="20.0dip" app:reloadable="true" app:show_loading_anim="true" />
+            <com.tron.wallet.common.components.NoNetView android:id="@+id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" app:description_text_color="@color/gray_9B" app:icon="@mipmap/ic_no_data_new" app:no_net_text="@string/no_data2" app:reloadable="false" />
+            <ImageView android:id="@+id/iv_place_holder" android:background="@mipmap/bg_asset_place_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

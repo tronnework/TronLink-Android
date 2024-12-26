@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content" android:background="@drawable/bg_no_screenshot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_marginTop="26.0dip" android:text="@string/no_screenshots" style="@style/text20_50" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_021c31_1" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="30.0dip">
+        <TextView android:id="@+id/tv_warning1" android:text="@string/screenshots_tip3" android:lineSpacingMultiplier="1.2" style="@style/text14_02_50_1" />
+        <TextView android:layout_marginTop="10.0dip" android:text="@string/screenshots_tip1" android:lineSpacingMultiplier="1.2" style="@style/text14_02_50_1" />
+    </LinearLayout>
+    <Button android:textSize="14.0dip" android:textColor="@color/white" android:id="@+id/bt_know" android:background="@drawable/ripple_button_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/knew" android:textAllCaps="false" />
+</LinearLayout>

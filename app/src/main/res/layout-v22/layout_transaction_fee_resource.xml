@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_fee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:id="@+id/tv_fee_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/fee" style="@style/text12_6d" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="230.0dip" android:text="--" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/text14_23" />
+            <ImageView android:id="@+id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@mipmap/ic_arrow_detail_down" android:layout_toRightOf="@id/tv_fee" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fee_content" android:background="@drawable/roundborder_f7f8fa_8" android:paddingLeft="15.0dip" android:paddingTop="4.0dip" android:paddingRight="15.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="15.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_account_update_permission" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_account_update_permission" android:text="@string/account_update_permission" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_account_update_permission" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_account_update_permission" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_create_representatives" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_create_representatives" android:text="@string/create_representatives" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_create_representatives" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_create_representatives" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_TRC10_issue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_TRC10_issue" android:text="@string/TRC10_issue" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_TRC10_issue" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_TRC10_issue" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_active_account" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_active_account" android:text="@string/active_address" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_active_account" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_active_account" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_multisign_transaction" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_multisign_transaction" android:text="@string/multisign_transaction" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_multisign_transaction" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_multisign_transaction" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_memo_fee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_memo_fee" android:text="@string/note" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_memo_fee" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_memo_fee" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_create_bancor_transaction" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center|left" android:id="@+id/tv_left_create_bancor_transaction" android:text="@string/bancor_create" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_create_bancor_transaction" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_create_bancor_transaction" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_burn_for_band" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center_vertical" android:id="@+id/tv_left_burn_for_band" android:text="@string/burn_for_band" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <ImageView android:id="@+id/iv_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@mipmap/fee_mark_new" android:layout_toRightOf="@id/tv_left_burn_for_band" android:layout_centerVertical="true" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_burn_for_band" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_burn_for_band" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_burn_for_energy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:gravity="center_vertical" android:id="@+id/tv_left_burn_for_energy" android:text="@string/burn_for_energy" android:layout_centerVertical="true" style="@style/text12_6d" />
+            <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_burn_for_energy" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_burn_for_energy" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <TextView android:id="@+id/tv_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/low_resources" style="@style/text12_02" />
+    </LinearLayout>
+</LinearLayout>

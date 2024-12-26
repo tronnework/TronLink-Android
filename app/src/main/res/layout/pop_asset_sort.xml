@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rootview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/border_ffffff_20" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rl_content" android:paddingTop="20.0dip" android:paddingBottom="14.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/tv_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/filter" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_hide" android:paddingLeft="20.0dip" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_filter">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/li_hide_small_values" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                    <ImageView android:id="@+id/iv_select" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_check_unselect" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:id="@+id/tv_hide_assets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/assets_hide_0_assets" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/iv_small_value_tips" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_tip_new" android:layout_centerVertical="true" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/li_scam_token" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/li_hide_small_values">
+                    <ImageView android:id="@+id/iv_select_scam" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_check_unselect" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:id="@+id/tv_hide_scam_assets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/assets_hide_scam_token" />
+                    <ImageView android:id="@+id/iv_scam_token_tips" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_tip_new" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View android:id="@+id/iv_divider" android:background="@color/black_02_04" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="18.0dip" android:layout_below="@id/ll_hide" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/tv_sort_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/sort_asset_by" android:layout_below="@id/iv_divider" android:layout_centerVertical="true" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/tv_sort_by" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:layout_below="@id/rv">
+                <TextView android:gravity="center" android:id="@+id/tv_cancle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancle" android:layout_weight="1.0" style="@style/bt44_8_ripple_transparent_border" />
+                <TextView android:gravity="center" android:id="@+id/tv_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="@string/ok2" android:layout_weight="1.0" style="@style/bt44_14_ripple_black_round_8" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

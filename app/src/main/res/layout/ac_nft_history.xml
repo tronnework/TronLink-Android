@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@+id/progress_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/loading_animlist" />
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayoutV2 android:id="@+id/pull_to_refresh" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_view" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/rc_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/item_nft_history_bar" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayoutV2>
+</RelativeLayout>

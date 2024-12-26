@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/ledger_view" android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/il_pop_hardware_connect_fail" android:visibility="gone" layout="@layout/pop_hardware_connect_fail" />
+        <include android:id="@+id/il_pop_hardware_address_fail" android:visibility="gone" layout="@layout/pop_hardware_address_fail" />
+        <include android:id="@+id/il_pop_hardwarelist" android:visibility="gone" layout="@layout/pop_hardwarelist" />
+        <include android:id="@+id/il_pop_ledger_confirm_gif" android:visibility="gone" layout="@layout/pop_ledger_confirm_gif" />
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/fl_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

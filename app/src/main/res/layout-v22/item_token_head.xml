@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="24.0dip" android:paddingRight="15.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_inner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_token_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/ll_logo" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <com.tron.wallet.common.components.TokenLogoDraweeView android:id="@+id/img_token" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@mipmap/ic_token_default" android:layout_centerVertical="true" fresco:placeholderImage="@mipmap/ic_token_default" fresco:placeholderImageScaleType="centerCrop" />
+                <ImageView android:id="@+id/iv_official_image" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="-6.0dip" android:src="@mipmap/ic_asset_official" android:scaleType="fitCenter" android:layout_toRightOf="@id/img_token" android:layout_alignBottom="@id/img_token" android:layout_toEndOf="@id/img_token" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/ll_logo" android:layout_centerVertical="true">
+                <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_assetname" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/black_23" android:ellipsize="end" android:gravity="center" android:id="@+id/assets_name" android:layout_width="0.0dip" android:maxWidth="100.0dip" android:text="TRX" android:singleLine="true" android:layout_centerVertical="true" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_constraintWidth_default="wrap" style="@style/text16_12" />
+                    <TextView android:textColor="@color/gray_9B" android:ellipsize="middle" android:gravity="center" android:id="@+id/assets_subname" android:layout_width="0.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="6.0dip" android:maxWidth="100.0dip" android:text="(TRX)" android:singleLine="true" android:layout_centerVertical="true" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintLeft_toRightOf="@id/assets_name" fresco:layout_constraintRight_toLeftOf="@id/ll_asset_tag" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_constraintWidth_default="wrap" style="@style/text12_99" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_asset_tag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginLeft="4.0dip" android:layout_centerVertical="true" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintLeft_toRightOf="@id/assets_subname" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_constraintWidth_default="wrap">
+                        <TextView android:textSize="10.0sp" android:gravity="center" android:id="@+id/assets_tag" android:background="@drawable/roundborder_1557_2" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:maxWidth="100.0dip" android:text="TRX" android:singleLine="true" android:layout_toRightOf="@id/tv_token_name" android:layout_alignBaseline="@id/tv_token_name" android:paddingHorizontal="5.0dip" style="@style/text12_57" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_assets_official" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_asset_official" android:scaleType="fitCenter" />
+                    </LinearLayout>
+                    <ImageView android:id="@+id/iv_national" android:background="@mipmap/ic_token_national_dm" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:layout_centerVertical="true" fresco:layout_constraintBottom_toBottomOf="parent" fresco:layout_constraintLeft_toRightOf="@id/ll_asset_tag" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_constraintWidth_default="wrap" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_price" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/gray_9B" android:gravity="center" android:text="@string/price" style="@style/text12_66" />
+                        <TextView android:textStyle="normal" android:textColor="@color/gray_9B" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_price" android:layout_marginLeft="6.0dip" android:text="0" android:lines="1" android:layout_centerVertical="true" style="@style/text14_02" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_tronscan_rating" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textColor="@color/gray_9B" android:gravity="center" android:id="@+id/tv_ranking" android:text="@string/asset_credit_rating" style="@style/text12_66" />
+                        <ImageView android:id="@+id/iv_ranking_tips" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_question_tip" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:gravity="center" android:id="@+id/tv_market" android:visibility="gone" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:text="@string/from_data" style="@style/text12_66" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.tron.wallet.common.components.CustomTokenNoFunctionView android:id="@+id/rc_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_marginTop="8.0dip" />
+    <RelativeLayout android:id="@+id/rl_tronscan" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_token_top">
+        <View android:id="@+id/divider" android:background="@color/gray_E8EAF1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/tronscan_logo_new" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_right_icon" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_token_right_arrow" android:scaleType="fitStart" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:foregroundGravity="left" />
+            <TextView android:id="@+id/tv_vdd" android:layout_marginRight="8.0dip" android:text="@string/view_detail" android:layout_toLeftOf="@id/iv_right_icon" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

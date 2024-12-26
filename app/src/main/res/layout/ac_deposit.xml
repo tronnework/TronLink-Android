@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@+id/tv_name" android:layout_marginLeft="20.0dip" android:layout_marginTop="17.0dip" android:text="USDT" style="@style/text20_02_50_b" />
+    <RelativeLayout android:background="@mipmap/wallet_content_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top_tr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="51.0dip">
+            <ImageView android:id="@+id/iv_sa" android:layout_width="20.0dip" android:layout_height="25.0dip" android:src="@drawable/gray_circle" android:scaleType="center" />
+            <TextView android:id="@+id/tv_deposit_type" android:text="@string/contract_address_of_type" style="@style/text14_02_m" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_send_address" android:paddingRight="31.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_top_tr">
+            <TextView android:background="@drawable/bg_dashed_vertical_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="32.5dip" android:layerType="software" />
+            <TextView android:id="@+id/tv_tokenid" android:layout_marginBottom="30.0dip" android:text="TAtXztnximXyasgaSiTaxJhxiGYPn1HUqw" style="@style/text13_02_30" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_below="@id/ll_send_address">
+            <ImageView android:id="@+id/iv_ra" android:layout_width="20.0dip" android:layout_height="25.0dip" android:src="@drawable/gray_circle" android:scaleType="center" />
+            <TextView android:id="@+id/tv_type_chain" android:text="@string/deposit_to" style="@style/text16_02_50_m_1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_chain_name" android:paddingRight="31.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_top_one">
+            <TextView android:background="@drawable/bg_dashed_vertical_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="32.5dip" android:layerType="software" />
+            <TextView android:id="@+id/tv_chain_name" android:layout_marginBottom="30.0dip" android:text="DAppChain" style="@style/text13_02_30" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_top_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_below="@id/ll_chain_name">
+            <ImageView android:id="@+id/iv_ba" android:layout_width="20.0dip" android:layout_height="25.0dip" android:src="@mipmap/transfer_fource" android:scaleType="center" />
+            <TextView android:id="@+id/tv_type_amount" android:text="@string/amount_of_deposit" style="@style/text16_02_50_m_1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_balance_amout" android:paddingRight="31.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_top_three">
+            <TextView android:id="@+id/tv_amount_line" android:background="@drawable/bg_dashed_vertical_line" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="32.5dip" android:layerType="software" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip">
+                <TextView android:textSize="14.0dip" android:textColor="@color/gray_99" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="0.0" android:layout_below="@id/ll_top_three" android:alpha="0.6" />
+                <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_amout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="7.0dip" android:layout_below="@id/tv_balance" app:text_Error="11111">
+                    <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <com.tron.wallet.common.components.CurrencyEditText android:id="@+id/et_count" android:layout_toLeftOf="@id/tv_amount_name" android:inputType="numberDecimal" style="@style/et48_ee_1" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/black_02" android:id="@+id/tv_max" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="15.0dip" android:text="MAX" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        <TextView android:id="@+id/tv_line_v" android:background="@drawable/bg_dashed_vertical_line" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="20.0dip" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/tv_max" android:layout_centerVertical="true" />
+                        <TextView android:id="@+id/tv_amount_name" android:layout_marginRight="15.0dip" android:text="BTT" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02" />
+                    </RelativeLayout>
+                </com.tron.wallet.common.components.ErrorEdiTextLayout>
+                <TextView android:textSize="13.0dip" android:textColor="@color/black_50" android:gravity="center" android:id="@+id/tv_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fee_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:enabled="false" android:id="@+id/bt_go" android:layout_marginTop="-30.0dip" android:text="@string/deposit" style="@style/bt40_16" />
+</LinearLayout>

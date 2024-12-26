@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/top" android:background="@drawable/roundborder_ffffff_10" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/black_50" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/add_address_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black_50_40" android:id="@+id/inner_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="27.0dip" android:text="@string/deleted2" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/li_et" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="24.0dip" android:layout_below="@id/inner_title">
+            <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_address_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip">
+                <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <EditText android:textSize="13.0dip" android:id="@+id/et_address_name" android:layout_marginRight="10.0dip" android:text="" android:lines="1" android:layout_toLeftOf="@id/iv_delete" android:inputType="text" style="@style/et48_ee_1" />
+                    <ImageView android:id="@+id/iv_delete" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/delete_black" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </com.tron.wallet.common.components.ErrorEdiTextLayout>
+            <TextView android:id="@+id/tv_note" android:visibility="gone" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:text="" style="@style/text14_08" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="37.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="37.0dip" android:layout_marginBottom="26.0dip" android:layout_below="@id/li_et">
+            <TextView android:gravity="center" android:id="@+id/tv_cancle" android:background="@drawable/roundborder_white_db_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancle" android:layout_weight="1.0" style="@style/text14_99" />
+            <TextView android:gravity="center" android:id="@+id/tv_ok" android:background="@drawable/roundborder_135dcd_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/go" android:layout_weight="1.0" style="@style/text14_ff" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@+id/fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <include android:id="@+id/ll_no_net" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/nonet_view" />
+    <include android:id="@+id/ll_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/empty_view" />
+</RelativeLayout>

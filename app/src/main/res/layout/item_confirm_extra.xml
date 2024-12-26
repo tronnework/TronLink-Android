@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_left" android:layout_marginLeft="26.0dip" android:layout_centerVertical="true" style="@style/text14_808D98" />
+    <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right" android:layout_marginLeft="16.0dip" android:layout_marginRight="26.0dip" android:singleLine="true" android:layout_toRightOf="@id/tv_left" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+</RelativeLayout>

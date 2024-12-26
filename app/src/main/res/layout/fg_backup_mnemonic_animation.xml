@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_top" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/create_wallet_hint_3" style="@style/text14_6d" />
+    <com.tron.wallet.common.components.SimpleDraweeViewGif android:id="@+id/gif_view" android:layout_width="fill_parent" android:layout_height="360.0dip" android:layout_marginLeft="47.0dip" android:layout_marginRight="47.0dip" android:layout_below="@id/tv_top" />
+    <TextView android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="104.0dip" android:text="@string/create_wallet_hint_4" android:layout_alignParentBottom="true" style="@style/text14_6d" />
+    <Button android:id="@+id/bt_backup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/backup_wallet_bt_3" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+</RelativeLayout>

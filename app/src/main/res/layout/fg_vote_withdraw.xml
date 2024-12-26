@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/rl_password" android:background="@drawable/border_ffffff_30" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@+id/rl_top_two" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="67.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/iv_close_two" android:paddingLeft="14.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent">
+                        <ImageView style="@style/imagex" />
+                    </LinearLayout>
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_50" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/withdraw_reward_lowercase" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:id="@+id/v_middle_two" style="@style/line3" />
+                <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:id="@+id/tv_left_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_receive_address" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:ellipsize="middle" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="00AtXhetnsedfghjksdxfcgvbnYPnejkHWa" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:id="@+id/tv_left_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_actual_amount" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:ellipsize="middle" android:id="@+id/tv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="TAtXhetnsedfghjksdxfcgvbnYPnejkHWa" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:paddingLeft="20.0dip" android:paddingRight="20.0dip" style="@style/line3" />
+                <RelativeLayout android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_consume_resource" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff021c31" android:ellipsize="middle" android:id="@+id/tv_resource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="TAtXhe" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <Button android:id="@+id/bt_send" android:layout_marginTop="100.0dip" android:text="@string/vote_confirm" android:textAllCaps="false" style="@style/bt40_16" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

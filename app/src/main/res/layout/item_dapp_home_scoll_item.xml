@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/ll_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <RelativeLayout android:id="@+id/rl_bg_0" android:background="@mipmap/ic_dapp_icon_bg_58" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/simple_drawee_view_0" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_centerInParent="true" fresco:failureImage="@mipmap/ic_default_dapp" fresco:failureImageScaleType="centerInside" fresco:placeholderImage="@mipmap/ic_default_dapp" fresco:placeholderImageScaleType="centerInside" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff021c31" android:id="@+id/tv_name_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/rl_bg_0" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/gray_88" android:ellipsize="end" android:id="@+id/tv_name_content_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:maxWidth="170.0dip" android:maxLines="2" android:layout_toRightOf="@id/rl_bg_0" android:layout_below="@id/tv_name_0" android:layout_centerHorizontal="true" />
+        <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/rl_bg_0" android:layout_below="@id/rl_bg_0" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ll_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/rl_bg_1" android:background="@mipmap/ic_dapp_icon_bg_58" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/simple_drawee_view_1" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_centerInParent="true" fresco:failureImage="@mipmap/ic_default_dapp" fresco:failureImageScaleType="centerInside" fresco:placeholderImage="@mipmap/ic_default_dapp" fresco:placeholderImageScaleType="centerInside" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff021c31" android:id="@+id/tv_name_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/rl_bg_1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_88" android:ellipsize="end" android:id="@+id/tv_name_content_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:maxWidth="170.0dip" android:maxLines="2" android:layout_toRightOf="@id/rl_bg_1" android:layout_below="@id/tv_name_1" android:layout_centerHorizontal="true" />
+        <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/rl_bg_1" android:layout_below="@id/rl_bg_1" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ll_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/rl_bg_2" android:background="@mipmap/ic_dapp_icon_bg_58" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/simple_drawee_view_2" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_centerInParent="true" fresco:failureImage="@mipmap/ic_default_dapp" fresco:failureImageScaleType="centerInside" fresco:placeholderImage="@mipmap/ic_default_dapp" fresco:placeholderImageScaleType="centerInside" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff021c31" android:id="@+id/tv_name_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/rl_bg_2" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_88" android:ellipsize="end" android:id="@+id/tv_name_content_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:maxWidth="170.0dip" android:maxLines="2" android:layout_toRightOf="@id/rl_bg_2" android:layout_below="@id/tv_name_2" android:layout_centerHorizontal="true" />
+        <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/rl_bg_2" android:layout_below="@id/rl_bg_2" />
+    </RelativeLayout>
+</LinearLayout>

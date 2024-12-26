@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/fr_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_bg_image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/li_content" android:background="@drawable/roundborder_white_10" android:layout_width="240.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/li_browser_url" style="@style/browser_menu_li">
+            <TextView android:ellipsize="end" android:id="@+id/tv_browser_longpress_content" android:layout_marginRight="15.0dip" android:lines="1" style="@style/browser_menu_title" />
+        </LinearLayout>
+        <View style="@style/browser_menu_divider" />
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/li_browser_copylink" style="@style/browser_menu_li">
+            <TextView android:text="@string/copy_link" style="@style/browser_menu_title" />
+        </LinearLayout>
+        <View style="@style/browser_menu_divider" />
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/li_browser_open_direction" style="@style/browser_menu_li">
+            <TextView android:text="@string/browser_open_direction" style="@style/browser_menu_title" />
+        </LinearLayout>
+        <View style="@style/browser_menu_divider" />
+        <RelativeLayout android:id="@+id/li_browser_in_new_tab" style="@style/browser_menu_li">
+            <TextView android:text="@string/browser_open_in_new_tab" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+            <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/li_browser_outside" style="@style/browser_menu_li">
+            <TextView android:text="@string/browser_open_with_outside" style="@style/browser_menu_title" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

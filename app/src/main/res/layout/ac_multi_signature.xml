@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_empty" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/rl_back_two" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/statusbar_2" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+            <RelativeLayout android:id="@+id/backview2" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/statusbar_2" android:layout_alignParentStart="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_common_left2" android:layout_width="37.0dip" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_common_left2" android:layout_width="7.0dip" android:layout_height="14.0dip" android:layout_marginLeft="16.0dip" android:src="@mipmap/ic_left_black_back" />
+                </LinearLayout>
+                <TextView android:textSize="21.0dip" android:textStyle="bold" android:textColor="@color/black_02" android:gravity="center_vertical" android:id="@+id/tv_common_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/ms_manager" android:layout_toRightOf="@id/ll_common_left2" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@+id/rl_right2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tv_common_title2" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/iv_qr2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@mipmap/note_black" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:gravity="center" android:background="@drawable/border_add_12" android:paddingLeft="9.0dip" android:paddingTop="2.0dip" android:paddingRight="9.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_marginRight="15.0dip" android:text="@string/add_to" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_02" />
+                <View android:id="@+id/bottom_line2" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/action_bar_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:src="@mipmap/lock" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/tv_empty_desc" android:layout_marginLeft="10.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="10.0dip" android:text="@string/permisson_empty" android:alpha="0.5" style="@style/text14_99" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_empty_addpermissions" android:background="@drawable/roundborder_135dcd_10" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="44.0dip" android:layout_marginRight="15.0dip" android:text="@string/add_permissions" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_back" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/statusbar" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+        <RelativeLayout android:id="@+id/backview" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/statusbar" android:layout_alignParentStart="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_common_left" android:layout_width="37.0dip" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_common_left" android:layout_width="9.0dip" android:layout_height="15.0dip" android:layout_marginLeft="16.0dip" android:src="@mipmap/ic_left_black_back" />
+            </LinearLayout>
+            <TextView android:textSize="21.0dip" android:textStyle="bold" android:textColor="@color/black_02" android:gravity="center_vertical" android:id="@+id/tv_common_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ms_manager" android:layout_toRightOf="@id/ll_common_left" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@+id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/tv_common_title" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_qr" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/note_black" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:gravity="center" android:id="@+id/tv_add" android:background="@drawable/border_add_12" android:paddingLeft="9.0dip" android:paddingTop="2.0dip" android:paddingRight="9.0dip" android:paddingBottom="2.0dip" android:layout_marginRight="15.0dip" android:text="@string/add_to" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_02" />
+            <View android:id="@+id/bottom_line" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/action_bar_line" />
+        </RelativeLayout>
+        <TextView android:id="@+id/tv_uc" android:layout_marginLeft="34.0dip" android:layout_marginTop="10.0dip" android:text="@string/under_control" android:layout_below="@id/backview" style="@style/text16_02_50_m" />
+        <RelativeLayout android:id="@+id/rl_uc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/tv_uc">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_edit" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/iv_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@mipmap/edit_black_icon" />
+            </LinearLayout>
+            <TextView android:ellipsize="middle" android:id="@+id/tv_uc_address" android:layout_width="fill_parent" android:layout_marginLeft="34.0dip" android:singleLine="true" android:layout_toLeftOf="@id/ll_edit" android:layout_centerVertical="true" style="@style/text14_02" />
+        </RelativeLayout>
+        <View android:id="@+id/v_line" android:background="@drawable/line_stroke" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="34.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="34.0dip" android:layout_below="@id/rl_uc" android:layerType="software" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rl_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/v_line">
+            <TextView android:textStyle="bold" android:ellipsize="middle" android:id="@+id/tv_permission_name" android:layout_width="0.0dip" android:layout_marginLeft="36.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" android:layout_centerVertical="true" style="@style/text20_02" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_more" android:clickable="true" android:layout_width="80.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/more3" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/viewpager_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewpager" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="6.0dip" android:clickable="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="225.0dip" android:layout_weight="1.0" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_centerInParent="true" />
+        <Button android:id="@+id/bt_go" android:visibility="gone" android:layout_marginTop="10.0dip" android:text="@string/add_ae" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/bt40_16" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_select" android:background="@color/black_0E_60" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="90.0dip" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_sa" android:layout_marginLeft="34.0dip" android:layout_marginTop="10.0dip" android:text="@string/select_address" style="@style/text16_02_50_m" />
+                <RelativeLayout android:id="@+id/rl_address_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageView android:visibility="visible" android:layout_width="18.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="39.0dip" android:src="@mipmap/ic_proposal_address" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_select_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="34.0dip" android:layout_below="@id/tv_top_tr" app:text_Error="@string/error">
+                <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <com.tron.wallet.common.components.TrimEditText android:textSize="13.0dip" android:id="@+id/et_select_address" android:text="" android:lines="1" android:layout_toLeftOf="@id/iv_one_delete" android:inputType="text" style="@style/et48_ee_1" />
+                    <ImageView android:id="@+id/iv_one_delete" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:src="@mipmap/delete_black" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </com.tron.wallet.common.components.ErrorEdiTextLayout>
+            <Button android:textColor="@color/white" android:id="@+id/bt_confirm" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:layout_marginBottom="10.0dip" android:text="@string/confirm" android:textAllCaps="false" style="@style/bt40_16" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

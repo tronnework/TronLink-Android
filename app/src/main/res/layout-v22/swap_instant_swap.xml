@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:enabled="false" android:id="@+id/btn_swap_instant" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/swap_instant" android:layout_centerHorizontal="true" android:layout_marginHorizontal="15.0dip" style="@style/bt44_14_ripple_black" />
+    <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="15.0dip" android:text="@string/swap_intro" android:layout_below="@id/btn_swap_instant" android:layout_centerHorizontal="true" style="@style/text12_9b" />
+</RelativeLayout>

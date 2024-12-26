@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zhy="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff021c31" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hot_search" android:drawableLeft="@mipmap/ic_hot_dapp" android:drawablePadding="10.0dip" />
+    <LinearLayout android:id="@+id/ll_hot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="70.0dip">
+        <com.tron.wallet.common.components.flowlayout.TagFlowLayout android:id="@+id/fl_hot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_marginHorizontal="@dimen/dp_10" zhy:max_select="10" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff021c31" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/history_search" android:drawableLeft="@mipmap/ic_history" android:drawablePadding="10.0dip" />
+        <ImageView android:id="@+id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_delet_history" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.tron.wallet.common.components.flowlayout.TagFlowLayout android:id="@+id/fl_history" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginHorizontal="10.0dip" zhy:max_select="15" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="90.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_full_node" android:background="@drawable/roundborder_135dcd_14" android:paddingLeft="15.0dip" android:paddingTop="3.0dip" android:paddingRight="15.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fullnode" android:layout_centerHorizontal="true" style="@style/text15_02_30" />
+                <TextView android:gravity="center" android:id="@+id/tv_solidity_node" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/soliditynode" android:layout_centerHorizontal="true" style="@style/text15_02_30" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/node_speed_tips" android:layout_weight="1.0" style="@style/text14_02" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="4.0dip" android:layout_height="4.0dip" app:srcCompat="@drawable/node_speed_dot_fast" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/node_speed_fast" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="4.0dip" android:layout_height="4.0dip" app:srcCompat="@drawable/node_speed_dot_medium" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/node_speed_medium" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <androidx.appcompat.widget.AppCompatImageView android:layout_width="4.0dip" android:layout_height="4.0dip" app:srcCompat="@drawable/node_speed_dot_slow" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/node_speed_slow" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/tv_chain_id" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:text="@string/chain_id" style="@style/text14_02_40" />
+            <TextView android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="30.0dip" android:text="@string/node_latency_tips" style="@style/text12_9b" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:id="@+id/btn_add_node" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/add_custom_node" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+</RelativeLayout>

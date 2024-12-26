@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@+id/amount_percent_25" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="25%" android:layout_weight="1.0" style="@style/tx12_for_percent" />
+    <TextView android:gravity="center" android:id="@+id/amount_percent_50" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="50%" android:layout_weight="1.0" style="@style/tx12_for_percent" />
+    <TextView android:gravity="center" android:id="@+id/amount_percent_75" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="75%" android:layout_weight="1.0" style="@style/tx12_for_percent" />
+    <TextView android:gravity="center" android:id="@+id/amount_percent_100" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="100%" android:layout_weight="1.0" style="@style/tx12_for_percent" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="34.0dip" android:paddingRight="34.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <RelativeLayout android:id="@+id/left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="@color/blue_72" android:id="@+id/left_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRX/TRC10" android:layout_centerInParent="true" />
+            <View android:id="@+id/line1" android:background="@color/blue_72" android:layout_width="110.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="@color/gray_99" android:id="@+id/center_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TRC20" android:layout_centerInParent="true" />
+            <View android:id="@+id/line2" android:background="@color/blue_72" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="@color/gray_99" android:id="@+id/right_text" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ohter_assets" android:layout_centerInParent="true" />
+            <View android:id="@+id/line3" android:background="@color/blue_72" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="3.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/line" />
+</LinearLayout>

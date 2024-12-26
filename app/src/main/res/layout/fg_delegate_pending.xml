@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/ll_root" android:background="@color/white" android:paddingTop="77.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/rl_result_partial" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_result" android:layout_width="60.0dip" android:layout_height="65.0dip" android:src="@mipmap/ic_unstake_result_success" android:layout_centerHorizontal="true" />
+        <TextView android:textStyle="bold" android:id="@+id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/withdraw_success" android:layout_below="@id/iv_result" android:layout_centerHorizontal="true" style="@style/text18_23" />
+        <TextView android:gravity="center" android:id="@+id/tv_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="48.0dip" android:text="" android:layout_below="@id/tv_result" style="@style/text14_6d" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_detail" android:background="@drawable/roundborder_f9fbfd_radius_8" android:paddingLeft="@dimen/dp_20" android:paddingTop="@dimen/dp_12" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_result">
+            <RelativeLayout android:id="@+id/rl_resource_first" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_left_first" android:text="@string/resource_delegate_type" android:layout_centerVertical="true" style="@style/text14_6d" />
+                <TextView android:textStyle="bold" android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_first" android:layout_marginLeft="16.0dip" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_left_first" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_23" />
+            </RelativeLayout>
+            <ImageView android:background="@mipmap/dash_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="19.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rl_resource_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <TextView android:id="@+id/tv_left_second" android:text="@string/receive_account" style="@style/text14_6d" />
+                <TextView android:gravity="right" android:id="@+id/tv_right_second" android:layout_width="0.0dip" android:layout_marginLeft="10.0dip" android:text="--" android:layout_weight="1.0" style="@style/text14_23" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:enabled="true" android:id="@+id/btn_again" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="12.0dip" android:text="@string/btn_result_again" android:layout_above="@id/btn_back_home" style="@style/bt44_14_ripple_black" />
+    <Button android:enabled="true" android:id="@+id/btn_back_home" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/return2" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_02_12_with_stroke" />
+    <Button android:enabled="true" android:id="@+id/btn_done" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/btn_result_done" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+</RelativeLayout>

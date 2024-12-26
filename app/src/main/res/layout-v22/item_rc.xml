@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayout android:id="@+id/rc_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_container" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/net_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="85.0dip" cube_ptr:button_text="@string/reload" cube_ptr:icon="@mipmap/ic_no_net_new" cube_ptr:icon_height="86.0dip" cube_ptr:icon_width="190.0dip" cube_ptr:no_net_text="@string/net_unavailable" cube_ptr:reload_padding_top="20.0dip" cube_ptr:reloadable="true" cube_ptr:show_loading_anim="true" />
+    <ImageView android:id="@+id/rc_holder_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_search_asset_placeholder" android:layout_above="@id/ll_container" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/gray_02_5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_marginVertical="12.0dip" android:paddingHorizontal="14.0dip">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_cancel" android:background="@drawable/roundborder_ccd2d6" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="27.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/confirm" android:background="@drawable/roundborder_135dcd_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/save" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

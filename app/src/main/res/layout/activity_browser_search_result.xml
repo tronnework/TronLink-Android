@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_F7F" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/search_header" layout="@layout/search_asset_header_dapp" />
+    <include android:id="@+id/search_history" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_header" layout="@layout/search_dapp_history" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_search_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_below="@id/search_history">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_dapp_result" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_header" />
+        <ImageView android:id="@+id/place_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_search_asset_placeholder" />
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_noresult" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip">
+            <com.tron.wallet.common.components.NoNetView android:id="@+id/no_data_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="90.0dip" app:button_background="@drawable/bg_bt_blue_shadow" app:button_text="@string/token_record" app:button_text_color="@color/white" app:icon="@mipmap/icon_search_asset_no_data" app:icon_height="120.0dip" app:icon_width="120.0dip" app:no_net_text="@string/no_token_search" app:reloadable="true" app:show_loading_anim="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/net_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="136.0dip" app:button_text="@string/reload" app:icon="@mipmap/ic_no_net" app:icon_height="120.0dip" app:icon_width="120.0dip" app:no_net_text="@string/net_unavailable" app:reloadable="true" app:show_loading_anim="true" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_interview_history" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_below="@id/search_history">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/interview_history_title" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="16.0dip" android:text="@string/interview_history" style="@style/text14_23" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_interview_history_clear" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_search_dapp_clear" android:scaleType="center" android:layout_alignTop="@id/interview_history_title" android:layout_alignBottom="@id/interview_history_title" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_interview_history" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@+id/rl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dp_20">
+            <ImageView android:id="@+id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:src="@mipmap/ic_no_data" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" /> e <TextView android:textColor="@color/gray_9B" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="40.0dip" android:text="@string/no_dapp_visit_history" android:layout_below="@id/iv_empty" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

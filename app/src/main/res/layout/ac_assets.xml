@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.xtablayout.XTabLayoutV2 android:id="@+id/ll_tab" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip" app:xTabIndicatorColor="@color/black_23" app:xTabIndicatorHeight="2.0dip" app:xTabIndicatorWidth="18.0dip" app:xTabMinWidth="50.0dip" app:xTabMode="scrollable" app:xTabPaddingBottom="2.0dip" app:xTabSelectedTextColor="@color/black_23" app:xTabSelectedTextSize="16.0dip" app:xTabTextColor="@color/black_6d" app:xTabTextSelectedBold="true" app:xTabTextSize="16.0dip" />
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_tab" />
+</RelativeLayout>

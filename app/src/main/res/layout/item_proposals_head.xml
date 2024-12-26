@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@mipmap/proposal_bg_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_address" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="17.0dip">
+            <TextView android:textColor="@color/white_30" android:id="@+id/account" android:text="@string/address" android:layout_centerVertical="true" style="@style/text12_ff_30" />
+            <RelativeLayout android:id="@+id/address_change" android:layout_width="36.0dip" android:layout_height="wrap_content" android:layout_marginRight="34.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:background="@mipmap/ic_change" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="" android:layout_toLeftOf="@id/address_change" android:layout_toRightOf="@id/account" android:layout_centerVertical="true" style="@style/text12_ff_50" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_below="@id/rl_address">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_my_proposals" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_proposals" style="@style/text14_ff_50" />
+                <TextView android:textStyle="bold" android:id="@+id/tv_my_proposals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="0" style="@style/text20_ff" />
+            </LinearLayout>
+            <TextView android:background="@color/white_30" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_approved_proposals" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/approved_proposals" style="@style/text14_ff_50" />
+                <TextView android:textStyle="bold" android:id="@+id/tv_approved_proposals" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="0" style="@style/text20_ff" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/include_search_select" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/roundborder_f7f8fa_8" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m / 44 '/ 195' / " style="@style/text14_02.1" />
+    <EditText android:id="@+id/et_account" android:background="@drawable/bg_white_coner_4" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:paddingHorizontal="3.0dip" android:paddingVertical="1.0dip" style="@style/import_mnemonic_path" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" ' / " style="@style/text14_02.1" />
+    <EditText android:id="@+id/et_change" android:background="@drawable/bg_white_coner_4" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:paddingHorizontal="3.0dip" android:paddingVertical="1.0dip" style="@style/import_mnemonic_path" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  / " style="@style/text14_02.1" />
+    <EditText android:id="@+id/et_index" android:background="@drawable/bg_white_coner_4" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:paddingHorizontal="3.0dip" android:paddingVertical="1.0dip" style="@style/import_mnemonic_path" />
+</LinearLayout>

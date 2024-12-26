@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="none" android:id="@+id/tv_title" android:text="@string/initiating_address" android:singleLine="true" style="@style/text12_6d" />
+    <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_description" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="账户名称" android:layout_toRightOf="@id/tv_title" style="@style/text12_23" />
+    <TextView android:textStyle="normal" android:ellipsize="middle" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_sub_description" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:text="TVpaQJaYGnnNtV23sgyAERxf2xTnaKE31z" android:drawableRight="@mipmap/detail_copy" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/tv_title" android:layout_below="@id/tv_description" style="@style/text12_23" />
+</RelativeLayout>

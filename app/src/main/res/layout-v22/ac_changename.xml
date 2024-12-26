@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="22.0dip" android:layout_above="@id/bt_next" android:layout_marginHorizontal="15.0dip">
+        <TextView android:textStyle="bold" android:text="@string/change_wallet_name_title" android:includeFontPadding="false" style="@style/text14_23" />
+        <EditText android:id="@+id/et_name" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="44.0dip" android:hint="@string/characters" android:lines="2" android:maxLength="28" android:inputType="textMultiLine" android:autoSizeMinTextSize="12.0dip" style="@style/et44_EB" />
+        <RelativeLayout android:id="@+id/rl_error_name" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.5dip">
+            <ImageView android:id="@+id/iv_name" android:background="@mipmap/error_view" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="8.0dip" />
+            <TextView android:id="@+id/tv_name_error" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:text="Please enter a name" android:layout_toRightOf="@id/iv_name" android:layout_centerVertical="true" style="@style/text14_FF" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:enabled="false" android:id="@+id/bt_next" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/ok" android:layout_alignParentBottom="true" android:layout_marginHorizontal="15.0dip" style="@style/bt44_14_ripple_black_8" />
+</RelativeLayout>

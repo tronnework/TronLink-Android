@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_committee_content" android:layout_marginLeft="31.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="31.0dip" android:text="It is proposed to allow the representatives and partners to be 160trx." style="@style/text14_02.1" />
+</LinearLayout>

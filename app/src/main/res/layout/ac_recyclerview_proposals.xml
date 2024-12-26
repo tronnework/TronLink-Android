@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_oriposals" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="70.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_nodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_shasta" android:visibility="visible" android:layout_width="127.0dip" android:layout_height="127.0dip" android:src="@mipmap/ic_no_data_new" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        <TextView android:id="@+id/tv_nodata_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/nodata" style="@style/text14_999" />
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/tv_make_proposal" android:background="@drawable/roundborder_blue_30_30" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/make_proposal" android:layout_alignParentBottom="true" style="@style/text17_ff" />
+</RelativeLayout>

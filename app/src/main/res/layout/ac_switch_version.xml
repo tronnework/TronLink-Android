@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_online" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:id="@+id/select_online" android:background="@mipmap/chain_select" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip" android:layout_centerVertical="true" />
+        <TextView android:textStyle="normal" android:text="@string/online_version" android:layout_toRightOf="@id/select_online" android:layout_centerVertical="true" style="@style/text14_02" />
+        <View android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentBottom="true" style="@style/line5" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_pre" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:id="@+id/select_pre" android:background="@mipmap/chain_unselect" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip" android:layout_centerVertical="true" />
+        <TextView android:textStyle="normal" android:text="@string/pre_version" android:layout_toRightOf="@id/select_pre" android:layout_centerVertical="true" style="@style/text14_02" />
+        <View android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentBottom="true" style="@style/line5" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_test" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:id="@+id/select_test" android:background="@mipmap/chain_unselect" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip" android:layout_centerVertical="true" />
+        <TextView android:textStyle="normal" android:text="@string/test_version" android:layout_toRightOf="@id/select_test" android:layout_centerVertical="true" style="@style/text14_02" />
+        <View android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentBottom="true" style="@style/line5" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_nile" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:id="@+id/select_nile" android:background="@mipmap/chain_unselect" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip" android:layout_centerVertical="true" />
+        <TextView android:textStyle="normal" android:text="@string/nile_version" android:layout_toRightOf="@id/select_nile" android:layout_centerVertical="true" style="@style/text14_02" />
+        <View android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentBottom="true" style="@style/line5" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_shasta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="73.0dip">
+        <ImageView android:id="@+id/select_shasta" android:background="@mipmap/chain_unselect" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="19.0dip" android:layout_centerVertical="true" />
+        <TextView android:textStyle="normal" android:text="Shasta Version" android:layout_toRightOf="@id/select_shasta" android:layout_centerVertical="true" style="@style/text14_02" />
+        <View android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentBottom="true" style="@style/line5" />
+    </RelativeLayout>
+</LinearLayout>

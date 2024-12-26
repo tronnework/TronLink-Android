@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_1A02" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/root" android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.tron.wallet.business.confirm.fg.component.GlobalTitleHeaderView android:id="@+id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_extras" android:paddingRight="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_12" android:layout_above="@id/btn_confirm" android:layout_below="@id/header_view" style="@style/vertical_scroll_bar" />
+        <com.tron.wallet.business.confirm.fg.component.GlobalConfirmButton android:id="@+id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

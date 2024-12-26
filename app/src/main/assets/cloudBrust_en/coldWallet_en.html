@@ -1,0 +1,287 @@
+<html lang="en" style="font-size: 58.5938px;">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>How to use TronLink cold wallet</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+    </style>
+
+    <style type="text/css">
+      .use-guide {
+        padding: 20px;
+      }
+
+      .use-guide .title {
+        font-size: 25px;
+        color: #021c31;
+        line-height: 35px;
+      }
+
+      .use-guide .ready {
+        font-size: 16px;
+        color: #021c31;
+        line-height: 35px;
+      }
+
+      .use-guide .ready-list {
+        background: rgba(2, 28, 49, 0.02);
+        border-radius: 4px;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #021c31;
+      }
+
+      .use-guide .ready-list li {
+        line-height: 21px;
+      }
+
+      .use-guide .note {
+        font-size: 12px;
+        color: #0838c7;
+        padding: 15px 0;
+        line-height: 18px;
+      }
+
+      .use-guide .content {
+        padding: 0px 0 15px;
+      }
+
+      .use-guide .content .item h6 {
+        font-size: 16px;
+        color: #021c31;
+        line-height: 25px;
+        margin-bottom: 5px;
+      }
+
+      .use-guide .content .item p {
+        font-size: 14px;
+        color: #021c31;
+        line-height: 20px;
+      }
+
+      .img-content {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+      }
+       
+      .img-content img{
+        width: 100%;
+      }
+
+      .use-guide .content .item .img-content .img-two {
+        width: 83%;
+      }
+
+      .use-guide .tips {
+        font-size: 14px;
+        color: #0838c7;
+        line-height: 30px;
+      }
+
+      .use-guide .tips-list {
+        font-size: 14px;
+        /* color: #999999; */
+      }
+
+      .use-guide .tips-list li {
+        line-height: 21px;
+      }
+      .color-red {
+        color: #ff4646;
+      }
+    </style>
+
+    <style type="text/css">
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #root {
+        background: #fff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      ul li {
+        list-style: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div data-reactroot="" class="use-guide">
+        <p class="title"><span>How to use TronLink cold wallet</span></p>
+        <h5 class="ready"><span>Before you start:</span></h5>
+        <ul class="ready-list">
+          <li>
+            <span
+              >1. Prepare two mobile devices that are secure and haven't been rooted before. Install TronLink on both devices. For security concerns, please download TronLink via official channels such as the TronLink official website, Google Play store, and App Store.</span
+            >
+          </li>
+          <li>
+            <span
+              >2.Switch one to the cold wallet mode and keep the other one in the hot wallet mode (the default mode).
+            </span>
+          </li>
+          <li>
+            <span>
+              3. Disconnect the device used for cold wallet mode from the Internet or turn on its flight mode, and then click "Switch to Cold Wallet" to set up your cold wallets. (Be sure to disconnect this device from the Internet as it stores your private keys.)
+              </span
+            >
+          </li>
+        </ul>
+        <div class="img-content">
+          <img class="img-three" alt="step2" src="coldwallet.png" />
+        </div>
+        <div class="content">
+          <div class="item">
+            <h6><span>How to interact with my cold wallets?
+            </span></h6>
+            <p>
+              <span
+                >1. Cold wallet: Select a cold wallet, and click on “Receive” to show the QR code of the cold wallet.</span
+              >
+            </p>
+            <div class="img-content">
+              <img class="img-three" alt="step1" src="step1.png" />
+            </div>
+          </div>
+          <div class="item">
+            <p>
+              <span
+                >2.Hot wallet mode: Click the "Add Wallet" icon on the top right corner of the homepage, select "Pair Cold Wallet", and then scan the QR code of the cold wallet to add the cold wallet on the Internet-connected device.
+              </span
+              >
+            </p>
+            <div class="img-content">
+              <img class="img-three" alt="step2" src="step2.png" />
+            </div>
+            <div class="img-content">
+             <img class="img-three" alt="step2" src="step3.png" />
+           </div>
+           <div class="img-content">
+             <img class="img-three" alt="step2" src="step4.png" />
+           </div>
+          </div>
+          <div class="item">
+            <p>
+              <span
+                >3.You can make all types of transactions supported by hot wallets including transfers, TRX staking & unstaking, voting, and multi-signature transaction via the cold wallet on the Internet-connected device. After you initiate a transaction on the Internet-connected device, you will be directed to the QR code page for scanning with the cold wallet mode device.
+              </span
+              >
+            </p>
+            <div class="img-content">
+              <img class="img-three" alt="step3" src="step5.png" />
+            </div>
+          </div>
+          <div class="item">
+            <p>
+              <span
+                >4. Use the cold wallet on that device to scan the QR code above and sign the transaction in the cold wallet. After that, another QR code is displayed on the cold wallet mode device.
+              </span
+              >
+            </p>
+            <div class="img-content">
+              <img class="img-three" alt="step4" src="step6.png" />
+            </div>
+            <div class="img-content">
+             <img class="img-three" alt="step4" src="step7.jpg" />
+           </div>
+          </div>
+          <div class="item">
+            <p>
+              <span
+                >5.Scan the QR code of the cold wallet with the Internet-connected device to complete the transaction.
+              </span
+              >
+            </p>
+<!--            <div class="img-content">-->
+<!--              <img class="img-two" alt="step5" src="step5_en.png" />-->
+<!--            </div>-->
+          </div>
+        </div>
+        <div>
+          <p class="tips"><span>Please note</span></p>
+          <ul class="tips-list">
+            <li>
+              <span
+                >1. Your cold wallet stores your private keys, so be sure to use a mobile device that is not connected to the Internet as the cold wallet mode device, and back up the data and store it in a safe place.</span
+              >
+            </li>
+            <li><span>2.Never connect your cold wallet mode device to the Internet once it contains created wallets.</span></li>
+            <li>
+              <span
+                >
+                3.If you want to transfer your asset with the cold wallet on the Internet-connected device, the offline signature on the other device is required to complete the transaction.
+                </span
+              >
+            </li>
+            <li>
+              <span
+                >
+                4.You can check your asset balance of the cold wallet on the Internet-connected device.
+                </span
+              >
+            </li>
+            <li>
+              <span
+                >
+                5.The cold wallet or hot wallet mode on a device cannot be changed once selected. Please process with caution.
+                </span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

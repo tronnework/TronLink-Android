@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_white_16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_ic_title" android:layout_height="@dimen/dp_ic_title" android:layout_marginTop="30.0dip" android:src="@mipmap/icon_backup_not" />
+        <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_marginTop="10.0dip" android:text="@string/no_screenshots" style="@style/text18_23" />
+        <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_marginLeft="74.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="74.0dip" android:text="@string/create_wallet_hint_9" style="@style/text14_6d" />
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/bt_know" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/i_know_ok" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/bt44_14_ripple_black" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_qr_code" android:background="@drawable/roundborder_white_16" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_centerInParent="true">
+        <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_marginTop="30.0dip" android:text="@string/show_mnemonic_qr" style="@style/text18_23" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_qr_code" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="20.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/bt_cancel" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/view_qrcode_cancel" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/bt44_14_ripple_black" />
+    </LinearLayout>
+</RelativeLayout>

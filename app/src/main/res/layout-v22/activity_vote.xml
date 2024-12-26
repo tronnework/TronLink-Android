@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root" android:background="@color/white" android:paddingTop="54.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/layout_common_header" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/dp_12" android:layout_marginHorizontal="15.0dip" layout="@layout/layout_common_header" />
+    <TextView android:id="@+id/tv_multi_warning" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/vote_multi_sign_tips" android:layout_below="@id/header_layout" android:layout_marginHorizontal="15.0dip" style="@style/text12_6d" />
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayout android:id="@+id/ptr_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:elevation="0.0dip">
+                <RelativeLayout android:id="@+id/rl_search" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:paddingHorizontal="15.0dip" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+                    <include android:id="@+id/ll_search_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:layout_alignParentBottom="true" layout="@layout/layout_search_view" />
+                    <androidx.fragment.app.FragmentContainerView android:name="com.tron.wallet.business.vote.VoteHeaderFragment" android:id="@+id/frame_header" android:tag="fragment_vote_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/apr_tip_layout" android:background="@color/gray_F7F" android:paddingTop="19.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_card">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/roundborder_ffa928_radius_12" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+                        <TextView android:id="@+id/tv_apr_tip" android:layout_width="0.0dip" android:text="@string/apr_tips_format" android:layout_weight="1.0" style="@style/text12_23" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:background="@color/gray_F7F" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                    <TextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/vote_witness" android:layout_centerVertical="true" style="@style/text16_232c" />
+                    <LinearLayout android:id="@+id/ll_sort" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:id="@+id/iv_sort" android:layout_width="30.0dip" android:layout_height="18.0dip" android:src="@mipmap/iv_vote_sort" />
+                    </LinearLayout>
+                    <TextView android:textColor="@drawable/selector_action_bar_text_color" android:id="@+id/btn_cancel_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vote_cancel_all" android:layout_toLeftOf="@id/ll_sort" android:layout_centerVertical="true" style="@style/text12_3c" />
+                </RelativeLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <include android:id="@+id/layout_vote_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/layout_vote_content_list" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayout>
+</LinearLayout>

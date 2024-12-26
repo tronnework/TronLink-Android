@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="#ffe9e9e9" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/ll_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/item_token_check_risk_search_result_list" />
+    </RelativeLayout>
+</RelativeLayout>

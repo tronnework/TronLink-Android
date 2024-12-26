@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayout android:id="@+id/rc_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/net_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="85.0dip" cube_ptr:button_text="@string/reload" cube_ptr:icon="@mipmap/ic_no_net" cube_ptr:icon_height="120.0dip" cube_ptr:icon_width="120.0dip" cube_ptr:no_net_text="@string/net_unavailable" cube_ptr:reloadable="true" cube_ptr:show_loading_anim="true" />
+    <ImageView android:id="@+id/rc_holder_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_search_asset_placeholder" />
+    <androidx.core.widget.NestedScrollView android:id="@+id/ll_nodata" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="114.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_marginRight="3.0dip" android:src="@mipmap/ic_browser_bookmark_empty" />
+            <TextView android:textColor="@color/gray_9B" android:gravity="center" android:id="@+id/tv_no_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/browser_bookmark_empty" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

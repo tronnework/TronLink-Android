@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_white_24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+        <RelativeLayout android:id="@+id/rl_title" android:clickable="true" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@+id/iv_common_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@mipmap/ic_left_black_back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/user_agreement" android:layout_centerInParent="true" />
+            <ImageView android:id="@+id/iv_common_right" android:background="@mipmap/icon_browse" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@+id/line" android:background="@color/black_23" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/rl_title" android:alpha="0.05" />
+        <com.tron.wallet.common.components.MyWebView android:id="@+id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_above="@id/bt_accept" android:layout_below="@id/line" />
+        <Button android:enabled="false" android:id="@+id/bt_accept" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/swipe_all_terms" android:layout_alignParentBottom="true" android:layout_marginHorizontal="15.0dip" style="@style/bt44_14_ripple_black" />
+    </RelativeLayout>
+</LinearLayout>

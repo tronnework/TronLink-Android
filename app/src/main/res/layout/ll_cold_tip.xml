@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_cold_tip" android:background="@drawable/border_0e0f11_10_80" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="35.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_cold_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:text="@string/safe_tip" />
+    <ImageView android:id="@+id/iv_cold_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_close" android:layout_alignParentRight="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/gray_F7F8" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/safe_note" android:layout_below="@id/tv_cold_title" android:alpha="0.7" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/tv_desc" android:layout_alignParentRight="true">
+        <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="#ffeeb023" android:gravity="center" android:id="@+id/tv_cold_backup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="8.0dip" android:text="@string/knew" android:layout_below="@id/tv_desc" />
+    </LinearLayout>
+</RelativeLayout>

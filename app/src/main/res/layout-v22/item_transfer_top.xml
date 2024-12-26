@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/token_header_root" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_token_icon" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_current_price" android:background="@color/gray_F5F8" android:layout_width="fill_parent" android:layout_height="31.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/current_price" android:layout_centerVertical="true" style="@style/text12_23" />
+            <TextView android:id="@+id/tv_current_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+        </RelativeLayout>
+        <com.tron.wallet.common.components.TokenLogoDraweeView android:id="@+id/trx" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:src="@mipmap/ic_token_default" android:layout_below="@id/rl_current_price" android:layout_centerHorizontal="true" fresco:placeholderImage="@mipmap/ic_token_default" fresco:placeholderImageScaleType="centerCrop" />
+        <ImageView android:id="@+id/iv_official_image" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="-10.0dip" android:src="@mipmap/ic_asset_official" android:scaleType="fitCenter" android:layout_toRightOf="@id/trx" android:layout_alignBottom="@id/trx" android:layout_toEndOf="@id/trx" />
+    </RelativeLayout>
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="14.0dip" android:text="--" android:maxLines="3" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/sp_12" android:autoSizeMaxTextSize="24.0sp" />
+    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_note_detail" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/note_detail" android:drawableRight="@mipmap/right_triangle_arrow" android:drawablePadding="4.0dip" />
+    <TextView android:textColor="@color/black_6d" android:layout_gravity="center_horizontal" android:id="@+id/tv_price" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="--" android:layout_below="@id/li_count" style="@style/text14_CCFFFFFF" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_price" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_count">
+        <TextView android:gravity="center|right" android:id="@+id/tv_price_trx" android:visibility="visible" android:layout_width="fill_parent" android:layout_weight="1.0" android:layout_centerVertical="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="6.0sp" android:autoSizeMaxTextSize="13.0sp" style="@style/text12_6d" />
+        <TextView android:gravity="center|left" android:id="@+id/price" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:text="--" android:layout_weight="1.0" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="6.0sp" android:autoSizeMaxTextSize="13.0sp" style="@style/text12_6d" />
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rl_price_trx" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="-4.0dip" android:layout_below="@id/tv_count">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/roundborder_white_15" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_marginTop="12.0dip" android:text="@string/banlance2" style="@style/text12_6d" />
+                <TextView android:textStyle="bold" android:id="@+id/tv_balance" android:layout_marginTop="4.0dip" android:text="——" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10.0sp" android:autoSizeMaxTextSize="13.0sp" style="@style/text14_23" />
+            </LinearLayout>
+            <View android:layout_gravity="center_vertical" android:background="@color/gray_eef3fd" android:layout_width="1.0dip" android:layout_height="25.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:layout_marginTop="12.0dip" android:text="@string/alerday_freeze" style="@style/text12_6d" />
+                    <RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@+id/tv_freeze_amout" android:layout_marginTop="4.0dip" android:text="--" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10.0sp" android:autoSizeMaxTextSize="13.0sp" style="@style/text14_23" />
+                        <ImageView android:id="@+id/ic_token_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="6.0dip" android:src="@mipmap/ic_token_right_arrow" android:layout_toRightOf="@id/tv_freeze_amout" android:layout_alignTop="@id/tv_freeze_amout" android:layout_alignBottom="@id/tv_freeze_amout" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/rd_6d72cc_565ba7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="14.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:src="@mipmap/usdt_ymoney" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                <TextView android:text="@string/yesterday_earnings" android:alpha="0.8" style="@style/text12_6d" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black_alpha_60" android:id="@+id/tv_yearnings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+0.00" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/usdt_smoney" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                <TextView android:text="@string/sum_earrings" android:alpha="0.8" style="@style/text12_6d" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/black_alpha_60" android:id="@+id/tv_sumearnings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+0.00" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/split_line" android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/tv_address_book" />
+</LinearLayout>

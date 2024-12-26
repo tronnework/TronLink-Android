@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_chainid" android:background="@mipmap/add_shadow0" android:paddingLeft="31.0dip" android:paddingTop="50.0dip" android:paddingRight="36.0dip" android:paddingBottom="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-40.0dip" android:minHeight="134.0dip">
+            <TextView android:text="ChainID" style="@style/text16_02_50_m" />
+            <EditText android:id="@+id/et_chainid" android:layout_marginTop="10.0dip" android:text="410A6DBD0780EA9B136E3E9F04EBE80C6C288B80EE" android:hint="47.90.240.201" android:singleLine="false" style="@style/et14_02_1" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@mipmap/add_shadow_top" android:paddingLeft="31.0dip" android:paddingTop="31.0dip" android:paddingRight="36.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:text="Full Node" style="@style/text16_02" />
+            <TextView android:layout_marginTop="22.0dip" android:text="Node IP" style="@style/text16_02_50_m" />
+            <EditText android:id="@+id/et_fullip" android:layout_marginTop="10.0dip" android:hint="47.90.240.201" style="@style/et14_02_1" />
+            <TextView android:layout_marginTop="22.0dip" android:text="Node Port" style="@style/text16_02_50_m" />
+            <EditText android:id="@+id/et_fullport" android:layout_marginTop="10.0dip" android:hint="50051" style="@style/et14_02_1" />
+            <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/connet_fullnormal" android:background="@drawable/ripple_transfer_send" android:layout_marginTop="10.0dip" android:text="@string/switch_node" android:textAllCaps="false" style="@style/text13_fd" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@mipmap/add_shadow_bottom" android:paddingLeft="31.0dip" android:paddingTop="26.0dip" android:paddingRight="36.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:textColor="@color/black_50" android:text="Solidity Node" style="@style/text16_02" />
+            <TextView android:layout_marginTop="22.0dip" android:text="Node IP" style="@style/text16_02_50_m" />
+            <EditText android:id="@+id/et_solip" android:layout_marginTop="10.0dip" android:hint="47.90.240.201" style="@style/et14_02_1" />
+            <TextView android:layout_marginTop="22.0dip" android:text="Node Port" style="@style/text16_02_50_m" />
+            <EditText android:id="@+id/et_solport" android:paddingLeft="17.0dip" android:layout_marginTop="10.0dip" android:hint="50051" style="@style/et14_02_1" />
+            <Button android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/connet_solnormal" android:background="@drawable/ripple_transfer_send" android:layout_marginTop="10.0dip" android:text="@string/switch_node" android:textAllCaps="false" style="@style/text13_fd" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

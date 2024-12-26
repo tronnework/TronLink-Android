@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <View android:background="@color/gray_b3_50" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_02_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/fee" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:ellipsize="middle" android:id="@+id/tv_fee_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:maxWidth="150.0dip" android:text="0 TRX" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_cost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_02_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cosume_resource" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:ellipsize="middle" android:id="@+id/tv_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="@string/default_bandwidth_0" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

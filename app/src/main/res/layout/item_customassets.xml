@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:id="@+id/tv_top" android:paddingLeft="16.0dip" android:text="@string/custom_2" style="@style/text16_99" />
+        <com.tron.wallet.common.components.SwitchView android:id="@+id/switchview" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignTop="@id/tv_top" android:layout_alignParentRight="true" app:hasShadow="false" app:primaryColor="@color/blue_72" app:primaryColorDark="@color/blue_72" />
+        <TextView android:id="@+id/tv_hidden_prompt" android:visibility="gone" android:layout_marginTop="6.0dip" android:text="@string/prompt_token" android:layout_below="@id/tv_top" android:layout_alignParentRight="true" style="@style/text12_BD" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:paddingLeft="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_top" />
+    <View android:id="@+id/line" android:layout_marginTop="21.0dip" android:layout_below="@id/rc_list" style="@style/line" />
+</RelativeLayout>

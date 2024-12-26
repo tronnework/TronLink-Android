@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/security_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_security_title" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="6.0dip" android:src="@mipmap/create_security_icon" android:layout_centerVertical="true" />
+        <TextView android:id="@+id/security_title" android:text="@string/create_wallet_security_title_1" android:layout_toRightOf="@id/iv_security_title" android:layout_centerVertical="true" style="@style/text14_23" />
+    </RelativeLayout>
+    <TextView android:id="@+id/security_content" android:layout_marginTop="6.0dip" android:text="@string/create_wallet_security_content_1" android:layout_toRightOf="@id/iv_security_title" android:layout_centerVertical="true" style="@style/text13_6d" />
+    <View android:background="@color/gray_eb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+</LinearLayout>

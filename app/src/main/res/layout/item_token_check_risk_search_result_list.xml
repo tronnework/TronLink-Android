@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_inner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/ll_logo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <com.tron.wallet.common.components.TokenLogoDraweeView android:id="@+id/iv_logo" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@mipmap/ic_token_default" android:layout_centerInParent="true" fresco:actualImageScaleType="centerCrop" fresco:placeholderImage="@mipmap/ic_token_default" fresco:placeholderImageScaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/ll_content" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="89.0dip" android:layout_toRightOf="@id/ll_logo" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@+id/rl_asset_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@+id/ll_assetname" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:ellipsize="end" android:gravity="center" android:id="@+id/assets_name" android:layout_width="0.0dip" android:maxWidth="100.0dip" android:text="TRX" android:singleLine="true" fresco:layout_constraintStart_toStartOf="parent" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_constraintWidth_default="wrap" style="@style/text14_23" />
+                    <TextView android:textSize="12.0dip" android:textColor="@color/gray_9B" android:ellipsize="end" android:id="@+id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:text="--" android:maxLines="1" fresco:layout_constraintStart_toStartOf="@id/assets_name" fresco:layout_constraintTop_toBottomOf="@id/assets_name" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_asset_tag" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="17.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_centerVertical="true" fresco:layout_constraintLeft_toRightOf="@id/assets_name" fresco:layout_constraintTop_toTopOf="parent" fresco:layout_constraintWidth_default="wrap">
+                        <TextView android:gravity="center_vertical" android:id="@+id/assets_tag" android:maxWidth="100.0dip" android:text="" android:singleLine="true" style="@style/text10_3c" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/black_23" android:ellipsize="end" android:id="@+id/assets_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:text="---" android:maxLines="1" />
+                    <TextView android:ellipsize="none" android:id="@+id/assets_price" android:maxWidth="180.0dip" android:text="--" android:singleLine="true" style="@style/text12_9b" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.tron.wallet.business.security.tokencheck.view.TokenTagFlowLayout android:id="@+id/tags" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_asset_name" />
+        </RelativeLayout>
+        <View android:background="@color/black_23_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

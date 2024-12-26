@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:gravity="left" android:id="@+id/tv_sr_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="" android:lines="1" android:singleLine="true" android:layout_weight="1.0" style="@style/text12_23" />
+    <TextView android:gravity="center" android:id="@+id/tv_sr_apr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="" android:layout_weight="1.0" style="@style/text12_23" />
+    <TextView android:ellipsize="end" android:gravity="right" android:id="@+id/tv_sr_votes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="" android:layout_weight="1.0" style="@style/text12_23" />
+</LinearLayout>

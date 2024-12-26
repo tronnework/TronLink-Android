@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_4_f1f2f5" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_12" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:id="@+id/rl_fee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:gravity="center|left" android:id="@+id/tv_left_active_account" android:layout_width="0.0dip" android:text="@string/active_address" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_right_active_account" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/text12_02_50" />
+        <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_active_account" android:layout_marginLeft="16.0dip" android:text="1TRX" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toEndOf="@id/tv_left_active_account" app:layout_constraintTop_toTopOf="parent" style="@style/text14_02_100" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_multi_fee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:gravity="center|left" android:id="@+id/tv_left_multi_fee" android:text="@string/multisign_transaction" android:layout_centerVertical="true" style="@style/text12_02_50" />
+        <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_multi_fee" android:layout_marginLeft="16.0dip" android:text="1TRX" android:singleLine="true" android:layout_toRightOf="@id/tv_left_multi_fee" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_memo_fee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:gravity="center|left" android:id="@+id/tv_left_memo_fee" android:text="@string/note" android:layout_centerVertical="true" style="@style/text12_02_50" />
+        <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_memo_fee" android:layout_marginLeft="16.0dip" android:text="1TRX" android:singleLine="true" android:layout_toRightOf="@id/tv_left_memo_fee" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_resource_bandwidth" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:gravity="center_vertical" android:id="@+id/tv_left_deduct_bw" android:text="@string/fee_detail_deduct_bandwidth" android:layout_centerVertical="true" style="@style/text12_02_50" />
+        <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_deduct_bw" android:layout_marginLeft="16.0dip" android:text="≈TRX" android:singleLine="true" android:layout_toRightOf="@id/tv_left_deduct_bw" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_resource_energy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:gravity="center_vertical" android:id="@+id/tv_left_deduct_energy" android:text="@string/fee_detail_deduct_energy" android:layout_centerVertical="true" style="@style/text12_02_50" />
+        <TextView android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_deduct_energy" android:layout_marginLeft="16.0dip" android:text="≈TRX" android:singleLine="true" android:layout_toRightOf="@id/tv_left_deduct_energy" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+    </RelativeLayout>
+</LinearLayout>

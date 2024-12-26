@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayoutV2 android:id="@+id/pull_to_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom_bar" android:layout_below="@id/rl_scam" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/rc_list" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar_layout" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:elevation="0.0dip">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_f8fafe_radius_10" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <include android:id="@+id/ac_token_check_head" layout="@layout/ac_token_check_head" />
+                    </LinearLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.tron.wallet.common.components.xtablayout.XTabLayoutV2 android:id="@+id/ll_tab" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_centerVertical="true" cube_ptr:xTabIndicatorColor="@color/black_23" cube_ptr:xTabIndicatorHeight="2.0dip" cube_ptr:xTabIndicatorWidth="18.0dip" cube_ptr:xTabMinWidth="50.0dip" cube_ptr:xTabMode="scrollable" cube_ptr:xTabPaddingBottom="2.0dip" cube_ptr:xTabSelectedTextColor="@color/black_23" cube_ptr:xTabSelectedTextSize="14.0dip" cube_ptr:xTabTextColor="@color/gray_6D778C" cube_ptr:xTabTextSelectedBold="true" cube_ptr:xTabTextSize="14.0dip" />
+                    <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" cube_ptr:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <TextView android:id="@+id/token_check_risk_tips" android:layout_marginLeft="15.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="15.0dip" android:text="@string/token_check_risk_tips" style="@style/text12_9b" />
+                <androidx.viewpager2.widget.ViewPager2 android:id="@+id/viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/token_check_risk_tips" />
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayoutV2>
+</LinearLayout>

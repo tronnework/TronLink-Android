@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.MyWebView android:id="@+id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_net_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:icon="@mipmap/ic_no_net" app:no_net_text="net_unavailable" />
+</RelativeLayout>

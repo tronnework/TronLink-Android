@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/root" android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height" android:stateListAnimator="@drawable/appbar_elevation" app:statusBarScrim="@android:color/transparent">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapsedTitleTextAppearance="@style/collapsedTitleTextAppearanceStyle" app:contentScrim="@color/transparent" app:expandedTitleMarginBottom="60.0dip" app:expandedTitleMarginStart="30.0dip" app:expandedTitleMarginTop="30.0dip" app:expandedTitleTextAppearance="@style/expandedTitleTextAppearanceStyle" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar">
+                <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@mipmap/ic_left_back" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" app:layout_behavior="com.tron.wallet.common.components.behavior.AppbarViewBehavior">
+            <com.tron.wallet.common.components.SimpleDraweeViewGif android:layout_gravity="center_horizontal" android:id="@+id/gif_image" android:layout_width="fill_parent" android:layout_height="60.0dip" app:actualImageScaleType="fitCenter" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="25.0dip" android:src="@mipmap/ic_gif_background" android:scaleType="fitXY" />
+        </LinearLayout>
+        <include layout="@layout/content_create_wallet" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <TextView android:id="@+id/tv_warning_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/ll_action" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:id="@+id/ll_action" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_marginHorizontal="15.0dip">
+        <TextView android:textColor="@color/black_23" android:gravity="center" android:id="@+id/btn_jump" android:layout_width="0.0dip" android:text="@string/unstake" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/btn_project" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/bt44_14_ripple_02_12_with_transparent_stroke" />
+        <TextView android:gravity="center" android:id="@+id/btn_project" android:layout_width="0.0dip" android:layout_marginLeft="13.0dip" android:text="@string/stake" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/btn_jump" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginLeft="0.0dip" style="@style/bt44_14_ripple_black" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

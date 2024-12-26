@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/roundborder_white_16" android:paddingLeft="20.0dip" android:paddingTop="25.0dip" android:paddingRight="20.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mnemonic_tips" android:layout_below="@id/tv_title" style="@style/text13_02_50" />
+    <TextView android:gravity="center" android:id="@+id/tv_cancel" android:background="@drawable/roundborder_dbdbdb_10" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="@dimen/dp_20" android:text="@string/cancel" android:layout_below="@id/tv_content" style="@style/text14_99" />
+    <TextView android:gravity="center" android:id="@+id/tv_confirm" android:background="@drawable/roundborder_135dcd_10" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/confirm" android:layout_alignTop="@id/tv_cancel" android:layout_alignBottom="@id/tv_cancel" android:layout_alignParentRight="true" style="@style/text14_FFFFFF" />
+</RelativeLayout>

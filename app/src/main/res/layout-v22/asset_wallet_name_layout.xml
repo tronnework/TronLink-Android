@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/net_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <RelativeLayout android:id="@+id/rl_net_notice" android:background="@color/gray_02_06" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginBottom="1.0dip">
+            <ImageView android:id="@+id/iv_error" android:background="@mipmap/error_icon2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/red_EC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" android:text="@string/no_network_connection" android:drawablePadding="4.0dip" android:layout_toRightOf="@id/iv_error" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_server_notice" android:background="@color/gray_02_06" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginBottom="1.0dip" android:layout_below="@id/rl_net_notice">
+            <ImageView android:id="@+id/iv_server_notice" android:background="@mipmap/ic_notice_gray" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+            <TextView android:layout_marginLeft="2.0dip" android:text="@string/server_not_available" android:drawablePadding="4.0dip" android:layout_toRightOf="@id/iv_server_notice" android:layout_centerVertical="true" style="@style/text12_23" />
+            <TextView android:id="@+id/tv_switch_server" android:layout_marginRight="15.0dip" android:text="@string/server_to_switch" android:drawableRight="@mipmap/ic_arrow_right_blue" android:drawablePadding="5.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/text12_3c" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_node_notice" android:background="@color/gray_02_06" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/rl_server_notice">
+            <ImageView android:id="@+id/iv_node_error" android:background="@mipmap/ic_notice_gray" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+            <TextView android:layout_marginLeft="2.0dip" android:text="@string/node_connection_time_out" android:drawablePadding="4.0dip" android:layout_toRightOf="@id/iv_node_error" android:layout_centerVertical="true" style="@style/text12_23" />
+            <TextView android:id="@+id/tv_switch_node" android:layout_marginRight="15.0dip" android:text="@string/switch_node" android:drawableRight="@mipmap/ic_arrow_right_blue" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_3c" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/rl_block_sync" android:background="@color/gray_02_06" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/rl_node_notice">
+            <ImageView android:id="@+id/iv_warning" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="15.0dip" android:src="@mipmap/error_icon" android:layout_alignTop="@id/tv_blocking" android:layout_alignBottom="@id/tv_blocking" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/black_02" android:gravity="center_vertical" android:id="@+id/tv_blocking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/block_snycing" android:drawablePadding="8.0dip" android:layout_toRightOf="@id/iv_warning" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_current_block" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@id/tv_block_divider" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_block_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:layout_toLeftOf="@id/tv_block_amount" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_block_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/net_layout" android:layout_marginHorizontal="20.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@+id/ll_walletname" android:background="@drawable/ripple_assetshome_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/black_23" android:ellipsize="middle" android:gravity="center|left" android:id="@+id/tv_walletname" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="" android:singleLine="true" />
+                <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@mipmap/ic_wallet_switch" android:scaleType="fitCenter" android:foregroundGravity="center_vertical" />
+            </LinearLayout>
+            <TextView android:textSize="11.0dip" android:textColor="@color/black_6d" android:gravity="left" android:id="@+id/tv_chain_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_chain" android:layout_below="@id/ll_walletname" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv_wallet_manager" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ripple_addasset_btn" />
+            <ImageView android:id="@+id/iv_wallet_scan" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ripple_scan_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

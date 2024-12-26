@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@+id/tv_pull_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1029.138 TRX" android:layout_centerHorizontal="true" style="@style/text16_232c" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/li_pull_title_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_pull_title">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_pull_title_error" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="4.0dip" android:src="@mipmap/ic_input_error" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/red_EC" android:ellipsize="none" android:gravity="right" android:id="@+id/tv_pull_title_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="5.0dip" android:maxLines="2" android:layout_centerVertical="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_pull_title_right_error" android:visibility="gone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="2.0dip" android:src="@mipmap/ic_tip" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

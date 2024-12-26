@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/view_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@+id/state_view" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height" android:stateListAnimator="@drawable/appbar_elevation" app:statusBarScrim="@android:color/transparent">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapsedTitleTextAppearance="@style/collapsedTitleTextAppearanceStyle" app:contentInsetLeft="1.0dip" app:contentInsetStart="1.0dip" app:contentScrim="@color/transparent" app:expandedTitleMarginBottom="60.0dip" app:expandedTitleMarginStart="30.0dip" app:expandedTitleMarginTop="30.0dip" app:expandedTitleTextAppearance="@style/expandedTitleTextAppearanceStyle" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar">
+                <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@mipmap/ic_left_back" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginRight="15.0dip" app:layout_behavior="com.tron.wallet.common.components.behavior.AppbarViewBehavior">
+            <com.tron.wallet.common.components.SimpleDraweeViewGif android:layout_gravity="center_horizontal" android:id="@+id/gif_image" android:layout_width="fill_parent" android:layout_height="60.0dip" app:actualImageScaleType="fitCenter" /> /> <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="25.0dip" android:src="@mipmap/ic_gif_background" android:scaleType="fitXY" />
+        </LinearLayout>
+        <include android:id="@+id/content_import_wallet" layout="@layout/content_import_wallet" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/rl_bottom_nextstep" android:background="@color/white" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <Button android:enabled="false" android:id="@+id/btn_next_step" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/next_step" style="@style/bt44_14_ripple_black_round_8" />
+    </RelativeLayout>
+</RelativeLayout>

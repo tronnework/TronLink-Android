@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@mipmap/ic_bg_receive" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="@color/black_23" android:gravity="center" android:id="@+id/tv_copy_top" android:layout_width="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/scan_code" style="@style/text18_23" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/li_qr_content" android:background="@drawable/roundborder_ffffff_60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_copy_top">
+            <TextView android:gravity="center" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="28.0dip" android:layout_marginRight="@dimen/dp_20" android:layout_marginBottom="8.0dip" android:text="@string/tron_adddress_only" android:layout_above="@id/tv_address2" android:layout_centerHorizontal="true" style="@style/text14_9b" />
+            <LinearLayout android:gravity="center" android:background="@drawable/roundborder_ffffff_radius_8" android:layout_width="225.0dip" android:layout_height="225.0dip" android:layout_marginTop="24.0dip">
+                <ImageView android:layout_gravity="center" android:id="@+id/qr2" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_centerInParent="true" />
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:textColor="@color/black_23" android:gravity="center" android:id="@+id/tv_wallet_name2" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="" android:layout_centerHorizontal="true" style="@style/text18_23" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black_02_50" android:id="@+id/tv_address2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="24.0dip" android:text="" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <RelativeLayout android:background="@color/white_50" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="60.0dip" android:layout_below="@id/li_qr_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:src="@mipmap/ic_receive_logo2" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_receive_logo_qr" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

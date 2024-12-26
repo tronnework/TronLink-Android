@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/ly_myinfo_changeaddress" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/ly_myinfo_changeaddress_child" android:background="@drawable/popu_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="100.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:id="@+id/bgtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="2017" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wheelview" android:layout_width="fill_parent" android:layout_height="260.0dip">
+            <com.tron.wallet.common.components.pickerview.pickerview.wheelview.view.WheelView android:layout_gravity="center_vertical" android:id="@+id/wv_birth_year" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.tron.wallet.common.components.pickerview.pickerview.wheelview.view.WheelView android:layout_gravity="center_vertical" android:id="@+id/wv_birth_month" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.tron.wallet.common.components.pickerview.pickerview.wheelview.view.WheelView android:layout_gravity="center_vertical" android:id="@+id/wv_birth_day" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:background="@color/yellow_FFA928" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/wheelview">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_myinfo_sure" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="确定" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

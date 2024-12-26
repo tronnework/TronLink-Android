@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="@drawable/ripple_white" android:layout_width="fill_parent" android:layout_height="73.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_select" android:paddingLeft="15.0dip" android:paddingRight="19.0dip" android:layout_width="wrap_content" android:layout_height="73.0dip">
+        <ImageView android:id="@+id/iv_select" android:background="@mipmap/chain_select" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_select" android:layout_centerVertical="true">
+        <TextView android:id="@+id/tv_node_name" android:text="MainChain" style="@style/text14_02" />
+        <TextView android:id="@+id/tv_node" android:layout_marginTop="4.0dip" android:text="47.75.246.83.50051" android:layout_below="@id/tv_node_name" style="@style/text12_88" />
+    </LinearLayout>
+    <ImageView android:id="@+id/back3" android:background="@mipmap/ic_enter" android:layout_width="7.0dip" android:layout_height="11.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentBottom="true" style="@style/line5" />
+</RelativeLayout>

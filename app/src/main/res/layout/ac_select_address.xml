@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/view_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_next">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_to_be_imported" style="@style/text14_6d" />
+            <TextView android:id="@+id/tv_change_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:text="@string/change_import_address" android:layout_alignParentRight="true" style="@style/text14_3c" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <include android:id="@+id/address_item_shield_container" android:visibility="gone" layout="@layout/item_choose_address" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@+id/iv_loading" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@mipmap/ic_ledger_loading" android:scaleType="centerCrop" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_chb_nonhd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <CheckBox android:id="@+id/chb_nonhd" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="3.0dip" android:checked="false" android:button="@drawable/selector_cb" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/gray_9B" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/import_before_150" android:layout_toRightOf="@id/chb_nonhd" />
+        </RelativeLayout>
+        <include android:id="@+id/error_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" layout="@layout/item_errorview" />
+    </LinearLayout>
+    <Button android:enabled="true" android:layout_gravity="center_horizontal" android:id="@+id/btn_next" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/dp_20" android:text="@string/next_step" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+    <include android:id="@+id/view_load_fail" android:visibility="gone" layout="@layout/ledger_no_device" />
+</RelativeLayout>

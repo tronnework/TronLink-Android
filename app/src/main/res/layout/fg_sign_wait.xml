@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.core.widget.NestedScrollView android:id="@+id/no_net" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/et_search">
+        <com.tron.wallet.common.components.NoNetView android:id="@+id/no_net_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="120.0dip" app:icon="@mipmap/ic_no_net" />
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

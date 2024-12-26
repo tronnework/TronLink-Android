@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_pop_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+        <TextView android:textStyle="bold" android:id="@+id/tv_title" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:text="@string/switch_hd_seed_account" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginHorizontal="40.0dip" style="@style/text18_23" />
+        <ImageView android:gravity="center_horizontal" android:id="@+id/iv_close_select" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginTop="23.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/delete_gray" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <View android:id="@+id/divider_line" android:background="@color/black_23_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/tv_title" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="13.0dip" android:layout_above="@id/bt_confirm" android:layout_below="@id/divider_line" />
+        <ImageView android:id="@+id/iv_place_holder" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="13.0dip" android:src="@mipmap/iv_place_holder_mnemonic" android:scaleType="centerInside" android:layout_above="@id/bt_confirm" />
+        <Button android:enabled="true" android:id="@+id/bt_confirm" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/confirm" android:layout_alignParentBottom="true" android:layout_marginHorizontal="15.0dip" style="@style/bt44_14_ripple_black" />
+    </RelativeLayout>
+</RelativeLayout>

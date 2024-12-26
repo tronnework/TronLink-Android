@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/top" android:background="@drawable/roundborder_white_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true" android:layout_marginHorizontal="15.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_title" android:layout_width="@dimen/dp_ic_title" android:layout_height="@dimen/dp_ic_title" android:src="@mipmap/ic_risk_warning" />
+            <TextView android:textStyle="bold" android:id="@+id/title" android:layout_marginTop="3.0dip" android:text="@string/risk_warning" style="@style/text18_23" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/ll_title" android:layout_centerHorizontal="true" android:layout_marginHorizontal="20.0dip">
+            <ImageView android:visibility="gone" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_warning" />
+            <TextView android:gravity="center" android:id="@+id/tv_content" android:layout_marginLeft="4.0dip" android:text="@string/warning_back_privatekey" style="@style/text14_6d" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/ll_content" android:layout_marginHorizontal="20.0dip">
+            <Button android:id="@+id/btn_confirm" android:text="@string/copy_continue" style="@style/bt44_14_ripple_black" />
+            <Button android:id="@+id/btn_cancel" android:layout_marginTop="10.0dip" android:text="@string/cancel" style="@style/bt44_16_ripple_transparent" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

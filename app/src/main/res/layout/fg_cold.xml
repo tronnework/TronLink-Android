@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingBottom="@dimen/dp_40" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@+id/rl_header" android:background="@mipmap/home_head_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="280.0dip">
+                <RelativeLayout android:id="@+id/rl_header_inner" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@+id/ll_nonet_tip" layout="@layout/ll_nonet_tip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="35.0dip" android:layout_below="@id/ll_nonet_tip">
+                        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="middle" android:gravity="center" android:id="@+id/tv_walletname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="" android:singleLine="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="2.0dip" android:src="@mipmap/home_arrow_cold" android:foregroundGravity="center_vertical" />
+                        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/iv_shield_icon" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:src="@mipmap/ic_shield_wallet" />
+                            <ImageView android:id="@+id/iv_wallet_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/ripple_addasset_btn_cold" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="30.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cold_title" android:layout_centerInParent="true" />
+                    <ImageView android:layout_width="9.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@mipmap/ic_jump" android:scaleType="fitCenter" android:layout_toRightOf="@id/tv_title" android:layout_alignBottom="@id/tv_title" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_receive" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/iv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sel_tab_receive" />
+                            <TextView android:textSize="11.0dip" android:textColor="@drawable/sel_tab_offlinsign" android:id="@+id/tv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:text="@string/receive" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_offline_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip">
+                            <ImageView android:id="@+id/iv_offline_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sel_tab_offlinsign" />
+                            <TextView android:textSize="11.0dip" android:textColor="@drawable/sel_tab_offlinsign" android:id="@+id/tv_offline_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/offline_scan_sign" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fl_receive" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@+id/iv_qr" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="40.0dip" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/gray_02" android:id="@+id/tv_address" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+                    <Button android:textSize="16.0dip" android:textColor="@color/white" android:id="@+id/bt_copy" android:background="@drawable/roundborder_135dcd_10" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="36.0dip" android:text="@string/copy" />
+                    <ImageView android:id="@+id/iv_receive_shasta" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@mipmap/ic_shasta" />
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/fl_offline_sign" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@+id/iv_offline_sign_qr" android:layout_width="160.0dip" android:layout_height="160.0dip" android:layout_marginTop="50.0dip" android:src="@mipmap/ic_offline_sign" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/gray_02_50" android:id="@+id/tv_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/offlin_sign_desc" android:layout_below="@id/iv_offline_sign_qr" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+                    <Button android:enabled="true" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_offline_sign_desc" android:background="@drawable/roundborder_135dcd_10" android:clickable="true" android:layout_width="252.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:text="@string/offline_sign_tip" android:layout_below="@id/iv_offline_sign_qr" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+                    <ImageView android:id="@+id/iv_offline_sign_shasta" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@mipmap/ic_shasta" android:layout_below="@id/tv_offline_sign_desc" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <include android:id="@+id/ll_code_tip" android:visibility="gone" layout="@layout/ll_cold_tip" />
+    <include android:id="@+id/ll_back_tip" layout="@layout/ll_backup_tip" />
+</RelativeLayout>

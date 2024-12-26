@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_no_stake" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tv_multi_warning"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@+id/view_top_bg" android:background="@drawable/bg_stake_home" android:layout_width="fill_parent" android:layout_height="500.0dip" />
+    <TextView android:id="@+id/tv_join_stake_title" android:layout_marginLeft="20.0dip" android:layout_marginTop="32.0dip" android:text="@string/use_stake_v2" style="@style/text28_FF" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:src="@mipmap/icon_stake_new_tag" android:layout_toRightOf="@id/tv_join_stake_title" />
+    <ImageView android:id="@+id/iv_stake_new_icon_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@mipmap/stake_new_icon_big" android:layout_alignTop="@id/tv_join_stake_title" android:layout_alignParentRight="true" />
+    <TextView android:id="@+id/tv_join_stake_description" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:text="@string/stake_v2_no_stake_desc_place_holder" android:layout_toLeftOf="@id/iv_stake_new_icon_big" android:layout_below="@id/tv_join_stake_title" style="@style/text14_ff_80" />
+    <TextView android:gravity="center" android:id="@+id/btn_stake_no_stake" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="175.0dip" android:layout_marginRight="20.0dip" android:text="@string/stake_for_resource_rewards" style="@style/bt44_14_ripple_black" />
+    <TextView android:id="@+id/tv_stake_update_tips" android:layout_marginTop="12.0dip" android:text="@string/stake_v2_no_stake_desc3" android:layout_below="@id/btn_stake_no_stake" android:layout_centerHorizontal="true" style="@style/text12_ff_80" />
+    <RelativeLayout android:background="@drawable/roundborder_ffffff_8_top_90" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:layout_below="@id/tv_stake_update_tips">
+        <TextView android:textStyle="bold" android:id="@+id/tv_dot_title" android:text="@string/enhanced_features" android:layout_alignParentTop="true" style="@style/text16_232c" />
+        <TextView android:id="@+id/learn_more_no_stake" android:layout_marginTop="2.0dip" android:text="@string/about_stake_v2" android:drawableRight="@mipmap/ic_arrow_right_blue" android:drawablePadding="4.0dip" android:layout_alignParentRight="true" style="@style/text12_3c" />
+        <RelativeLayout android:id="@+id/layout_stake_dot_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_below="@id/tv_dot_title">
+            <ImageView android:id="@+id/icon_stake_dot_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_stake_dot_1" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:id="@+id/icon_stake_dot_1_title" android:layout_marginLeft="15.0dip" android:text="@string/get_res_tron_power" android:layout_toRightOf="@id/icon_stake_dot_1" android:layout_alignParentTop="true" style="@style/text14_23" />
+            <TextView android:id="@+id/icon_stake_dot_1_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:text="@string/get_res_tron_power_desc" android:layout_toRightOf="@id/icon_stake_dot_1" android:layout_below="@id/icon_stake_dot_1_title" style="@style/text12_6d" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_stake_dot_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/layout_stake_dot_1">
+            <ImageView android:id="@+id/icon_stake_dot_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_stake_dot_1" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:id="@+id/icon_stake_dot_2_title" android:layout_marginLeft="15.0dip" android:text="@string/delegate_with_flex" android:layout_toRightOf="@id/icon_stake_dot_2" android:layout_alignParentTop="true" style="@style/text14_23" />
+            <TextView android:id="@+id/icon_stake_dot_2_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:text="@string/delegate_with_flex_desc" android:layout_toRightOf="@id/icon_stake_dot_2" android:layout_below="@id/icon_stake_dot_2_title" style="@style/text12_6d" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_stake_dot_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/layout_stake_dot_2">
+            <ImageView android:id="@+id/icon_stake_dot_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_stake_dot_3" android:layout_centerVertical="true" />
+            <TextView android:textStyle="bold" android:id="@+id/icon_stake_dot_3_title" android:layout_marginLeft="15.0dip" android:text="@string/contribute_to_tron_to_get_res" android:layout_toRightOf="@id/icon_stake_dot_3" android:layout_alignParentTop="true" style="@style/text14_23" />
+            <TextView android:id="@+id/icon_stake_dot_3_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:text="@string/contribute_to_tron_to_get_res_desc" android:layout_toRightOf="@id/icon_stake_dot_3" android:layout_below="@id/icon_stake_dot_3_title" style="@style/text12_6d" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

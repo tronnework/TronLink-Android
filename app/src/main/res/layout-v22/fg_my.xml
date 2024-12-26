@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white_F7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/ll_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="54.0dip">
+        <ImageView android:id="@+id/ic_my_wallet" android:layout_width="@dimen/dp_ic_title" android:layout_height="@dimen/dp_ic_title" android:layout_marginLeft="20.0dip" android:src="@mipmap/ic_my_wallet" android:scaleType="fitCenter" />
+        <TextView android:textStyle="bold" android:layout_marginLeft="25.0dip" android:text="@string/my_wallet" android:layout_toRightOf="@id/ic_my_wallet" android:layout_centerVertical="true" style="@style/text24_23" />
+        <FrameLayout android:id="@+id/rl_bell" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_width="@dimen/dp_ic_btn" android:layout_height="@dimen/dp_ic_btn" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:src="@mipmap/ic_message_center" android:scaleType="fitXY" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/ll_new_assets_count" android:background="@color/transparent" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+                <com.tron.wallet.common.components.BadgeButton android:id="@+id/tv_bell" android:visibility="visible" android:layout_height="wrap_content" app:btnBadgeColor="@color/orange_FF" app:btnBadgeHeight="12.0dip" app:btnBadgeText="11" app:btnTextSize="8.0dip" app:btnType="1" style="@style/BadgeButton.Normal" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/scroll_layout" android:paddingTop="20.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view" android:layout_below="@id/ll_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.tron.wallet.business.tabmy.advancedfeatures.HorizontalOptionView android:id="@+id/unit_test" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hov_title="自用测试" app:hov_typeface_bold="false" />
+                <RelativeLayout android:id="@+id/wallet_manager" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <ImageView android:id="@+id/iv_wallet_manager" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/icon_wallet_public" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:layout_marginLeft="20.0dip" android:text="@string/public_account" android:layout_toRightOf="@id/iv_wallet_manager" android:layout_centerVertical="true" style="@style/text14_23" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/shield_wallet_manager" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_shield_wallet" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_shield_wallet_manager" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/icon_wallet_shield" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_shield_wallet" android:layout_marginLeft="20.0dip" android:text="@string/shield_account" android:layout_toRightOf="@id/iv_shield_wallet_manager" android:layout_centerVertical="true" style="@style/text14_23" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/hardware_management" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_ledger" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_ledger" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_hardware_wallet" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_ledger" android:layout_marginLeft="20.0dip" android:text="@string/ledger" android:layout_toRightOf="@id/iv_ledger" android:layout_centerVertical="true" style="@style/text14_23" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <RelativeLayout android:id="@+id/transfer_history" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <ImageView android:id="@+id/iv_transaction" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_transaction" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:layout_marginLeft="20.0dip" android:text="@string/transaction_histotry" android:layout_toRightOf="@id/iv_transaction" android:layout_centerVertical="true" style="@style/text14_02_4" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/backup_layout" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_backup_records_title" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_backup_record" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_back_up_records" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_backup_records_title" android:layout_marginLeft="20.0dip" android:text="@string/backup_records_title" android:layout_toRightOf="@id/iv_backup_record" android:layout_centerVertical="true" style="@style/text14_02_4" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <RelativeLayout android:id="@+id/address_book" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <ImageView android:id="@+id/iv_address_book" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_address_book" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_address_book" android:layout_marginLeft="20.0dip" android:text="@string/address_book" android:layout_toRightOf="@id/iv_address_book" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <View android:layout_alignLeft="@id/tv_address_book" android:layout_alignParentBottom="true" style="@style/line_gray_eb" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/setting" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <ImageView android:id="@+id/iv_setting" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_setting" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <ImageView android:id="@+id/iv_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:layout_marginLeft="20.0dip" android:text="@string/setting" android:layout_toRightOf="@id/iv_setting" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <ImageView android:id="@+id/iv_dot_tip" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/roundborder_red_ec" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/friend_invitation" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_friend_invitation" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_friend_invitation" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_friend_invitation" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_friend_invitation" android:layout_marginLeft="20.0dip" android:text="@string/friend_invitation" android:layout_toRightOf="@id/iv_friend_invitation" android:layout_centerVertical="true" style="@style/text14_02_4" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/advanced_features" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:id="@+id/line_advanced_features" android:layout_alignLeft="@id/tv_advanced_features" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_advanced_features" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_adv_feature" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_advanced_features" android:layout_marginLeft="20.0dip" android:text="@string/advanced_features" android:layout_toRightOf="@id/iv_advanced_features" android:layout_centerVertical="true" style="@style/text14_23" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <RelativeLayout android:id="@+id/announcement" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <ImageView android:id="@+id/iv_announcement" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_anounce_new" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:layout_marginLeft="20.0dip" android:text="@string/announcement" android:layout_toRightOf="@id/iv_announcement" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <View android:id="@+id/v_an" android:background="@drawable/roundborder_red_ec" android:visibility="visible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/safety_academy" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_security_academy" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_safety_academy" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_security_academy" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_security_academy" android:layout_marginLeft="20.0dip" android:text="@string/security_academy" android:layout_toRightOf="@id/iv_safety_academy" android:layout_centerVertical="true" style="@style/text14_23" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/help" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_help" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_help" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_help" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_help" android:layout_marginLeft="20.0dip" android:text="@string/setting_wallet_intro" android:layout_toRightOf="@id/iv_help" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <ImageView android:id="@+id/iv_help_dot_tip" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginRight="@dimen/dp_20" android:src="@drawable/roundborder_red_ec" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/about" android:background="@drawable/ripple_transparent_gray" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:paddingHorizontal="20.0dip">
+                    <View android:layout_alignLeft="@id/tv_about" android:layout_alignParentTop="true" style="@style/line_gray_eb" />
+                    <View android:layout_alignLeft="@id/tv_about" android:layout_alignParentBottom="true" style="@style/line_gray_eb" />
+                    <ImageView android:id="@+id/iv_about" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:src="@mipmap/ic_about" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/right_arrow_new" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_about" android:layout_marginLeft="20.0dip" android:text="@string/about" android:layout_toRightOf="@id/iv_about" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <View android:id="@+id/dd" android:background="@drawable/roundborder_red_ec" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/tv_has_new_version" android:layout_centerVertical="true" />
+                    <TextView android:id="@+id/tv_has_new_version" android:layout_marginRight="20.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/text14_6d" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:id="@+id/bt" android:background="@drawable/roundborder_c2c8d5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="10.0dip" android:text="dapp测试" />
+            <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/scroll_layout" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@+id/bottom_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

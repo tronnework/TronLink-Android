@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/roundborder_f7f8fa_8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_warning" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:src="@mipmap/ic_warning_text" android:layout_alignParentLeft="true" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip" android:text="@string/backup_record_tips" android:layout_toRightOf="@id/iv_warning" style="@style/text11_yellow_FFA928" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/backup_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" />
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="110.0dip" android:layout_below="@id/rl_title" app:description_text_color="@color/gray_9B" app:icon="@mipmap/ic_no_data" app:icon_height="120.0dip" app:icon_width="120.0dip" app:no_net_text="@string/no_backup_records" app:reloadable="false" app:show_loading_anim="false" />
+</LinearLayout>

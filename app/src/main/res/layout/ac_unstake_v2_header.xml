@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_tab_energy" android:background="@drawable/roundborder_ffffff_8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:background="@mipmap/icon_unstake_enengy" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="14.0dip" />
+            <TextView android:id="@+id/tv_tab_energy" android:layout_marginLeft="5.0dip" android:layout_marginTop="12.0dip" android:text="@string/energy" style="@style/text14_23" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_tab_bandwidth" android:background="@drawable/roundborder_ebedf0_8_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="14.0dip" android:src="@mipmap/icon_unstake_bandwidth_green" />
+            <TextView android:id="@+id/tv_tab_bandwidth" android:layout_marginLeft="5.0dip" android:layout_marginTop="12.0dip" android:text="@string/bandwidth" style="@style/text14_23" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

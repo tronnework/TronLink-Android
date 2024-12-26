@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/bg_vote_first_enter" android:paddingLeft="14.0dip" android:paddingTop="15.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip" android:layout_width="216.0dip" android:layout_height="72.0dip" android:paddingHorizontal="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_close" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@mipmap/ic_close" android:layout_alignParentRight="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/vote_first_enter_tip" android:layout_toLeftOf="@id/iv_close" android:layout_alignParentBottom="true" />
+</RelativeLayout>

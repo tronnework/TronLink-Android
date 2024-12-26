@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.CircularImageDraweeView android:id="@+id/iv_logo" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:layout_centerVertical="true" app:actualImageScaleType="centerCrop" app:failureImage="@mipmap/ic_nft_default_4" app:failureImageScaleType="centerCrop" app:placeholderImage="@mipmap/ic_nft_default_4" app:placeholderImageScaleType="centerCrop" app:roundedCornerRadius="10.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toLeftOf="@id/iv_arrow_right" android:layout_toRightOf="@id/iv_logo" android:layout_centerVertical="true">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_token_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" android:maxLines="1" style="@style/text16_02" />
+        <TextView android:ellipsize="middle" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="ID" android:singleLine="true" style="@style/text11_b3" />
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_arrow_right" android:paddingLeft="@dimen/dp_20" android:layout_width="27.0dip" android:layout_height="@dimen/dp_12" android:src="@mipmap/ic_arrow_right" android:tint="@color/gray_99" android:layout_alignTop="@id/iv_logo" android:layout_alignBottom="@id/iv_logo" android:layout_alignParentRight="true" />
+    <View android:background="@color/gray_b3_15" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toRightOf="@id/iv_logo" android:layout_alignParentBottom="true" />
+</RelativeLayout>

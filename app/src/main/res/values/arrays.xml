@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="asset_sort_en">
+    <item>Preference</item>
+    <item>Value</item>
+    <item>Name</item>
+  </string-array>
+  <string-array name="asset_sort_zh">
+    <item>按偏好</item>
+    <item>按价值</item>
+    <item>按名称</item>
+  </string-array>
+  <string-array name="asset_titles">
+    <item>@string/assets</item>
+    <item>@string/asset_collection</item>
+  </string-array>
+  <array name="auto_size_text_sizes">
+    <item>10.0sp</item>
+    <item>12.0sp</item>
+    <item>14.0sp</item>
+    <item>16.0sp</item>
+    <item>18.0sp</item>
+    <item>20.0sp</item>
+    <item>24.0sp</item>
+    <item>28.0sp</item>
+    <item>32.0sp</item>
+  </array>
+  <string-array name="icon_list">
+    <item>one</item>
+    <item>two</item>
+    <item>three</item>
+    <item>four</item>
+    <item>five</item>
+    <item>six</item>
+    <item>seven</item>
+  </string-array>
+  <string-array name="main_dapp_node_list">
+    <item>47.90.245.159:50051</item>
+  </string-array>
+  <string-array name="main_node_list">
+    <item>43.198.147.230:50051</item>
+    <item>18.206.50.220:50051</item>
+    <item>44.205.88.94:50051</item>
+    <item>16.162.38.213:50051</item>
+  </string-array>
+  <string-array name="nile_dapp_node_list">
+    <item>47.90.205.225:50051</item>
+  </string-array>
+  <string-array name="nile_node_list">
+    <item>grpc.nile.trongrid.io:50051</item>
+  </string-array>
+  <string-array name="node_type">
+    <item>Full Node</item>
+    <item>Solidity Node</item>
+  </string-array>
+  <string-array name="prorelease_dapp_node_list">
+    <item>47.90.245.159:50051</item>
+  </string-array>
+  <string-array name="prorelease_node_list">
+    <item>47.75.246.83:50051</item>
+    <item>47.90.243.77:50051</item>
+    <item>47.90.252.11:50051</item>
+  </string-array>
+  <string-array name="shasta_dapp_node_list">
+    <item>
+    </item>
+  </string-array>
+  <string-array name="shasta_node_list">
+    <item>grpc.shasta.trongrid.io:50051</item>
+  </string-array>
+  <string-array name="test_dapp_node_list">
+    <item>47.90.205.225:50051</item>
+  </string-array>
+  <string-array name="test_node_list">
+    <item>grpc.nile.trongrid.io:50051</item>
+  </string-array>
+  <string-array name="vote_sort_en">
+    <item>Votes (high to low)</item>
+    <item>Votes (low to high)</item>
+    <item>Estimated yield (high to low)</item>
+    <item>Estimated yield (low to high)</item>
+  </string-array>
+  <string-array name="vote_sort_zh">
+    <item>得票数（高到低）</item>
+    <item>得票数（低到高）</item>
+    <item>预计年化收益（高到低）</item>
+    <item>预计年化收益（低到高）</item>
+  </string-array>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root" android:paddingTop="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:cube_ptr="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/header_layout" android:paddingTop="4.0dip" android:paddingRight="15.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="4.0dip">
+        <ImageView android:id="@+id/iv_back" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/dp_ic_btn" android:src="@mipmap/ic_back_new" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <TextView android:textStyle="bold" android:id="@+id/tv_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/resource_management" android:layout_toRightOf="@id/iv_back" android:layout_centerVertical="true" style="@style/text20_02" />
+        <ImageView android:id="@+id/iv_help" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/ic_detail_help" android:layout_toRightOf="@id/tv_main_title" android:layout_alignTop="@id/tv_main_title" android:layout_alignBottom="@id/tv_main_title" />
+    </RelativeLayout>
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayout android:id="@+id/rc_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="15.0dip" cube_ptr:ptr_duration_to_close_header="1000" cube_ptr:ptr_keep_header_when_refresh="true" cube_ptr:ptr_mode="refresh" cube_ptr:ptr_pull_to_fresh="false" cube_ptr:ptr_ratio_of_header_height_to_refresh="1.5" cube_ptr:ptr_resistance_header="3.0">
+        <androidx.core.widget.NestedScrollView android:id="@+id/ll_scroll" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_ffffff_3" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                        <TextView android:text="@string/my_resources" android:layout_centerVertical="true" style="@style/text16_232c" />
+                        <TextView android:id="@+id/tv_staked_details" android:text="@string/view_staked_details" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_3c" />
+                    </RelativeLayout>
+                    <View android:background="@drawable/line_ee" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:id="@+id/tv_title_energy" android:text="@string/energy" style="@style/text14_6d" />
+                                <ImageView android:id="@+id/iv_energy_tip" android:padding="@dimen/dp_4" android:layout_width="20.0dip" android:layout_height="@dimen/dp_20" android:src="@mipmap/ic_tip_gray" android:layout_toRightOf="@id/tv_title_energy" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                                <androidx.constraintlayout.helper.widget.Flow android:layout_width="0.0dip" android:layout_height="wrap_content" cube_ptr:constraint_referenced_ids="tv_energy,tv_energy_total" cube_ptr:flow_firstHorizontalBias="0.0" cube_ptr:flow_firstHorizontalStyle="packed" cube_ptr:flow_horizontalBias="0.0" cube_ptr:flow_lastHorizontalBias="0.0" cube_ptr:flow_lastHorizontalStyle="packed" cube_ptr:flow_wrapMode="chain" cube_ptr:layout_constraintBottom_toBottomOf="parent" cube_ptr:layout_constraintEnd_toEndOf="parent" cube_ptr:layout_constraintStart_toStartOf="parent" cube_ptr:layout_constraintTop_toTopOf="parent" />
+                                <TextView android:textStyle="bold" android:id="@+id/tv_energy" android:text="--/" cube_ptr:layout_constraintWidth_default="wrap" style="@style/text18_23" />
+                                <TextView android:textStyle="bold" android:id="@+id/tv_energy_total" android:text="--" cube_ptr:layout_constraintWidth_default="wrap" style="@style/text18_9b" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                        <com.tron.wallet.common.components.CircularProgressView android:layout_gravity="center_vertical" android:id="@+id/progress_energy" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" cube_ptr:primary_bar_width="3.0dip" cube_ptr:primary_color="@color/yellow_FFF0DA" cube_ptr:progress="0.0" cube_ptr:progress_bar_width="5.0dip" cube_ptr:progress_color="#ffe2b380" cube_ptr:swipe_angle="180" />
+                        <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/dp_20" android:src="@mipmap/ic_energy" android:layout_alignLeft="@id/progress_energy" android:layout_alignRight="@id/progress_energy" />
+                    </RelativeLayout>
+                    <View android:background="@drawable/line_ee" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:id="@+id/tv_title_bandwidth" android:text="@string/bandwidth" style="@style/text14_6d" />
+                                <ImageView android:id="@+id/iv_bandwidth_tip" android:padding="@dimen/dp_4" android:layout_width="20.0dip" android:layout_height="@dimen/dp_20" android:src="@mipmap/ic_tip_gray" android:layout_toRightOf="@id/tv_title_bandwidth" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                                <androidx.constraintlayout.helper.widget.Flow android:layout_width="0.0dip" android:layout_height="wrap_content" cube_ptr:constraint_referenced_ids="tv_bandwidth,tv_bandwidth_total" cube_ptr:flow_firstHorizontalBias="0.0" cube_ptr:flow_firstHorizontalStyle="packed" cube_ptr:flow_horizontalBias="0.0" cube_ptr:flow_lastHorizontalBias="0.0" cube_ptr:flow_lastHorizontalStyle="packed" cube_ptr:flow_wrapMode="chain" cube_ptr:layout_constraintBottom_toBottomOf="parent" cube_ptr:layout_constraintEnd_toEndOf="parent" cube_ptr:layout_constraintStart_toStartOf="parent" cube_ptr:layout_constraintTop_toTopOf="parent" />
+                                <TextView android:textStyle="bold" android:id="@+id/tv_bandwidth" android:layout_marginTop="2.0dip" android:text="--/" cube_ptr:layout_constraintWidth_default="wrap" style="@style/text18_23" />
+                                <TextView android:textStyle="bold" android:id="@+id/tv_bandwidth_total" android:layout_marginTop="2.0dip" android:text="--" cube_ptr:layout_constraintWidth_default="wrap" style="@style/text18_9b" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                        <com.tron.wallet.common.components.CircularProgressView android:layout_gravity="center_vertical" android:id="@+id/progress_bandwidth" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" cube_ptr:primary_bar_width="3.0dip" cube_ptr:primary_color="@color/green_D7F0EC" cube_ptr:progress="0.0" cube_ptr:progress_bar_width="5.0dip" cube_ptr:progress_color="#ff57bfad" cube_ptr:swipe_angle="180" />
+                        <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/dp_20" android:src="@mipmap/ic_bandwidth" android:layout_alignLeft="@id/progress_bandwidth" android:layout_alignRight="@id/progress_bandwidth" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_ffffff_3" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="20.0dip">
+                    <TextView android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/staking_trx_get_resources" android:layout_marginVertical="20.0dip" style="@style/text16_232c" />
+                    <View android:background="@drawable/line_ee" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textStyle="bold" android:id="@+id/tv_trx_balance" android:text="0 TRX" android:singleLine="false" style="@style/text18_23" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                                <TextView android:text="@string/available_trx" style="@style/text12_9b" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_available_trx_tip" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_tip_gray" android:scaleType="fitCenter" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:gravity="center_vertical" android:id="@+id/bt_stake" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="@string/stake" android:paddingHorizontal="13.0dip" style="@style/bt30_12_ripple_black" />
+                        <TextView android:gravity="center_vertical" android:id="@+id/bt_unstake" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="@string/unstake" android:paddingHorizontal="13.0dip" style="@style/bt30_12_ripple_transparent_border" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_vote" android:background="@drawable/roundborder_ffffff_3" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="20.0dip">
+                    <TextView android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/voting_for_trx_benefits" android:layout_marginVertical="20.0dip" style="@style/text16_232c" />
+                    <View android:background="@drawable/line_ee" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginVertical="20.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textStyle="bold" android:id="@+id/tv_voting_tps" android:text="0 TPs" android:singleLine="false" style="@style/text18_23" />
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                                <TextView android:id="@+id/tv_vote_tip" android:layout_width="0.0dip" android:text="@string/available_tron_power" cube_ptr:layout_constraintBottom_toBottomOf="parent" cube_ptr:layout_constraintEnd_toStartOf="@id/iv_available_votes_tip" cube_ptr:layout_constraintStart_toStartOf="parent" cube_ptr:layout_constraintTop_toTopOf="parent" cube_ptr:layout_constraintWidth_default="wrap" style="@style/text12_9b" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_available_votes_tip" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_tip_gray" android:scaleType="fitCenter" cube_ptr:layout_constraintBottom_toBottomOf="parent" cube_ptr:layout_constraintEnd_toEndOf="parent" cube_ptr:layout_constraintStart_toEndOf="@id/tv_vote_tip" cube_ptr:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textStyle="bold" android:id="@+id/tv_voting_apr" android:text="--" style="@style/text18_23" />
+                            <TextView android:layout_marginTop="2.0dip" android:text="@string/voting_apr" style="@style/text12_9b" />
+                        </LinearLayout>
+                        <TextView android:gravity="center_vertical" android:id="@+id/bt_vote" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:text="@string/vote" android:paddingHorizontal="13.0dip" style="@style/bt30_12_ripple_black" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayout>
+</LinearLayout>

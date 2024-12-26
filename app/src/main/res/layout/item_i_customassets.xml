@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/image" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="14.0dip" android:src="@mipmap/trx" app:placeholderImage="@mipmap/trx" app:placeholderImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/gray_25" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="11.0dip" android:text="" android:layout_toRightOf="@id/image" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/gray_66" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/tv_name" android:layout_alignLeft="@id/tv_name" />
+    <com.tron.wallet.common.components.SwitchView android:id="@+id/switchview" android:layout_width="24.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" app:hasShadow="false" app:primaryColor="@color/red_D8" app:primaryColorDark="@color/red_D8" />
+</RelativeLayout>

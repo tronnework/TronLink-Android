@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/create_wallet_hint_11" style="@style/text14_6d" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <TextView android:textStyle="bold" android:textColor="@color/selector_item_write_mnemonic_text" android:gravity="center" android:id="@+id/tv_item1" android:background="@drawable/selector_item_write_mnemonic" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="1.0" style="@style/text14_23" />
+        <TextView android:textStyle="bold" android:textColor="@color/selector_item_write_mnemonic_text" android:gravity="center" android:id="@+id/tv_item2" android:background="@drawable/selector_item_write_mnemonic" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="" android:layout_weight="1.0" style="@style/text14_23" />
+        <TextView android:textStyle="bold" android:textColor="@color/selector_item_write_mnemonic_text" android:gravity="center" android:id="@+id/tv_item3" android:background="@drawable/selector_item_write_mnemonic" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="" android:layout_weight="1.0" style="@style/text14_23" />
+    </LinearLayout>
+</LinearLayout>

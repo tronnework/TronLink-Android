@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_do_menu" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_below="@id/backup_tip_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rl_send" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/rl_receive" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@+id/iv_send" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_send" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/asset_send" android:layout_below="@id/iv_send" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/rl_just_swap" app:layout_constraintStart_toEndOf="@id/rl_send">
+        <ImageView android:id="@+id/iv_receive" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_receive" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/asset_receive" android:layout_below="@id/iv_receive" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_just_swap" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/rl_freeze_unfreeze" app:layout_constraintStart_toEndOf="@id/rl_receive">
+        <ImageView android:id="@+id/iv_just_swap" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_just_swap" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/swap" android:layout_below="@id/iv_just_swap" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_freeze_unfreeze" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/rl_vote" app:layout_constraintStart_toEndOf="@id/rl_just_swap">
+        <ImageView android:id="@+id/iv_freeze" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_freeze_unfreeze" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/freeze" android:layout_below="@id/iv_freeze" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_stake_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_market_new" app:layout_constraintCircle="@id/rl_freeze_unfreeze" app:layout_constraintCircleAngle="40" app:layout_constraintCircleRadius="30.0dip" />
+    <RelativeLayout android:id="@+id/rl_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/rl_freeze_unfreeze">
+        <ImageView android:id="@+id/iv_vote" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/ic_asset_header_vote" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/vote" android:layout_below="@id/iv_vote" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_blue_e0ebff_8" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="6.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="8.0dip">
+            <TextView android:textStyle="bold" android:id="@+id/tv_hd" android:text="HD" android:singleLine="true" app:layout_constraintEnd_toStartOf="@id/tv_total_balance" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" style="@style/text16_232c" />
+            <ImageView android:id="@+id/iv_tips" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/icon_tips_select_wallet" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/tv_hd" app:layout_constraintStart_toEndOf="@id/tv_hd" app:layout_constraintTop_toTopOf="@id/tv_hd" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_total_balance" android:layout_width="0.0dip" android:layout_marginLeft="20.0dip" android:text="@string/total_value" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_hd" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" style="@style/text14_23" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/rl_group_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

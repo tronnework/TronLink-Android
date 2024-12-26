@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bg_white_24" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+        <RelativeLayout android:id="@+id/rl_title" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textStyle="bold" android:id="@+id/tv_title" android:layout_marginTop="20.0dip" android:text="@string/finance_switch_wallet" android:layout_centerHorizontal="true" style="@style/text18_23" />
+            <ImageView android:id="@+id/iv_common_right" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginTop="22.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/icon_detail_relition_close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="@color/black_23" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/tv_title" android:alpha="0.05" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_place_holder" android:background="@mipmap/bg_finance_all_header_place_holder" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitCenter" android:layout_below="@id/rl_title" android:layout_marginHorizontal="8.0dip" />
+        <ImageView android:id="@+id/iv_place_holder_body" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="15.0dip" android:src="@mipmap/bg_finance_all_body_place_holder" android:scaleType="matrix" android:layout_below="@id/iv_place_holder" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="80.0dip" android:layout_below="@id/rl_title">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+                <TextView android:textStyle="bold" android:text="@string/finance_wallet_summary" style="@style/text14_23" />
+                <ImageView android:id="@+id/iv_ask" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="6.0dip" android:src="@mipmap/white_ask" />
+                <TextView android:gravity="right" android:id="@+id/tv_finance_asset_percent" android:text="@string/finance_switch_wallet_percent" android:layout_weight="1.0" style="@style/text12_6d" />
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/ll_all_asset" android:background="@drawable/bg_f1_12" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bg_financial_switch_wallet_left" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/bg_financial_switch_wallet_right" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <TextView android:textStyle="bold" android:id="@+id/tv_finance_asset_title" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/finance_asset" style="@style/text12_23" />
+                <TextView android:textStyle="bold" android:id="@+id/tv_finance_asset" android:layout_marginLeft="15.0dip" android:layout_marginTop="4.0dip" android:text="--" android:layout_below="@id/tv_finance_asset_title" android:autoSizeMinTextSize="12.0dip" style="@style/text18_bd" />
+                <ImageView android:id="@+id/iv_all_asset_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="7.0dip" android:src="@mipmap/ic_wallet_select" android:layout_alignParentRight="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="7.0dip" android:layout_below="@id/tv_finance_asset">
+                    <TextView android:text="@string/finance_asset_all" style="@style/text12_6d" />
+                    <TextView android:textStyle="bold" android:id="@+id/tv_finance_asset_all" android:layout_marginLeft="6.0dip" android:text="--" android:maxLines="1" style="@style/text12_23" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+                <TextView android:textStyle="bold" android:id="@+id/tv_wallet_list" android:text="@string/finance_wallet_list" style="@style/text14_23" />
+            </LinearLayout>
+            <View android:background="@color/black_23_5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_finance_asset" android:layout_marginHorizontal="15.0dip" />
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" android:id="@+id/rv_list" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:background="@mipmap/bg_financial_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:layout_marginLeft="54.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="54.0dip" android:text="@string/finance_switch_wallet_sub_title" android:layout_marginHorizontal="54.0dip" style="@style/text12_6d" />
+    </LinearLayout>
+</RelativeLayout>

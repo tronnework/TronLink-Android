@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:background="@drawable/roundborder_ffffff_radius_16" android:paddingBottom="30.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_common_right" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginTop="22.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/icon_detail_relition_close" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    <TextView android:textStyle="bold" android:id="@+id/tv_title" android:layout_marginTop="30.0dip" android:text="@string/unstake" android:layout_centerHorizontal="true" style="@style/text18_23" />
+    <TextView android:id="@+id/tv_tips" android:layout_marginTop="16.0dip" android:text="@string/select_trx_you_want_to_unfreeze" android:layout_below="@id/tv_title" android:layout_centerHorizontal="true" style="@style/text14_6d" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:weightSum="2.0" android:layout_below="@id/tv_tips">
+        <RelativeLayout android:id="@+id/rl_unfreeze_v2" android:background="@drawable/roundborder_f5f8fe_radius_8" android:layout_width="0.0dip" android:layout_height="112.0dip" android:layout_weight="1.0">
+            <TextView android:id="@+id/tv_unfreeze_v2_title" android:layout_marginTop="30.0dip" android:text="@string/staking" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/text14_23" />
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:id="@+id/tv_unfreeze_v2_count" android:layout_marginTop="15.0dip" android:layout_marginBottom="30.0dip" android:text="--" android:layout_below="@id/tv_unfreeze_v2_title" android:layout_centerHorizontal="true" style="@style/text14_23" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/icon_arrow_stake_v2_pop" android:layout_toRightOf="@id/tv_unfreeze_v2_count" android:layout_alignTop="@id/tv_unfreeze_v2_count" android:layout_alignBottom="@id/tv_unfreeze_v2_count" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_pop_stake_v2" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_unfreeze_v1" android:background="@drawable/roundborder_f5f8fe_radius_8" android:layout_width="0.0dip" android:layout_height="112.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:id="@+id/tv_unfreeze_v1_title" android:layout_marginTop="30.0dip" android:text="@string/staking" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/text14_23" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_unfreeze_v1_count" android:layout_marginTop="15.0dip" android:layout_marginBottom="30.0dip" android:text="--" android:layout_below="@id/tv_unfreeze_v1_title" android:layout_centerHorizontal="true" style="@style/text14_23" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/icon_arrow_stake_v2_pop" android:layout_toRightOf="@id/tv_unfreeze_v1_count" android:layout_alignTop="@id/tv_unfreeze_v1_count" android:layout_alignBottom="@id/tv_unfreeze_v1_count" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_pop_stake_v1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

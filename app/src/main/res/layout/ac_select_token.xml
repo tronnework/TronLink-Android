@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@+id/tv_no_net" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tron.wallet.common.components.NoNetView android:id="@+id/no_net_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" app:icon="@mipmap/ic_no_net" app:no_net_text="net_unavailable" />
+    </androidx.core.widget.NestedScrollView>
+    <androidx.core.widget.NestedScrollView android:id="@+id/ll_nodata" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:src="@mipmap/ic_no_data_token" />
+            <TextView android:textColor="@color/gray_b3" android:gravity="center" android:id="@+id/tv_no_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/no_result" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:id="@+id/token_name_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/token_name" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/token_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_4dp" android:layout_below="@id/token_name_title" />
+    <com.tron.wallet.common.components.placeholder.TokenDetailPlaceHolderRecyclerView android:id="@+id/rc_holder_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/top" android:background="@drawable/roundborder_ffffff_10" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0dip" android:textColor="@color/gray_02_50" android:id="@+id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="27.0dip" android:text="@string/modify_permission_exit_title" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="31.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="26.0dip" android:layout_below="@id/tv_subtitle">
+            <TextView android:gravity="center" android:id="@+id/tv_cancle" android:background="@drawable/roundborder_white_db_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancle" android:layout_weight="1.0" style="@style/text14_99" />
+            <TextView android:gravity="center" android:id="@+id/tv_exit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="14.0dip" android:text="@string/exit" android:layout_weight="1.0" style="@style/bt44_14_ripple_black" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:height="100.0dip" android:top="80.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/black_23" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+    <item android:bottom="58.0dip">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#ff8467ff" android:endColor="#ffb99bef" android:angle="0.0" />
+            <corners android:radius="12.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="right" android:height="122.0dip" android:width="122.0dip">
+        <bitmap android:src="@drawable/ic_main_card_watch" />
+    </item>
+</layer-list>

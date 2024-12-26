@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_ffffff_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip">
+            <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@mipmap/waring_icon" />
+            <TextView android:textStyle="bold" android:layout_marginLeft="6.0dip" android:text="@string/root_error" style="@style/text16_50" />
+        </LinearLayout>
+        <TextView android:layout_marginLeft="29.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="29.0dip" android:text="@string/root_note" style="@style/text14_50" />
+        <View android:id="@+id/line" android:layout_marginTop="20.0dip" android:layout_below="@id/et_password" style="@style/line3" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/line">
+            <TextView android:textSize="14.0sp" android:textColor="@color/gray_88" android:gravity="center" android:id="@+id/tv_cancle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/ignore" android:layout_weight="1.0" />
+            <View android:background="@color/gray_F7F8" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/blue_63" android:gravity="center" android:id="@+id/tv_ok" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/exit" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

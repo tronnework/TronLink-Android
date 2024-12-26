@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="89.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="normal" android:id="@+id/tv_name" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:text="jame" style="@style/text15_50" />
+    <ImageView android:id="@+id/selected" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/thaw_select" android:layout_alignTop="@id/tv_name" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/gray_88" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:text="TFyMtiZ6NGaroZh4Z6NGaroAVz" android:layout_below="@id/tv_name" />
+    <TextView android:textSize="13.0dip" android:textColor="@color/gray_88" android:id="@+id/tv_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_address" />
+    <View android:background="@color/gray_F7F8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

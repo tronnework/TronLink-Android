@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/finance_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.business.tabdapp.browser.BrowserWebView android:id="@+id/browser_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:id="@+id/loading_view" android:background="@drawable/roundborder_232c41_15_8" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/iv_loading" android:background="@mipmap/icon_load" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.tron.wallet.common.components.NoNetView android:gravity="center" android:id="@+id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:description_text_color="@color/gray_9B" app:icon="@mipmap/ic_finance_timeout" app:icon_height="76.0dip" app:icon_padding_bottom="@dimen/dp_20" app:icon_width="170.0dip" app:no_net_text="@string/time_out" app:reload_padding_top="@dimen/dp_20" app:reloadable="false" app:show_loading_anim="false" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/not_support" />
+</RelativeLayout>

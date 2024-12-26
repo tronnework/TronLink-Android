@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@+id/super_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/black_02" android:ellipsize="end" android:id="@+id/tv_person_name" android:layout_width="150.0dip" android:layout_marginRight="5.0dip" android:text="Sesameseed" android:singleLine="true" android:layout_centerVertical="true" style="@style/text14_13" />
+    <ImageView android:id="@+id/iv_delete_VR" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_delete_candidate" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <EditText android:textColor="@color/black_02" android:gravity="right" android:id="@+id/et_input" android:background="@drawable/bg_et_round_rect" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:minWidth="100.0dip" android:text="" android:hint="0" android:layout_toLeftOf="@id/iv_delete_VR" android:layout_centerVertical="true" android:inputType="number" android:paddingHorizontal="12.0dip" android:paddingVertical="6.0dip" style="@style/et14_13" />
+</RelativeLayout>

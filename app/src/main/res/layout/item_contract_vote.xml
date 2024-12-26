@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bg" android:background="@drawable/ripple_shadow3" android:paddingTop="22.0dip" android:paddingBottom="23.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="29.0dip" android:paddingRight="29.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+            <TextView android:textSize="10.0dip" android:textColor="@color/blue_13" android:gravity="center" android:id="@+id/tv_index" android:background="@drawable/border_33135dcd" android:layout_width="22.0dip" android:layout_height="13.0dip" android:text="1" android:layout_centerVertical="true" />
+            <TextView android:id="@+id/tv_name" android:layout_marginLeft="10.0dip" android:text="TEdh" android:layout_toRightOf="@id/tv_index" android:layout_centerVertical="true" style="@style/text14_13" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="29.0dip" android:paddingRight="29.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <TextView android:text="@string/vote_num" android:layout_centerVertical="true" style="@style/text14_99" />
+            <TextView android:textStyle="bold" android:id="@+id/tv_vote" android:text="10" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text20_02" />
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="29.0dip" android:paddingRight="29.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="23.0dip">
+            <TextView android:text="@string/address" android:layout_centerVertical="true" style="@style/text13_99" />
+            <TextView android:id="@+id/tv_address" android:text="TAtXztnximXyas…iTaxJhxiGYPn1HWa" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_999_50" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:id="@+id/ll_delete" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_delete" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@mipmap/vote_delete" />
+    </LinearLayout>
+</FrameLayout>

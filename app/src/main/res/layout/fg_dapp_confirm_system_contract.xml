@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/root" android:background="@drawable/border_ffffff_30" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <com.tron.wallet.business.confirm.fg.component.GlobalTitleHeaderView android:id="@+id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.tron.wallet.common.components.xtablayout.XTabLayout android:id="@+id/tablayout" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="8.0dip" app:xTabDividerWidthWidthText="true" app:xTabGravity="1" app:xTabIndicatorColor="@color/gray_232c41" app:xTabIndicatorHeight="2.0dip" app:xTabMinWidth="80.0dip" app:xTabMode="fixed" app:xTabSelectedTextBackground="@color/white" app:xTabSelectedTextColor="@color/gray_232c41" app:xTabSelectedTextSize="14.0sp" app:xTabTextBackground="@color/white" app:xTabTextColor="@color/gray_80" app:xTabTextSelectedBold="true" app:xTabTextSize="14.0sp" />
+        <FrameLayout android:id="@+id/content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" />
+    </LinearLayout>
+</RelativeLayout>

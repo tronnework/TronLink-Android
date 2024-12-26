@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.VerticalScrollView android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb" android:scrollbarTrackVertical="@color/gray_F5F6F7" android:scrollbarStyle="insideOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.tron.wallet.common.components.ErrorBottomLayout android:orientation="vertical" android:id="@+id/custom_approve_amount_layout" android:background="@drawable/bg_shape_6d_8" android:padding="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/tv_amount_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:id="@+id/approve_amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_approved_amount_title" android:layout_centerVertical="true" style="@style/text14_23" />
+                        <ImageView android:id="@+id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@mipmap/approve_tips" android:layout_toRightOf="@id/approve_amount_title" android:layout_centerVertical="true" />
+                        <ImageView android:id="@+id/approve_amount_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/dapp_approve_amount_unselected" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/ll_amount" android:background="@drawable/roundborder_f7f8fa_8" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minHeight="50.0dip" android:layout_below="@id/tv_amount_title">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_toLeftOf="@id/tv_max" android:layout_centerVertical="true">
+                            <com.tron.wallet.common.components.CurrencyEditText android:id="@+id/et_count" android:hint="@string/approve_amount_hint" android:inputType="numberDecimal" app:intValue="133" style="@style/et14_232c" />
+                            <TextView android:id="@+id/tv_value" android:visibility="gone" android:text="≈ ¥ 111.2" android:layout_below="@id/et_count" style="@style/text12_9b" />
+                        </LinearLayout>
+                        <TextView android:id="@+id/tv_max" android:background="@drawable/roundborder_white_4" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_marginLeft="4.0dip" android:text="@string/max" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text12_23" />
+                        <ImageView android:id="@+id/iv_delete" android:visibility="gone" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginLeft="4.0dip" android:src="@mipmap/ic_delete_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/balance_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_amount">
+                        <TextView android:id="@+id/tv_amount_info" android:text="@string/approve_balance_amount" style="@style/text12_23" />
+                        <TextView android:id="@+id/tv_balance" android:layout_marginLeft="4.0dip" android:text="--" style="@style/text12_23" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.tron.wallet.common.components.ErrorBottomLayout>
+            <RelativeLayout android:id="@+id/default_approve_amount_layout" android:background="@drawable/bg_shape_cd_8" android:padding="15.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/custom_approve_amount_layout">
+                <RelativeLayout android:id="@+id/rl_trust_approve_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:id="@+id/trust_approve_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trust_approve_title" android:layout_centerVertical="true" style="@style/text14_23" />
+                    <ImageView android:id="@+id/default_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@mipmap/approve_tips" android:layout_toRightOf="@id/trust_approve_title" android:layout_alignTop="@id/trust_approve_select" android:layout_alignBottom="@id/trust_approve_select" />
+                    <ImageView android:id="@+id/trust_approve_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/dapp_approve_amount_unselected" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:id="@+id/tv_default_balance" android:visibility="gone" android:layout_marginLeft="4.0dip" android:layout_marginTop="15.0dip" android:text="--" android:layout_below="@id/rl_trust_approve_title" style="@style/text12_23" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.tron.wallet.common.components.VerticalScrollView>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.ptr.PtrHTFrameLayout android:id="@+id/rc_frame" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom_bar" android:layout_below="@id/rl_scam" app:ptr_duration_to_close_header="1000" app:ptr_keep_header_when_refresh="true" app:ptr_mode="refresh" app:ptr_pull_to_fresh="false" app:ptr_ratio_of_header_height_to_refresh="1.5" app:ptr_resistance_header="3.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/root_rv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.tron.wallet.common.components.ptr.PtrHTFrameLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_net_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="480.0dip" />
+    <ImageView android:id="@+id/iv_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:src="@mipmap/nft_list_loading" android:scaleType="centerCrop" />
+    <com.tron.wallet.common.components.ItemWarningTagView android:id="@+id/rl_scam" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" app:warning_tag_icon="@mipmap/ic_scam_waring_icon" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_bottom_bar" android:background="@color/white" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:layout_marginVertical="12.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_transfer" android:background="@drawable/selector_bg_black_round_8" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_transfer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/send_1" style="@style/text12_6d" />
+            <ImageView android:id="@+id/iv_transfer" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:src="@mipmap/ic_token_send_white" />
+        </LinearLayout>
+        <include android:id="@+id/ll_menu_line1" android:visibility="gone" layout="@layout/ll_blue_dashed" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_receive" android:background="@drawable/selector_bg_white_round_6" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="@color/black_23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receive" style="@style/text12_6d" />
+            <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" android:src="@mipmap/ic_token_receive_black" />
+        </LinearLayout>
+        <include android:id="@+id/ll_menu_line2" android:visibility="gone" layout="@layout/ll_blue_dashed" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_market" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="1.0dip" android:src="@mipmap/icon_market" />
+            <TextView android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/jys" style="@style/text12_6d" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

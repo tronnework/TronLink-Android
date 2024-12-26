@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root_page_1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/gray_F8FAFE" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_security_header_1" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:text="@string/security_home_check_wallet_title" style="@style/text20_00" />
+        <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:text="@string/security_home_check_wallet_desc" style="@style/text12_9b" />
+        <com.tron.wallet.business.security.components.SecurityHorizontalView android:id="@+id/btn_start" android:layout_width="fill_parent" android:layout_height="wrap_content" app:button_text="@string/security_button" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="33.0dip" android:paddingRight="15.0dip" android:paddingBottom="33.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_environment" />
+        <TextView android:textStyle="bold" android:layout_marginLeft="12.0dip" android:text="@string/security_home_running_detection" style="@style/text14_23" />
+    </LinearLayout>
+    <View android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/line_f5" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="33.0dip" android:paddingRight="15.0dip" android:paddingBottom="33.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_token_check" />
+        <TextView android:textStyle="bold" android:layout_marginLeft="12.0dip" android:text="@string/security_home_token_detection" style="@style/text14_23" />
+    </LinearLayout>
+    <View android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/line_f5" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="33.0dip" android:paddingRight="15.0dip" android:paddingBottom="33.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@mipmap/icon_approve_check" />
+        <TextView android:textStyle="bold" android:layout_marginLeft="12.0dip" android:text="@string/security_home_approval_detection" style="@style/text14_23" />
+    </LinearLayout>
+    <View android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/line_f5" />
+</LinearLayout>

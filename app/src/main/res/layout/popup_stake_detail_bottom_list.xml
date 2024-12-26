@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@drawable/bg_white_24" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="252.0dip">
+        <RelativeLayout android:id="@+id/rl_title" android:clickable="true" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentTop="true">
+            <TextView android:textStyle="bold" android:id="@+id/tv_title" android:text="@string/stake_detail" android:layout_centerInParent="true" style="@style/text18_23" />
+            <ImageView android:id="@+id/iv_common_right" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginTop="22.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/icon_detail_relition_close" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="@color/black_23" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" android:alpha="0.05" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_title">
+            <ImageView android:id="@+id/iv_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="24.0dip" android:src="@mipmap/iv_loading_unstake" android:scaleType="fitStart" />
+            <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="2.0dip" android:scrollbarStyle="insideOverlay" android:id="@+id/rv_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+            <com.tron.wallet.common.components.NoNetView android:id="@+id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" app:description_text_color="@color/gray_9B" app:icon="@mipmap/ic_no_data_new" app:no_net_text="@string/no_data_unstaking_resources" app:reloadable="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

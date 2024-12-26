@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black_6d" android:gravity="left" android:id="@+id/tv_sr_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/stake_v2_result_vote_title_name" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black_6d" android:gravity="center" android:id="@+id/tv_sr_apr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stake_v2_result_vote_title_apr" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black_6d" android:gravity="right" android:id="@+id/tv_sr_votes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/stake_v2_result_vote_title_number" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:background="@drawable/bg_layer_dashed_line_6d" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

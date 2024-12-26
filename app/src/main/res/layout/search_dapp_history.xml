@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_search_root" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/search_history_title" android:layout_marginTop="12.0dip" android:text="@string/search_dapp_history" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/text14_23" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_search_history_clear" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@mipmap/ic_search_dapp_clear" android:scaleType="center" android:layout_alignTop="@id/search_history_title" android:layout_alignBottom="@id/search_history_title" android:layout_alignParentRight="true" />
+    <com.tron.wallet.business.tabdapp.browser.search.HistoryFlowLayout android:id="@+id/search_history_flow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/search_history_title" />
+</RelativeLayout>

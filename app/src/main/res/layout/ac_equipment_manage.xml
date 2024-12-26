@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height" android:stateListAnimator="@drawable/appbar_elevation" app:statusBarScrim="@android:color/transparent">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapsedTitleTextAppearance="@style/collapsedTitleTextAppearanceStyle" app:contentScrim="@color/transparent" app:expandedTitleMarginBottom="60.0dip" app:expandedTitleMarginStart="30.0dip" app:expandedTitleMarginTop="30.0dip" app:expandedTitleTextAppearance="@style/expandedTitleTextAppearanceStyle" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@mipmap/ic_left_back">
+                <TextView android:textSize="12.0dip" android:textColor="@color/black_23" android:layout_gravity="right" android:id="@+id/tv_tutorial" android:background="@drawable/roundborder_cdd1da_8" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/tutorial" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="15.0dip" app:layout_behavior="com.tron.wallet.common.components.behavior.AppbarViewBehavior">
+        <com.tron.wallet.common.components.SimpleDraweeViewGif android:layout_gravity="center_horizontal" android:id="@+id/gif_image" android:layout_width="fill_parent" android:layout_height="60.0dip" app:actualImageScaleType="fitCenter" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="50.0dip" android:layout_height="25.0dip" android:src="@mipmap/ic_gif_background" android:scaleType="fitXY" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

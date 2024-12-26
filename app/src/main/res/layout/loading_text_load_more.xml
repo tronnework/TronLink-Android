@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@+id/tv_loading" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loading_dapp" style="@style/text12_999_50" />
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_loading_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@+id/iv_failed" android:layout_width="@dimen/dp_20" android:layout_height="14.0dip" android:src="@mipmap/ic_load_fail_footer" android:layout_centerVertical="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/loading_fail_retry" android:layout_toRightOf="@id/iv_failed" android:layout_centerVertical="true" style="@style/text12_999_50" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@+id/no_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loading_fail_no_more" style="@style/text12_999_50" />
+</RelativeLayout>

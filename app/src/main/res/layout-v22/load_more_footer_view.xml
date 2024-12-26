@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_loading_asset_header" android:layout_centerInParent="true" app:tint="@color/gray_99_50" />
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_loading_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_failed" android:layout_width="@dimen/dp_20" android:layout_height="14.0dip" android:src="@mipmap/ic_load_fail_footer" android:layout_centerVertical="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/loading_fail_retry" android:layout_toRightOf="@id/iv_failed" android:layout_centerVertical="true" style="@style/text12_999_50" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:id="@+id/no_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/loading_fail_no_more" android:layout_marginHorizontal="15.0dip" style="@style/text12_9b" />
+</RelativeLayout>

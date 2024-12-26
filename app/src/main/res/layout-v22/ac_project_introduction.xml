@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_scam">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@+id/il_header" layout="@layout/item_token_head" />
+            <View android:background="@color/gray_f7" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" style="@style/ll_common_content">
+                    <TextView android:textStyle="bold" android:text="@string/project_info" android:includeFontPadding="false" style="@style/text16_02" />
+                    <ImageView android:id="@+id/iv_open_in_webview_arraw" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_token_arrow_right_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/blue_3c" android:id="@+id/tv_open_in_webview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/token_detail_in_webview" android:includeFontPadding="false" android:layout_toLeftOf="@id/iv_open_in_webview_arraw" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_6d778c_4" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:paddingHorizontal="15.0dip">
+                    <RelativeLayout android:id="@+id/ll_project_base_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                        <TextView android:textStyle="bold" android:text="@string/project_base_info" style="@style/text14_23" />
+                    </RelativeLayout>
+                    <View android:background="@color/gray_f7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" />
+                    <RelativeLayout android:id="@+id/rl_project_name" android:layout_marginTop="16.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_project_name" android:text="@string/project_name" style="@style/text14_6d" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_toRightOf="@id/tv_project_name" android:layout_alignParentRight="true">
+                            <TextView android:id="@+id/project_name" android:text="--" style="@style/text14_23" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_id" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_token_id" android:text="@string/token_id" style="@style/text14_6d" />
+                        <LinearLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_toRightOf="@id/tv_token_id" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <TextView android:gravity="right" android:id="@+id/token_id" android:text="--" android:layout_weight="1.0" style="@style/text14_23" />
+                            <ImageView android:id="@+id/iv_id_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@mipmap/detail_copy" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_token_url" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_token_url" android:text="@string/official_website" style="@style/text14_6d" />
+                        <RelativeLayout android:gravity="center|right" android:layout_toRightOf="@id/tv_token_url" style="@style/ll_common_content_rl">
+                            <TextView android:textColor="@color/blue_3c" android:id="@+id/token_url" android:text="" android:layout_toLeftOf="@id/iv_url_copy" style="@style/text14_23" />
+                            <ImageView android:id="@+id/iv_url_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@mipmap/detail_copy" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_address" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_contract_address_label" android:text="@string/contract_address" style="@style/text14_6d" />
+                        <RelativeLayout android:layout_toRightOf="@id/tv_contract_address_label" style="@style/ll_common_content_rl">
+                            <TextView android:gravity="right" android:id="@+id/contract_address" android:text="" android:layout_toLeftOf="@id/iv_copy" style="@style/text14_23" />
+                            <ImageView android:id="@+id/iv_copy" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" android:src="@mipmap/detail_copy" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_publisher" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_publisher_label" android:text="@string/publisher" style="@style/text14_6d" />
+                        <TextView android:gravity="right" android:id="@+id/token_publisher" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:text="--" android:layout_toRightOf="@id/tv_publisher_label" style="@style/text14_23" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_accuracy" style="@style/ll_common_content">
+                        <TextView android:text="@string/accuracy" style="@style/text14_6d" />
+                        <TextView android:gravity="right" android:id="@+id/accuracy" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:text="--" style="@style/text14_23" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_describe" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_describe_label" android:text="@string/describe" style="@style/text14_6d" />
+                        <TextView android:gravity="right" android:id="@+id/token_describe" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="6.0dip" android:text="--" android:maxLines="3" android:layout_toRightOf="@id/tv_describe_label" style="@style/text14_23" />
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" style="@style/ll_common_content">
+                        <TextView android:textStyle="bold" android:text="@string/publish_msg" android:includeFontPadding="false" style="@style/text14_02" />
+                    </LinearLayout>
+                    <View android:background="@color/gray_f7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <RelativeLayout android:id="@+id/rl_start_time" android:layout_marginTop="16.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_start_time" android:text="@string/start_time" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <TextView android:gravity="right" android:id="@+id/start_time" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="6.0dip" android:text="--" android:layout_toRightOf="@id/tv_start_time" style="@style/text14_23" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_endtime" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_end_time_label" android:text="@string/end_time" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <TextView android:gravity="right" android:id="@+id/end_time" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="6.0dip" android:text="--" android:layout_toRightOf="@id/tv_end_time_label" style="@style/text14_23" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_total_circulation" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_total_circulation_label" android:text="@string/total_circulation" style="@style/text14_6d" />
+                        <TextView android:gravity="right" android:id="@+id/total_circulation" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginTop="6.0dip" android:text="--" android:layout_toRightOf="@id/tv_total_circulation_label" style="@style/text14_23" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/li_secure_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+                <RelativeLayout android:layout_marginTop="24.0dip" android:layout_marginBottom="0.0dip" style="@style/ll_common_content">
+                    <TextView android:textStyle="bold" android:id="@+id/tv_token_secure_info" android:text="@string/project_secure_info" android:includeFontPadding="false" style="@style/text16_02" />
+                    <ImageView android:id="@+id/iv_report_arraw" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="4.5dip" android:src="@mipmap/ic_token_arrow_right_blue" android:layout_alignParentRight="true" />
+                    <TextView android:textColor="@color/blue_3c" android:gravity="right" android:id="@+id/tv_project_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/project_report" android:layout_toLeftOf="@id/iv_report_arraw" android:layout_toRightOf="@id/tv_token_secure_info" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_6d778c_4" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:paddingHorizontal="15.0dip">
+                    <RelativeLayout android:id="@+id/rl_secure_black_list" android:layout_marginTop="16.0dip" android:layout_marginBottom="0.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_black_list" android:text="@string/project_secure_black_list" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <ImageView android:id="@+id/iv_secure_black_list" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/token_secure_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_secure_create_self" android:layout_marginTop="16.0dip" android:layout_marginBottom="0.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_issue_self" android:text="@string/project_secure_create_self" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <ImageView android:id="@+id/iv_secure_create_self" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/token_secure_err" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_secure_have_url" android:layout_marginTop="16.0dip" android:layout_marginBottom="0.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_have_url" android:text="@string/project_secure_have_url" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <ImageView android:id="@+id/iv_secure_have_url" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/token_secure_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_no_proxy" android:layout_marginTop="16.0dip" android:layout_marginBottom="0.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_no_proxy" android:text="@string/project_secure_no_proxy" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <ImageView android:id="@+id/iv_no_proxy" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/token_secure_err" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_secure_open_source" android:layout_marginTop="16.0dip" android:layout_marginBottom="0.0dip" style="@style/ll_common_content">
+                        <TextView android:id="@+id/tv_open_source" android:text="@string/project_secure_open_source" android:layout_centerVertical="true" style="@style/text14_6d" />
+                        <ImageView android:id="@+id/iv_secure_open_source" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@mipmap/token_secure_ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.tron.wallet.common.components.ItemWarningTagView android:id="@+id/rl_scam" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:warning_tag_icon="@mipmap/ic_scam_waring_icon" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@+id/no_book_data_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" android:layout_marginHorizontal="12.0dip">
+        <RelativeLayout android:background="@drawable/roundborder_ebedf0_stroke_8" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <ImageView android:id="@+id/iv_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@mipmap/icon_how_to_book" android:layout_centerVertical="true" />
+        <TextView android:id="@+id/tv_how_book" android:layout_marginLeft="8.0dip" android:text="@string/how_to_book" android:layout_toRightOf="@id/iv_book" android:layout_centerVertical="true" style="@style/text14_23" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@mipmap/ic_arrow_book" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

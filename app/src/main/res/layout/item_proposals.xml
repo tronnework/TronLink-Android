@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_top" android:background="@mipmap/shadow_proposal_middle_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@mipmap/shadow_proposal_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_committee" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_vertical" android:id="@+id/tv_proposals_id" android:background="@drawable/roundborder_135dcd_13" android:paddingLeft="13.0dip" android:paddingTop="1.0dip" android:paddingRight="8.0dip" android:paddingBottom="1.0dip" android:layout_marginLeft="16.0dip" android:text="29" style="@style/text14_ff" />
+            <TextView android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_proposals_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" style="@style/text14_13" />
+            <TextView android:id="@+id/tv_proposals_state" android:background="@drawable/roundborder_135dcd_10_15" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="29.0dip" android:text="Voting" style="@style/text12_13" />
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:id="@+id/tv_committee_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="29.0dip" android:maxLines="3" android:layout_below="@id/ll_committee" style="@style/text13_02" />
+        <RelativeLayout android:id="@+id/rl_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_committee_content">
+            <com.tron.wallet.common.components.countdownview.CountdownView android:layout_gravity="center_horizontal" android:id="@+id/cv_countdownView" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:isConvertDaysToHours="false" app:isShowDay="true" app:isShowHour="true" app:isShowMillisecond="false" app:isShowMinute="true" app:isShowSecond="true" app:suffixDay="D" app:suffixDayLeftMargin="2.0dip" app:suffixDayRightMargin="5.0dip" app:suffixGravity="center" app:suffixHour="H" app:suffixHourLeftMargin="2.0dip" app:suffixHourRightMargin="5.0dip" app:suffixMinute="M" app:suffixMinuteLeftMargin="2.0dip" app:suffixMinuteRightMargin="5.0dip" app:suffixSecond="S" app:suffixSecondLeftMargin="2.0dip" app:suffixTextColor="@color/blue_13" app:suffixTextSize="12.0dip" app:timeTextColor="@color/blue_13" app:timeTextSize="12.0dip" />
+            <TextView android:id="@+id/tv_create_time" android:visibility="gone" style="@style/text12_999_50" />
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_line" android:background="@mipmap/freeze_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="29.0dip" android:layout_marginTop="9.5dip" android:layout_marginRight="29.0dip" android:layout_below="@id/rl_time" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="29.0dip" android:layout_below="@id/iv_line">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.5dip">
+                <TextView android:id="@+id/title_all_votes" android:text="@string/all_votes" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/text12_02_50" />
+                <TextView android:textStyle="bold" android:id="@+id/num_all_votes" android:layout_marginLeft="6.0dip" android:text="0" android:layout_toRightOf="@id/title_all_votes" android:layout_centerVertical="true" style="@style/text13_02" />
+                <TextView android:id="@+id/title_valid_votes" android:visibility="visible" android:layout_marginLeft="16.0dip" android:text="@string/valid_votes" android:layout_toRightOf="@id/num_all_votes" android:layout_centerVertical="true" style="@style/text12_02_50" />
+                <TextView android:textStyle="bold" android:id="@+id/num_valid_votes" android:visibility="visible" android:layout_marginLeft="6.0dip" android:text="0" android:layout_toRightOf="@id/title_valid_votes" android:layout_centerVertical="true" style="@style/text13_02" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_agree" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="16.5dip" android:layout_marginRight="29.0dip" android:src="@mipmap/proposals_voting_agree" android:scaleType="centerInside" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_bottom" android:background="@mipmap/shadow_proposal_middle_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

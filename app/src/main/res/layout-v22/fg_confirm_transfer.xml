@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/rl_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@+id/fl_root" android:background="@drawable/border_ffffff_30" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/rl_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_top" android:paddingRight="14.0dip" android:layout_width="fill_parent" android:layout_height="67.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/iv_close_one" android:paddingLeft="20.0dip" android:layout_width="100.0dip" android:layout_height="fill_parent">
+                    <ImageView style="@style/imagex" />
+                </LinearLayout>
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirmtransaction" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:id="@+id/v_line" android:layout_below="@id/rl_top" style="@style/line7" />
+            <LinearLayout android:gravity="center_horizontal" android:id="@+id/rl_middle_two" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="14.0dip" android:layout_below="@id/v_line">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_real_money" android:text="1TRX" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="2.0sp" android:autoSizePresetSizes="@array/auto_size_text_sizes" android:autoSizeMinTextSize="12.0sp" android:autoSizeMaxTextSize="100.0sp" style="@style/text14_02_100" />
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_from_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/rl_middle_two">
+                <TextView android:id="@+id/tv_from_middle" android:layout_marginLeft="26.0dip" android:minWidth="70.0dip" android:text="@string/transfer_from" style="@style/text14_02_50_m" />
+                <TextView android:ellipsize="middle" android:gravity="right" android:id="@+id/tv_from_address" android:layout_marginLeft="37.0dip" android:layout_marginRight="26.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/tv_from_middle" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_from_address">
+                <TextView android:id="@+id/tv_middle" android:layout_marginLeft="26.0dip" android:minWidth="70.0dip" android:text="@string/transfer_to" style="@style/text14_02_50_m" />
+                <TextView android:ellipsize="middle" android:gravity="right" android:id="@+id/tv_address" android:layout_marginLeft="37.0dip" android:layout_marginRight="26.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/tv_middle" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_address">
+                <TextView android:id="@+id/tv_note_info" android:layout_marginLeft="26.0dip" android:minWidth="70.0dip" android:text="@string/note" android:layout_centerVertical="true" style="@style/text14_02_50_m" />
+                <TextView android:ellipsize="end" android:gravity="right" android:id="@+id/tv_note" android:layout_width="fill_parent" android:layout_marginLeft="37.0dip" android:layout_marginRight="26.0dip" android:text="" android:maxLines="1" android:layout_toRightOf="@id/tv_note_info" android:layout_centerVertical="true" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <View android:id="@+id/v_middle" android:layout_marginLeft="26.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="26.0dip" android:layout_below="@id/rl_note" style="@style/line7" />
+            <RelativeLayout android:id="@+id/rl_fee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_below="@id/v_middle">
+                <TextView android:layout_marginLeft="26.0dip" android:text="@string/fee" android:layout_centerVertical="true" style="@style/text14_02_50_m" />
+                <TextView android:id="@+id/tv_fee" android:layout_marginRight="26.0dip" android:text="0 TRX" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_middle_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_fee">
+                <TextView android:layout_marginLeft="26.0dip" android:text="@string/resource" style="@style/text14_02_50_m" />
+                <TextView android:id="@+id/tv_fee_amount_bw" android:layout_marginRight="26.0dip" android:text="@string/default_bandwidth_0" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/ll_middle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_middle_three">
+                <TextView android:id="@+id/tv_no_bandwidth" android:layout_marginLeft="26.0dip" android:layout_marginRight="26.0dip" android:text="@string/no_band_width" style="@style/text14_08" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ll_energy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/ll_middle">
+                <TextView android:id="@+id/tv_no_energy" android:layout_marginLeft="26.0dip" android:layout_marginRight="26.0dip" android:text="@string/trc20_transfer" style="@style/text14_08" />
+            </LinearLayout>
+            <Button android:textColor="@color/white" android:id="@+id/bt_go" android:background="@drawable/selector_bg_blue_gray_no_shadow" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="28.0dip" android:text="@string/confirm" android:layout_below="@id/ll_energy" android:textAllCaps="false" android:layout_marginHorizontal="15.0dip" android:layout_marginVertical="28.0dip" style="@style/bt40_16" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

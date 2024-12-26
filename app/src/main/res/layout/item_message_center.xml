@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/item_layout" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="4.0dip" android:src="@mipmap/message_payment_icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@+id/rl_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/iv_icon">
+        <RelativeLayout android:id="@+id/rl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Transfer Success" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray_9B" android:id="@+id/tv_out_account_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/message_center_from_title" android:layout_below="@id/rl_title" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray_9B" android:ellipsize="middle" android:id="@+id/tv_out_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_out_account_title" android:layout_alignBaseline="@id/tv_out_account_title" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray_9B" android:id="@+id/tv_account_receive_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/message_center_to_title" android:layout_below="@id/tv_out_account_title" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/gray_9B" android:ellipsize="middle" android:id="@+id/tv_account_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:singleLine="true" android:layout_toRightOf="@id/tv_account_receive_title" android:layout_alignBaseline="@id/tv_account_receive_title" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_9B" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="--" android:layout_below="@id/tv_account_receive_title" />
+    </RelativeLayout>
+    <View android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/rl_info" style="@style/line5" />
+</RelativeLayout>

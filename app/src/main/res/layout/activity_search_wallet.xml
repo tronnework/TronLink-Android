@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_search" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/roundborder_ebedf0_8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText android:textSize="14.0dip" android:textColor="@color/black_23" android:textColorHint="@color/gray_9B" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/et_search" android:background="@null" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/input_wallet_name_address" android:lines="1" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_clear" android:visibility="visible" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginRight="5.0dip" android:src="@mipmap/ic_search_delete" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/black_6d" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="@string/cancle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_recent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_search">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_select_wallet_decoration" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_recent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ll_search">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_select_wallet_decoration" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_search_result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    </LinearLayout>
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_result_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_below="@id/ll_search" app:icon="@mipmap/ic_search_wallet_no_result" app:no_net_text="@string/no_matched_wallet" app:reloadable="false" />
+</RelativeLayout>

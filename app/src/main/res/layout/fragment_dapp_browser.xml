@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tron.wallet.common.components.browser.BrowserContent android:id="@+id/browser_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dapp_title_view" />
+    <com.tron.wallet.business.tabdapp.component.DAppTitleView android:id="@+id/dapp_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:page_mode="1" />
+    <com.tron.wallet.common.components.NoNetView android:id="@+id/no_net_view" android:background="@color/white" android:paddingTop="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dapp_title_view" app:icon="@mipmap/ic_no_net" app:no_net_text="net_unavailable" />
+</RelativeLayout>

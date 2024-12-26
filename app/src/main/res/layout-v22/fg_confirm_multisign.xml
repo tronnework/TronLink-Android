@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_bottom_next" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_marginHorizontal="20.0dip">
+        <TextView android:gravity="center" android:id="@+id/tv_bottom_next" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/next_step" android:layout_centerInParent="true" style="@style/bt44_14_ripple_black" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_bottom_next">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@+id/tv_permission_title" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/permission" style="@style/text14_23" />
+        <RelativeLayout android:id="@+id/rl_permission_select" android:background="@drawable/roundborder_ebedf0_16" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/tv_permission_title">
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/tv_selected_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@+id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@mipmap/ic_mutilsign_arrow_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rl_permission_list" android:background="@drawable/border_f7f7f7_10" android:paddingLeft="12.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:overScrollMode="never" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:id="@+id/tv_failure_time_title" android:layout_marginLeft="20.0dip" android:text="@string/failure_time" style="@style/text16_02_1" />
+            <TextView android:textColor="@color/gray_9B" android:layout_marginLeft="4.0dip" android:text="@string/failure_time_limit" style="@style/text12" />
+        </LinearLayout>
+        <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/errorEt_invalid_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/tv_failure_time_title" android:layout_centerVertical="true">
+            <RelativeLayout android:background="@drawable/roundborder_ebedf0_16" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/gray_9B" android:id="@+id/tv_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/failure_time_h" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/tv_invalid_time" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="24" android:layout_toLeftOf="@id/tv_h" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </com.tron.wallet.common.components.ErrorEdiTextLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black_23" android:text="@string/confirm_sign_progress" style="@style/text16_02_1" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/gray_9B" android:id="@+id/tv_signature_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.tron.wallet.common.components.SignatureProgressView android:id="@+id/progress_signature" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rl_address_weight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="20.0dip" android:overScrollMode="never" />
+    </LinearLayout>
+</RelativeLayout>

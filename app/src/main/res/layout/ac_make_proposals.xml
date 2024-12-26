@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="60.0dip">
+        <TextView android:id="@+id/tv_title" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/modify_parameter" style="@style/text14_99" />
+        <RelativeLayout android:background="@mipmap/transfer_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="41.0dip" android:layout_marginBottom="40.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textStyle="bold" android:gravity="center" android:id="@+id/tv_confirm" android:background="@drawable/roundborder_blue_30_30" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/make_proposal" android:layout_alignParentBottom="true" style="@style/text17_ff" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@+id/sign_wait" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:gravity="center" android:id="@+id/tv_sign_wait" android:background="@drawable/selector_bg_black" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sign_wait" android:maxLines="1" android:layout_centerHorizontal="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10.0sp" style="@style/text15_ff" />
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/ll_tab_count" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="2.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                    <com.tron.wallet.common.components.BadgeButton android:id="@+id/redView" app:btnBadgeColor="@color/yellow_ee" app:btnBadgeText="0" style="@style/BadgeButton.Normal" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/sign_already" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:gravity="center" android:id="@+id/tv_sign_already" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sign_already" android:maxLines="1" android:layout_centerHorizontal="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10.0sp" style="@style/text15_02_30" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/sign_success" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:gravity="center" android:id="@+id/tv_sign_success" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sign_success" android:maxLines="1" android:layout_centerHorizontal="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10.0sp" style="@style/text15_02_30" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@+id/sign_failure" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0">
+                <TextView android:gravity="center" android:id="@+id/tv_sign_failure" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sign_failure" android:maxLines="1" android:layout_centerHorizontal="true" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10.0sp" style="@style/text15_02_30" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:id="@+id/tv_limit" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/deal_sign_limit" style="@style/text12_9b" />
+</LinearLayout>

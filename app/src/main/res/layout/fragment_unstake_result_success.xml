@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_result" android:layout_width="60.0dip" android:layout_height="65.0dip" android:layout_marginTop="77.0dip" android:src="@mipmap/ic_unstake_result_success" android:layout_centerHorizontal="true" />
+    <TextView android:textStyle="bold" android:id="@+id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/unstake_result_success" android:layout_below="@id/iv_result" android:layout_centerHorizontal="true" style="@style/text18_23" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_result_container" android:background="@drawable/roundborder_f9fbfd_radius_8" android:paddingLeft="@dimen/dp_20" android:paddingTop="18.0dip" android:paddingRight="@dimen/dp_20" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/dp_20" android:layout_marginRight="15.0dip" android:layout_below="@id/tv_result">
+        <RelativeLayout android:id="@+id/rl_resource_first" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_left_first" android:text="@string/unstake_result_released_energy" android:layout_centerVertical="true" style="@style/text14_6d" />
+            <TextView android:textStyle="bold" android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_first" android:layout_marginLeft="16.0dip" android:text="200trx" android:singleLine="true" android:layout_toRightOf="@id/tv_left_first" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_23" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_resource_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:id="@+id/tv_left_second" android:text="释放带宽" android:layout_centerVertical="true" style="@style/text14_6d" />
+            <TextView android:textStyle="bold" android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_right_second" android:layout_marginLeft="16.0dip" android:text="200trx" android:singleLine="true" android:layout_toRightOf="@id/tv_left_second" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_23" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_vote_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@mipmap/dash_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="19.0dip" />
+            <TextView android:id="@+id/tv_vote_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/unstake_result_clear_vote" style="@style/text14_23" />
+            <Button android:id="@+id/btn_vote_again" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/unstake_result_vote_again" style="@style/bt44_14_ripple_02_12_with_transparent_stroke" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:enabled="true" android:id="@+id/btn_done_success" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/dp_40" android:text="@string/btn_result_done" android:layout_alignParentBottom="true" style="@style/bt44_14_ripple_black" />
+</RelativeLayout>

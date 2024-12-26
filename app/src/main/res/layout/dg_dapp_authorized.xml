@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/top" android:background="@drawable/border_ffffff_24" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/iv_close" android:background="@mipmap/ic_dapp_pop_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_host" android:layout_marginLeft="35.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="35.0dip" android:text="" android:singleLine="true" android:layout_centerHorizontal="true" style="@style/text24_23" />
+        <ImageView android:id="@+id/iv_is_black" android:background="@mipmap/ic_is_black" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="29.0dip" android:layout_toRightOf="@id/tv_host" />
+        <TextView android:gravity="center" android:id="@+id/tv_top" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_marginTop="4.0dip" android:text="@string/requesting_address" android:layout_below="@id/tv_host" android:layout_centerHorizontal="true" style="@style/text14_6d" />
+        <RelativeLayout android:id="@+id/rl_middle" android:background="@drawable/roundborder_f7f8fa_8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="30.0dip" android:layout_below="@id/tv_top">
+            <ImageView android:id="@+id/ic_wallet" android:background="@mipmap/ic_wallet_hot" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:layout_toRightOf="@id/ic_wallet" android:layout_centerVertical="true">
+                <TextView android:textStyle="bold" android:ellipsize="middle" android:id="@+id/tv_wallet_name" android:layout_width="150.0dip" android:text="" android:singleLine="true" style="@style/text16_232c" />
+                <TextView android:ellipsize="end" android:id="@+id/tv_trx_num" android:layout_width="150.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:maxLines="1" android:layout_alignParentRight="true" style="@style/text14_9b" />
+                <LinearLayout android:id="@+id/wallet_address_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_wallet_name">
+                    <TextView android:id="@+id/tv_wallet_address" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:drawablePadding="6.0dip" android:layout_weight="1.0" style="@style/text12_9b" />
+                    <ImageView android:id="@+id/iv_copy" android:layout_width="@dimen/dp_ic_mini" android:layout_height="@dimen/dp_ic_mini" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/relation_copy" android:scaleType="centerInside" android:layout_toRightOf="@id/tv_wallet_address" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/tips_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_middle">
+            <TextView android:id="@+id/tv_tips" android:visibility="gone" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:text="@string/dapp_is_black_tips" style="@style/text12_ec" />
+            <TextView android:id="@+id/tv_bottom" android:visibility="gone" android:layout_marginLeft="14.0dip" android:text="@string/ensure_site" android:drawableLeft="@drawable/gray_circle_808d98" android:drawablePadding="6.0dip" style="@style/text14_6d" />
+            <TextView android:id="@+id/tv_bottom2" android:visibility="gone" android:layout_marginLeft="14.0dip" android:layout_marginTop="8.0dip" android:text="@string/access_address" android:drawableLeft="@drawable/gray_circle_808d98" android:drawablePadding="6.0dip" android:layout_below="@id/tv_bottom" style="@style/text14_6d" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="36.0dip" android:layout_below="@id/tips_layout">
+            <TextView android:gravity="center" android:id="@+id/tv_reject" android:background="@drawable/roundborder_ebedf0_12_stroke" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/reject" android:layout_weight="1.0" style="@style/text14_23" />
+            <TextView android:gravity="center" android:id="@+id/tv_approve" android:background="@drawable/roundborder_23_12" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:text="@string/dapp_approve2" android:layout_weight="1.0" style="@style/text14_ff" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

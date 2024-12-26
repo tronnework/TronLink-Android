@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@mipmap/vote_middle" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/remaining_tp" android:layout_marginTop="8.0dip" android:text="@string/surplus_available" style="@style/text14_ff_50" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_tp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/remaining_tp">
+        <TextView android:ellipsize="end" android:id="@+id/surplus_available" android:text="0" android:singleLine="true" style="@style/text24_FF" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_getvote" android:background="@drawable/roundborder_white20_7" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="1.5dip">
+            <TextView android:textColor="@color/white" android:background="@drawable/ripple_transparent" android:text="@string/get_more_vote" style="@style/text11_ff" />
+            <ImageView android:background="@mipmap/arraw_vote_freeze" android:layout_width="5.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_voting_reward" android:layout_marginTop="8.0dip" android:text="@string/voting_reward" android:layout_below="@id/ll_tp" style="@style/text14_ff_50" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_reward" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_voting_reward">
+        <TextView android:textStyle="normal" android:ellipsize="end" android:id="@+id/trx_reward" android:text="0 TRX" android:singleLine="true" android:layout_centerVertical="true" style="@style/text24_ff" />
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/ll_getReward" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/roundborder_white20_7" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="3.0dip">
+                <TextView android:textColor="@color/white_50" android:gravity="center_vertical" android:id="@+id/tv_awards" android:background="@drawable/ripple_transparent" android:text="@string/awards" style="@style/text11_ff" />
+                <ImageView android:id="@+id/iv_rewards" android:background="@mipmap/arraw_vote_unclick" android:layout_width="5.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_vote_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_below="@id/ll_reward">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/roundborder_white_11" android:paddingTop="7.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:layout_weight="1.0">
+            <TextView android:text="@string/my_votes" style="@style/text12_ff_50" />
+            <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/my_vote" android:layout_marginTop="4.0dip" android:text="0" android:singleLine="true" style="@style/text16_ff" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/roundborder_white_11" android:paddingTop="7.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:text="@string/alltransfer4" style="@style/text12_ff_50" />
+            <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/total_vote" android:layout_marginTop="4.0dip" android:text="0" android:singleLine="true" style="@style/text16_ff" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

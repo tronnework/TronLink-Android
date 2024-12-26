@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="center_vertical" android:id="@+id/tv_content" style="@style/text14_13"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

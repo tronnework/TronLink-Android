@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="20.0dip">
+        <TextView android:id="@+id/tv_address_title" android:text="@string/address" android:layout_centerVertical="true" style="@style/text16_02_50_m" />
+        <RelativeLayout android:id="@+id/rl_address_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:visibility="visible" android:layout_width="18.0dip" android:layout_height="16.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="35.0dip" android:src="@mipmap/ic_proposal_address" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.tron.wallet.common.components.ErrorEdiTextLayout android:id="@+id/eet_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="34.0dip" app:text_Error="11111">
+        <RelativeLayout android:background="@drawable/roundborder_eeeeee" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.tron.wallet.common.components.TrimEditText android:textSize="13.0dip" android:id="@+id/et_address" android:text="" android:hint="@string/please_input_address" android:lines="1" android:layout_toLeftOf="@id/rl_clear" android:inputType="text" style="@style/et48_ee_1" />
+            <RelativeLayout android:id="@+id/rl_clear" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:background="@mipmap/proposal_address_clear" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.tron.wallet.common.components.ErrorEdiTextLayout>
+    <Button android:enabled="true" android:textSize="16.0dip" android:textColor="@color/white" android:id="@+id/confirm" android:background="@drawable/selector_write_mnemonic_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:text="@string/confirm" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+    <TextView android:gravity="center" android:id="@+id/tv_description" android:layout_marginLeft="34.0dip" android:layout_marginRight="34.0dip" android:text="With the multi-signature, you can manipulate the freezing and unfreezing of other addresses, which requires the address give you the appropriate permissions." android:lineSpacingMultiplier="1.2" style="@style/text12_999_50" />
+</LinearLayout>

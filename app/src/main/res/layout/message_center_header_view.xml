@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_common_left" android:layout_width="37.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_common_left" android:background="@mipmap/ic_left_back" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="22.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/black_02" android:ellipsize="end" android:id="@+id/tv_common_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="235.0dip" android:maxLines="1" android:layout_toRightOf="@id/ll_common_left" android:layout_centerVertical="true" />
+    <ImageView android:id="@+id/iv_question" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@mipmap/ic_question_tip" android:layout_toRightOf="@id/tv_common_title" android:layout_centerVertical="true" />
+</RelativeLayout>

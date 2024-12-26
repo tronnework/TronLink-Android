@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@+id/rl_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@+id/ll_logo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <RelativeLayout android:background="@drawable/bg_login_logo" android:layout_width="88.0dip" android:layout_height="88.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="60.0dip" android:src="@mipmap/ic_launcher" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/login_arrow" />
+        <RelativeLayout android:background="@drawable/bg_login_logo" android:layout_width="88.0dip" android:layout_height="88.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="60.0dip" android:src="@mipmap/ic_launcher" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ff888998" android:id="@+id/tv_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="22.0dip" android:text="@string/uninstall_tronlink" android:layout_below="@id/ll_logo" android:lineSpacingMultiplier="1.2" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff888998" android:id="@+id/tv_bottom_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:lineSpacingMultiplier="1.2" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_above="@id/tv_bottom_desc" android:layout_alignLeft="@id/tv_desc" android:layout_alignRight="@id/tv_desc">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_googleplay" android:background="@drawable/roundborder_dd7a" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/googlePlay_install" android:layout_weight="1.0" android:layout_below="@id/view_border" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@+id/tv_local_install" android:background="@drawable/roundborder_636acc" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="@string/local_install" android:layout_weight="1.0" android:layout_below="@id/view_border" />
+    </LinearLayout>
+</RelativeLayout>

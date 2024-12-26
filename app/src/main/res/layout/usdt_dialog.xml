@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerInParent="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@mipmap/usdt_zh" fresco:viewAspectRatio="0.7" />
+        <ImageView android:id="@+id/iv_close" android:background="@mipmap/usdt_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="40.0dip" android:layout_below="@id/iv_pic" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

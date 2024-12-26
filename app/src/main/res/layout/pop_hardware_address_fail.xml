@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_device_not_matched" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/tv_device_not_matched" android:layout_marginTop="12.0dip" android:text="@string/device_not_matched" android:layout_centerHorizontal="true" style="@style/text20_02" />
+    <ImageView android:id="@+id/iv_close_for_address_error" android:background="@mipmap/ic_popup_close" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="21.0dip" android:layout_alignParentRight="true" />
+    <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="20.0dip" android:text="@string/check_hardware_address" android:layout_below="@id/tv_device_not_matched" style="@style/text14_02_50" />
+</RelativeLayout>

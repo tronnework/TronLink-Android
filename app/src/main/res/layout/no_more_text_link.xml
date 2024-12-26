@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_loading_asset_header" android:layout_centerInParent="true" app:tint="@color/gray_99_50" />
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_loading_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@+id/iv_failed" android:layout_width="@dimen/dp_20" android:layout_height="14.0dip" android:src="@mipmap/ic_load_fail_footer" android:layout_centerVertical="true" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/loading_fail_retry" android:layout_toRightOf="@id/iv_failed" android:layout_centerVertical="true" style="@style/text12_999_50" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_no_more_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40">
+        <TextView android:id="@+id/tv_no_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_more_asset_nft" style="@style/text12_999_50" />
+        <TextView android:textColor="@color/blue_13" android:id="@+id/tv_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/no_more_asset_nft_extra" android:layout_toRightOf="@id/tv_no_more" style="@style/text12_999_50" />
+    </RelativeLayout>
+</RelativeLayout>

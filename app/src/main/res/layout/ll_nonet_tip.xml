@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_nonet_tip" android:background="#4d0e0f11" android:clickable="true" android:layout_width="fill_parent" android:layout_height="34.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_nonet_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/know_coldwallet" />
+        <ImageView android:id="@+id/iv_nonet_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@mipmap/ic_nonet_arrow" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_nonet_tip_close" android:clickable="true" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="15.0dip" android:src="@mipmap/ic_nonet_tip_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

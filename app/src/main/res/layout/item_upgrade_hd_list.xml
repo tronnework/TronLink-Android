@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/root" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/v_top" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <TextView android:textStyle="bold" android:id="@+id/tv_wallet_name" android:text="---" android:layout_below="@id/v_top" style="@style/text12_23" />
+    <TextView android:id="@+id/tv_wallet_assets" android:text="--- " android:layout_below="@id/v_top" android:layout_alignParentRight="true" style="@style/text12_6d" />
+    <TextView android:id="@+id/tv_wallet_address" android:layout_marginTop="8.0dip" android:text="---" android:layout_below="@id/tv_wallet_assets" style="@style/text12_6d" />
+    <View android:id="@+id/line" android:layout_marginTop="12.0dip" android:layout_below="@id/tv_wallet_address" style="@style/line_white" />
+</RelativeLayout>

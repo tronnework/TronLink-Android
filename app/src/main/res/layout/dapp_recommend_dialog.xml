@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_ffffff_3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@mipmap/dapp_dialog_bg" android:layout_width="fill_parent" android:layout_height="227.0dip">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_logo" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="197.0dip" android:src="@mipmap/trx" android:scaleType="centerCrop" fresco:failureImage="@mipmap/dapp_recom_default" fresco:failureImageScaleType="centerCrop" fresco:placeholderImage="@mipmap/dapp_recom_default" fresco:placeholderImageScaleType="centerCrop" fresco:roundedCornerRadius="12.0dip" />
+            </RelativeLayout>
+            <TextView android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/dapp_recom_title" android:layout_marginLeft="28.0dip" android:layout_marginRight="27.0dip" android:text="" android:singleLine="true" android:lineSpacingMultiplier="1.3" style="@style/text16_50" />
+            <TextView android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/dapp_recom_centent" android:layout_marginLeft="28.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="27.0dip" android:text="" android:maxLines="3" android:lineSpacingMultiplier="1.3" style="@style/text14_88" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_enter" android:background="@drawable/roundborder_135dcd_10" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="28.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="18.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/recom_close" android:background="@mipmap/dapp_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="29.0dip" />
+    </LinearLayout>
+</RelativeLayout>

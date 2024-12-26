@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_white_8" android:layout_width="240.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/li_browser_newtab" style="@style/browser_menu_li">
+        <TextView android:text="@string/browser_new_tab" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:src="@mipmap/ic_browser_new_tab_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_refresh" android:layout_height="50.0dip" style="@style/browser_menu_li">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/refresh_divider">
+            <TextView android:text="@string/browser_refresh" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+            <ImageView android:src="@mipmap/ic_browser_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        </RelativeLayout>
+        <View android:id="@+id/refresh_divider" android:layout_alignParentBottom="true" style="@style/browser_menu_gap" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_bookmark" style="@style/browser_menu_li">
+        <TextView android:id="@+id/tv_browser_bookmark" android:text="@string/browser_add_to_bookmark" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:id="@+id/iv_browser_bookmark" android:src="@mipmap/ic_browser_add_bookmark" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_history" style="@style/browser_menu_li">
+        <TextView android:text="@string/browser_menu_history" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:src="@mipmap/ic_browser_history" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_bookmark_package" android:layout_height="50.0dip" style="@style/browser_menu_li">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bookmark_divider">
+            <TextView android:text="@string/browser_bookmark_manage" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+            <ImageView android:src="@mipmap/ic_browser_bookmark_manage" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        </RelativeLayout>
+        <View android:id="@+id/bookmark_divider" android:layout_alignParentBottom="true" style="@style/browser_menu_gap" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_switch_wallet" style="@style/browser_menu_li">
+        <TextView android:text="@string/browser_switch_wallet" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:src="@mipmap/ic_switch_wallet" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_dapp_link_manager" style="@style/browser_menu_li">
+        <TextView android:text="@string/browser_dapp_manager" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:src="@mipmap/ic_browser_dapp_manage" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_share" style="@style/browser_menu_li">
+        <TextView android:text="@string/browser_share" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:src="@mipmap/ic_browser_share" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_open_outside" android:layout_height="50.0dip" style="@style/browser_menu_li">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider_open_outside">
+            <TextView android:text="@string/browser_open_outside" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+            <ImageView android:src="@mipmap/ic_browser_open_outside" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        </RelativeLayout>
+        <View android:id="@+id/divider_open_outside" android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_dapp_report" android:layout_height="50.0dip" style="@style/browser_menu_li">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/divider_dapp_report">
+            <TextView android:text="@string/browser_dapp_report" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+            <ImageView android:src="@mipmap/ic_browser_dapp_report" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        </RelativeLayout>
+        <View android:id="@+id/divider_dapp_report" android:layout_alignParentBottom="true" style="@style/browser_menu_gap" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/li_browser_debug_page" style="@style/browser_menu_li">
+        <TextView android:id="@+id/tv_browser_debug" android:text="@string/browser_debug_on" android:layout_centerVertical="true" style="@style/browser_menu_title" />
+        <ImageView android:id="@+id/iv_browser_debug" android:src="@mipmap/ic_browser_debug_on" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/browser_menu_icon" />
+        <View android:id="@+id/divider_debug" android:layout_alignParentBottom="true" style="@style/browser_menu_divider" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/li_browser_close_page" style="@style/browser_menu_li">
+        <TextView android:text="@string/browser_close_page" style="@style/browser_menu_title" />
+        <ImageView android:src="@mipmap/ic_browser_close_page" android:layout_alignParentRight="true" style="@style/browser_menu_icon" />
+    </RelativeLayout>
+</LinearLayout>

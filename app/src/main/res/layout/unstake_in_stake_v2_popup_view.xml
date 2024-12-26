@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ripple_white_corner_16" android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingRight="20.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_stake_v2_pop" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textStyle="bold" android:id="@+id/title" android:layout_marginTop="10.0dip" android:text="质押机制已升级为质押 2.0" android:layout_below="@id/iv_icon" android:layout_centerHorizontal="true" style="@style/text18_23" />
+    <TextView android:id="@+id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="1. 质押已升级全新 2.0 版本，支持随时解锁 TRX" android:layout_below="@id/title" android:lineSpacingExtra="6.0dip" style="@style/text14_6d" />
+    <TextView android:id="@+id/tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="2. 质押获得的网络资源（能量及带宽）可随时代理给他人使用" android:layout_below="@id/tv_1" android:lineSpacingExtra="6.0dip" style="@style/text14_6d" />
+    <TextView android:id="@+id/tv_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="3. 同时质押 1.0 不再支持质押，建议您解锁后参与质押 2.0" android:layout_below="@id/tv_2" android:lineSpacingExtra="6.0dip" style="@style/text14_6d" />
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_action_2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/tv_3">
+        <Button android:id="@+id/btn_confirm" android:layout_marginBottom="@dimen/dp_10" android:text="了解更多" style="@style/bt44_14_ripple_black" />
+        <Button android:id="@+id/btn_cancel" android:text="我知道了" style="@style/bt44_16_ripple_transparent" />
+    </LinearLayout>
+</RelativeLayout>

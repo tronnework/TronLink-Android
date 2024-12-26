@@ -1,0 +1,279 @@
+<html lang="en" style="font-size: 58.5938px;">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>TronLink冷钱包教程</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+    </style>
+
+    <style type="text/css">
+      .use-guide {
+        padding: 20px;
+      }
+
+      .use-guide .title {
+        font-size: 25px;
+        color: #021c31;
+        line-height: 35px;
+      }
+
+      .use-guide .ready {
+        font-size: 16px;
+        color: #021c31;
+        line-height: 35px;
+      }
+
+      .use-guide .ready-list {
+        background: rgba(2, 28, 49, 0.02);
+        border-radius: 4px;
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #021c31;
+      }
+
+      .use-guide .ready-list li {
+        line-height: 21px;
+      }
+
+      .use-guide .note {
+        font-size: 12px;
+        color: #0838c7;
+        padding: 15px 0;
+        line-height: 18px;
+      }
+
+      .use-guide .content {
+        padding: 0px 0 15px;
+      }
+
+      .use-guide .content .item h6 {
+        font-size: 16px;
+        color: #021c31;
+        line-height: 25px;
+        margin-bottom: 5px;
+      }
+
+      .use-guide .content .item p {
+        font-size: 14px;
+        color: #021c31;
+        line-height: 20px;
+      }
+
+      .img-content {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+      }
+       
+      .img-content img{
+        width: 100%;
+      }
+
+      .use-guide .content .item .img-content .img-two {
+        width: 83%;
+      }
+
+      .use-guide .tips {
+        font-size: 14px;
+        color: #0838c7;
+        line-height: 30px;
+      }
+
+      .use-guide .tips-list {
+        font-size: 14px;
+        /* color: #999999; */
+      }
+
+      .use-guide .tips-list li {
+        line-height: 21px;
+      }
+      .color-red {
+        color: #ff4646;
+      }
+    </style>
+
+    <style type="text/css">
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      #root {
+        background: #fff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      ul li {
+        list-style: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div data-reactroot="" class="use-guide">
+        <p class="title"><span>TronLink冷钱包教程</span></p>
+        <h5 class="ready"><span>准备工作:</span></h5>
+        <ul class="ready-list">
+          <li>
+            <span>1. 准备两部没有刷机过, 且你认为非常安全的手机，一部进入热钱包模式，另一部进入冷钱包模式。</span
+            >
+          </li>
+          <li>
+            <span>2. 两部手机都需要安装TronLink钱包。为了保证安全，您需要从正规渠道下载，包括TronLink官网、谷歌应用商店，Appstore海外苹果应用商店。</span
+            >
+          </li>
+          <li>
+            <span
+              >3. 下载后将作为冷钱包的设备断网或开启飞行模式，然后点击「切换冷钱包模式」进行冷钱包相关设置。（这部手机一定要断网，因为这是存有你私钥的设备）</span
+              ></span
+            >
+          </li>
+        </ul>
+        <div class="img-content">
+              <img class="img-three" alt="step2" src="coldwallet.png" />
+        </div>
+        <div class="content">
+          <div class="item">
+            <h6><span>第一步</span></h6>
+            <p>
+              <span
+                >冷钱包模式：点击接收，展示冷钱包二维码。</span
+              >
+            </p>
+           <div class="img-content">
+             <img class="img-three" alt="step1" src="step1.png" />
+           </div>
+          </div>
+          <div class="item">
+            <h6><span>第二步</span></h6>
+            <p>
+              <span
+                >热钱包模式：点击首页右上方的添加钱包按钮—选择配对冷钱包，扫描冷钱包模式的二维码，成功创建该冷钱包的热钱包模式。</span
+              >
+            </p>
+           <div class="img-content">
+             <img class="img-three" alt="step2" src="step2.png" />
+           </div>
+           <div class="img-content">
+            <img class="img-three" alt="step2" src="step3.png" />
+          </div>
+          <div class="img-content">
+            <img class="img-three" alt="step2" src="step4.png" />
+          </div>
+          </div>
+          <div class="item">
+            <h6><span>第三步</span></h6>
+            <p>
+              <span
+                >在热钱包模式下-冷钱包下，可以进行钱包内所有支持的交易类型，包括转账，冻结解冻，投票，多重签名等，在生成这些交易后，会跳转至二维码页面。</span
+              >
+            </p>
+           <div class="img-content">
+             <img class="img-three" alt="step3" src="step5.jpeg" />
+           </div>
+          </div>
+          <div class="item">
+            <h6><span>第四步</span></h6>
+            <p>
+              <span>在冷钱包模式下，扫描第三步热钱包模式下钱包的二维码，且签名验证，冷钱包模式则出现二维码。
+              </span>
+            </p>
+           <div class="img-content">
+             <img class="img-three" alt="step4" src="step6.png" />
+           </div>
+           <div class="img-content">
+            <img class="img-three" alt="step4" src="step7.jpg" />
+          </div>
+          </div>
+          <div class="item">
+            <h6><span>第五步</span></h6>
+            <p>
+              <span
+                >用热钱包模式扫描冷钱包模式的二维码，交易成功。
+
+</span
+              >
+            </p>
+<!--            <div class="img-content">-->
+<!--              <img class="img-two" alt="step5" src="step5_zh.png" />-->
+<!--            </div>-->
+          </div>
+        </div>
+        <div>
+          <p class="tips"><span>温馨提示</span></p>
+          <ul class="tips-list">
+            <li>
+              <span
+                >1.未联网的手机成为冷钱包，里面是包含私钥信息的，所以一定要做好冷钱包的备份且需悉心保管。</span
+              >
+            </li>
+            <li><span>2.冷钱包模式创建之后，一定不要联网。</span></li>
+            <li>
+              <span
+                >3.  热钱包模式下的冷钱包需配合冷钱包模式的离线签名，方能完成转账交易。</span
+              >
+            </li>
+            <li>
+              <span
+                >4. 可通过热钱包模式来查看冷钱包的资产变化。</span
+              >
+            </li>
+            <li>
+              <span
+                >5. 一旦选择冷钱包模式或热钱包模式就无法再切换模式。</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

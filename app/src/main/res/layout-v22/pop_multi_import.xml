@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_mark" android:background="@color/gray_232c41_60" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/roundborder_white_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:layout_centerInParent="true" android:layout_marginHorizontal="15.0dip" android:layout_marginVertical="20.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="30.0dip" android:src="@mipmap/icon_bell" />
+            <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_marginTop="10.0dip" android:text="@string/pop_import_detail_1" style="@style/text18_23" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="20.0dip" android:text="@string/pop_import_detail_2" android:layout_marginHorizontal="20.0dip" style="@style/text14_ec" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_f7f8fa_8" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:layout_marginHorizontal="20.0dip" android:layout_marginVertical="20.0dip">
+                <TextView android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/pop_import_detail_3" android:layout_marginHorizontal="15.0dip" style="@style/text14_6d" />
+                <TextView android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/pop_import_detail_4" android:layout_marginHorizontal="15.0dip" style="@style/text14_6d" />
+                <TextView android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/pop_import_detail_5" android:layout_marginHorizontal="15.0dip" style="@style/text14_6d" />
+                <TextView android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/pop_import_detail_6" android:layout_marginHorizontal="15.0dip" style="@style/text14_6d" />
+            </LinearLayout>
+            <TextView android:id="@+id/tv_url" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="24.0dip" android:text="@string/pop_import_detail_7" android:layout_marginHorizontal="20.0dip" style="@style/text14_23" />
+            <Button android:id="@+id/bt_know" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="@string/pop_import_detail_button" android:layout_marginHorizontal="20.0dip" style="@style/bt44_14_ripple_black_round_8" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

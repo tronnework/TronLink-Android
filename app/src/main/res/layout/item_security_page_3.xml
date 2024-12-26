@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@+id/root_page_3" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/gray_F8FAFE" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_top_result_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="36.0dip" android:src="@mipmap/icon_security_safe_big" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+            <TextView android:textSize="24.0dip" android:id="@+id/tv_risk_top_num_page_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/text20_57" />
+            <TextView android:layout_gravity="center" android:id="@+id/tv_risk_top_text_page_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="1.0dip" android:text="@string/security_home_risky_items" style="@style/text20_57" />
+        </LinearLayout>
+        <TextView android:layout_gravity="center_horizontal" android:id="@+id/tv_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/security_home_update_time" style="@style/text12_9b" />
+        <com.tron.wallet.business.security.components.SecurityHorizontalView android:id="@+id/btn_restart" android:layout_width="fill_parent" android:layout_height="wrap_content" app:button_text="@string/security_home_detect_again_btn" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="24.0dip">
+            <RelativeLayout android:background="@drawable/roundborder_white_8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@+id/left" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@mipmap/icon_security_risk" android:layout_centerVertical="true" />
+                <TextView android:layout_marginLeft="12.0dip" android:text="@string/security_home_risk_items" android:layout_toLeftOf="@id/rl_page_3_1" android:layout_toRightOf="@id/left" android:layout_centerVertical="true" style="@style/text12_252B27" />
+                <RelativeLayout android:id="@+id/rl_page_3_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textStyle="bold" android:id="@+id/tv_risk_num_page_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text16_ec" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/roundborder_white_8" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@+id/right" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="12.0dip" android:src="@mipmap/icon_security_waring" android:layout_centerVertical="true" />
+                <TextView android:layout_marginLeft="12.0dip" android:text="@string/security_home_attention_items" android:layout_toLeftOf="@id/rl_page_3_2" android:layout_toRightOf="@id/right" android:layout_centerVertical="true" style="@style/text12_252B27" />
+                <RelativeLayout android:id="@+id/rl_page_3_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <TextView android:textStyle="bold" android:id="@+id/tv_waring_num_page_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" style="@style/text16_FFA928" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tron.wallet.business.security.components.SecurityItemView android:id="@+id/environment_check_click" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" />
+    <View android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/line_f5" />
+    <com.tron.wallet.business.security.components.SecurityItemView android:id="@+id/token_check_click" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" />
+    <View android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/line_f5" />
+    <com.tron.wallet.business.security.components.SecurityItemView android:id="@+id/approve_check_click" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="25.0dip" />
+    <View android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/line_f5" />
+</LinearLayout>

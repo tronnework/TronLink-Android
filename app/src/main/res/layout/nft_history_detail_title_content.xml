@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_021c31_02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_logo1" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip" app:failureImage="@mipmap/ic_nft_default" app:failureImageScaleType="centerCrop" app:placeholderImage="@mipmap/ic_nft_default" app:placeholderImageScaleType="centerCrop" app:roundAsCircle="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_02" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="20.0dip" android:text="--" android:layout_toRightOf="@id/iv_logo1" />
+        <ImageView android:id="@+id/iv_scam" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="14.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="23.0dip" android:layout_marginBottom="17.0dip" android:src="@mipmap/ic_asset_scam" android:scaleType="centerInside" android:layout_toRightOf="@id/name" />
+    </RelativeLayout>
+    <View android:background="@color/gray_b3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:alpha="0.15" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_logo2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip" app:failureImage="@mipmap/ic_nft_default" app:failureImageScaleType="centerCrop" app:placeholderImage="@mipmap/ic_nft_default" app:placeholderImageScaleType="centerCrop" app:roundAsCircle="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="4.0dip" android:layout_toRightOf="@id/iv_logo2" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black_02" android:id="@+id/asset_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black_02_50" android:id="@+id/nft_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:layout_below="@id/asset_id" android:layout_alignLeft="@id/asset_id" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

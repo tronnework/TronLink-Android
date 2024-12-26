@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black_alpha_60" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content" android:background="@drawable/roundborder_white_90" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_copy_url" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_width="14.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_dapp_copy" android:scaleType="centerCrop" />
+            <TextView android:text="@string/copy_url" style="@style/text14_50" />
+        </LinearLayout>
+        <View android:id="@+id/line" android:background="@color/gray_e9" android:layout_alignParentBottom="true" style="@style/line4" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_safari_open" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_safari" android:scaleType="centerCrop" />
+            <TextView android:text="@string/safari_open" style="@style/text14_50" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_debug" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@mipmap/ic_web_debug" android:scaleType="centerCrop" />
+            <TextView android:text="@string/web_debug" style="@style/text14_50" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_cancle" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerInParent="true">
+            <TextView android:text="@string/cancle" style="@style/text14_50" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

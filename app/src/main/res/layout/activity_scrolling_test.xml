@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@+id/state_view" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/app_bar_height" android:stateListAnimator="@drawable/appbar_elevation" app:statusBarScrim="@android:color/transparent">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapsedTitleTextAppearance="@style/collapsedTitleTextAppearanceStyle" app:contentScrim="@color/transparent" app:expandedTitleTextAppearance="@style/expandedTitleTextAppearanceStyle" app:layout_scrollFlags="scroll|exitUntilCollapsed" app:toolbarId="@id/toolbar">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" app:navigationIcon="@mipmap/ic_left_back" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_scrolling" />
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="right" android:id="@+id/gif_image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="90.0dip" android:layout_marginRight="28.0dip" app:layout_behavior="com.tron.wallet.common.components.behavior.ImageBehavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/roundborder_batch_vote" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@+id/add_to_address_book" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/add_to_address_book_v2" android:layout_marginVertical="14.0dip" style="@style/text16_02" />
+    <View android:id="@+id/line" android:background="@color/gray_b3_15" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:gravity="center" android:id="@+id/view_on_tronscan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="@string/view_on_tronscan" android:layout_marginVertical="14.0dip" style="@style/text16_02" />
+    <View android:background="@color/black_02_04" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <TextView android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="40.0dip" android:text="@string/cancel" style="@style/text16_232c" />
+</LinearLayout>

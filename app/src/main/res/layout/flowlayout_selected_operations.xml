@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/blue_13" android:orientation="vertical" android:id="@+id/tv_operation" android:background="@drawable/ripple_blue135_6_blue135" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="TransferContract" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@mipmap/ic_permission_remove" android:layout_alignRight="@id/tv_operation" />
+</RelativeLayout>

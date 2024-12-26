@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@+id/ll_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="84.0dip">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@+id/rl_state" android:background="@mipmap/green_receive" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="20.0dip" android:scaleType="fitXY" />
+                <TextView android:textStyle="bold" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:text="" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeMinTextSize="@dimen/dp_10" style="@style/text20_02" />
+                <include android:id="@+id/include_content" layout="@layout/nft_history_detail_title_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="31.0dip" android:paddingRight="31.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="31.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="11.0dip" android:src="@mipmap/send_address" />
+                    <TextView android:layout_gravity="center_vertical" android:text="@string/sending_address" style="@style/text13_99_80" />
+                    <ImageView android:id="@+id/scam_tag_sa" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="14.0dip" android:src="@mipmap/ic_asset_scam" android:scaleType="centerInside" />
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_sa" android:paddingTop="8.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@+id/tv_wallet_name_sa" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:singleLine="true" app:layout_constraintBottom_toTopOf="@id/tv_sa" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <com.tron.wallet.common.components.EllipsizedTextView android:textSize="14.0sp" android:textColor="@color/black_02_50" android:id="@+id/tv_sa" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="--" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_sa_copy" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" />
+                    <ImageView android:id="@+id/iv_sa_copy" android:layout_width="13.0dip" android:layout_height="14.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:src="@mipmap/iv_copy" android:scaleType="centerInside" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_sa" app:layout_constraintTop_toTopOf="@id/tv_sa" app:layout_constraintWidth_default="wrap" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="11.0dip" android:src="@mipmap/receive_address" />
+                    <TextView android:layout_gravity="center_vertical" android:text="@string/receiving_address" style="@style/text13_99_80" />
+                    <ImageView android:id="@+id/scam_tag" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="14.0dip" android:src="@mipmap/ic_asset_scam" android:scaleType="centerInside" />
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_ra" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="end" android:id="@+id/tv_wallet_name_ra" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:singleLine="true" app:layout_constraintBottom_toTopOf="@id/tv_ra" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <com.tron.wallet.common.components.EllipsizedTextView android:textSize="14.0sp" android:textColor="@color/black_02_50" android:id="@+id/tv_ra" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="--" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_ra_copy" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" />
+                    <ImageView android:id="@+id/iv_ra_copy" android:layout_width="13.0dip" android:layout_height="14.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:src="@mipmap/iv_copy" android:scaleType="centerInside" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_ra" app:layout_constraintTop_toTopOf="@id/tv_ra" app:layout_constraintWidth_default="wrap" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_note" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="11.0dip" android:src="@mipmap/note_iv" />
+                    <TextView android:layout_gravity="center_vertical" android:text="@string/note" style="@style/text13_99_80" />
+                </LinearLayout>
+                <TextView android:id="@+id/tv_note" android:visibility="gone" android:layout_marginTop="8.0dip" android:text="--" style="@style/text14_02_50_m" />
+                <TextView android:layout_marginTop="24.0dip" android:text="@string/contract_type" style="@style/text13_99_80" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:ellipsize="middle" android:id="@+id/tv_contract_type" android:layout_marginTop="8.0dip" android:text="" android:singleLine="true" style="@style/text14_02_50_m" />
+                    <ImageView android:id="@+id/iv_contract_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:src="@mipmap/fee_mark" />
+                </LinearLayout>
+                <TextView android:layout_marginTop="20.0dip" android:text="@string/transaction_number" style="@style/text13_99_80" />
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/ll_hash" android:paddingTop="8.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.tron.wallet.common.components.EllipsizedTextView android:ellipsize="middle" android:id="@+id/tv_tn" android:layout_width="0.0dip" android:layout_marginRight="3.0dip" android:text="--" android:singleLine="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/iv_hash_copy" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" style="@style/text14_02_50_m" />
+                    <ImageView android:id="@+id/iv_hash_copy" android:layout_width="13.0dip" android:layout_height="14.0dip" android:layout_marginRight="70.0dip" android:src="@mipmap/iv_copy" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_tn" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView android:id="@+id/tv_bn_title" android:layout_marginTop="10.0dip" android:text="@string/block_number" style="@style/text13_99_80" />
+                <TextView android:id="@+id/tv_bn" android:layout_marginTop="8.0dip" android:text="--" style="@style/text14_02_50_m" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@+id/tv_time_title" android:text="@string/transaction_time" style="@style/text13_99_80" />
+                        <TextView android:id="@+id/tv_time" android:layout_marginTop="8.0dip" android:text="--" style="@style/text14_02_50_m" />
+                        <com.tron.wallet.business.confirm.fg.component.TransactionFeeResourceView android:id="@+id/resource_info_view2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                        <TextView android:id="@+id/tv_resource_title" android:layout_marginTop="20.0dip" android:text="@string/transaction_resource" style="@style/text13_99_80" />
+                        <TextView android:id="@+id/tv_resource" android:layout_marginTop="8.0dip" android:text="--" style="@style/text14_02_50_m" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <ImageView android:id="@+id/iv_code" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_code_copy" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:layout_gravity="center_vertical" android:layout_marginRight="4.0dip" android:text="@string/copy_link" style="@style/text14_13" />
+                            <ImageView android:layout_gravity="center_vertical" android:layout_width="13.0dip" android:layout_height="14.0dip" android:src="@mipmap/iv_copy" android:scaleType="centerInside" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_fail_reason" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <TextView android:id="@+id/tv_reason_failure_title" android:text="@string/reason_failure" style="@style/text13_99_80" />
+                    <TextView android:id="@+id/tv_reason_failure" android:layout_marginTop="8.0dip" android:text="--" style="@style/text14_02_50_m" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/rl_transfer_menu" android:background="@mipmap/ic_tab_background" android:layout_width="fill_parent" android:layout_height="75.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_marginHorizontal="5.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="30.0dip" android:src="@mipmap/tronscan_logo_new" android:layout_centerVertical="true" />
+        <ImageView android:id="@+id/iv_right_icon" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:src="@mipmap/ic_token_right_arrow" android:scaleType="fitStart" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:foregroundGravity="left" />
+        <TextView android:id="@+id/tv_vdd" android:layout_marginRight="8.0dip" android:text="@string/view_detail" android:layout_toLeftOf="@id/iv_right_icon" android:layout_centerVertical="true" style="@style/text12_23" />
+    </RelativeLayout>
+</RelativeLayout>

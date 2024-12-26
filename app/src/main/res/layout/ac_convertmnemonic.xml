@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:layout_marginTop="18.0dip" android:text="@string/convert2" style="@style/text14_02" />
+        <EditText android:textSize="14.0dip" android:textColor="@color/black_50" android:textColorHint="@color/gray_C2" android:gravity="top" android:id="@+id/et_innertitle" android:background="@drawable/roundborder_021c31_20" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:hint="@string/convert1" android:maxEms="1000" android:textCursorDrawable="@drawable/et_cursor" />
+        <Button android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_convert" android:background="@drawable/ripple_button_blue" android:paddingTop="8.0dip" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/convert3" android:textAllCaps="false" />
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:paddingLeft="14.0dip" android:paddingRight="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:text="@string/convert4" style="@style/text16_50" />
+            <RelativeLayout android:background="@drawable/roundborder_f7f8fa" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="9.0dip">
+                <TextView android:textSize="12.0dip" android:textColor="@color/black_50" android:id="@+id/tv_privatekey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="14.0dip" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/blue_57" android:gravity="right" android:id="@+id/copy" android:background="@color/gray_f8f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:text="@string/copy" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <ImageView android:id="@+id/iv_copy" android:background="@mipmap/ic_copy2" android:layout_width="10.0dip" android:layout_height="12.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="9.0dip" android:layout_toLeftOf="@id/copy" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@+id/root" android:background="@drawable/ripple_shadow22" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/rl_inner" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip" android:layout_toRightOf="@id/address" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray_66" android:ellipsize="middle" android:gravity="center|right" android:id="@+id/tv_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-1" android:singleLine="true" android:layout_alignParentRight="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_pending" android:background="@drawable/roundborder_0838c7_10" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tv_id" android:layout_alignParentRight="true" android:paddingHorizontal="8.0dip" android:paddingVertical="2.0dip">
+                <com.tron.wallet.common.components.LoadingView android:layout_gravity="center_vertical" android:id="@+id/iv_pending" android:layout_width="10.0dip" android:layout_height="11.0dip" android:layout_marginRight="4.0dip" android:src="@mipmap/ic_loading_asset_header" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/blue_08" android:layout_gravity="center_vertical" android:id="@+id/tv_pending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pending" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/green_23" android:id="@+id/address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="22.0dip" android:text="@string/nft_received" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <TextView android:ellipsize="middle" android:id="@+id/address" android:layout_marginLeft="4.0dip" android:layout_marginTop="22.0dip" android:text="--" android:width="150.0dip" android:singleLine="true" android:layout_toRightOf="@id/address_title" style="@style/text13_02" />
+        <TextView android:id="@+id/time" android:layout_marginTop="11.0dip" android:text="" android:layout_below="@id/address" android:layout_alignLeft="@id/address_title" style="@style/text13_99" />
+    </RelativeLayout>
+</RelativeLayout>

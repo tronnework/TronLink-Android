@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/item_layout" android:background="@drawable/selector_item_select_token" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_wallet_hot" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/ll_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/iv_icon">
+        <TextView android:textStyle="bold" android:ellipsize="end" android:id="@+id/tv_wallet_name" android:layout_width="wrap_content" android:layout_marginRight="40.0dip" android:text="--" android:singleLine="true" style="@style/text14_23" />
+        <TextView android:id="@+id/tv_balance" android:layout_marginTop="4.0dip" android:layout_marginRight="40.0dip" android:text="--" style="@style/text12_9b" />
+        <TextView android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="40.0dip" android:text="--" style="@style/text12_9b" />
+    </LinearLayout>
+    <ImageView android:id="@+id/asset_status" android:visibility="visible" android:layout_width="@dimen/dp_ic_list" android:layout_height="@dimen/dp_ic_list" android:layout_marginTop="34.0dip" android:src="@mipmap/ic_wallet_unselect" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+    <View android:background="@color/gray_f4f4f5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" android:layout_below="@id/ll_info" />
+</RelativeLayout>

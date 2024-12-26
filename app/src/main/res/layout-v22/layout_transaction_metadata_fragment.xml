@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tron.wallet.common.components.VerticalScrollView android:scrollbarThumbVertical="@drawable/scrollbar_ver_thumb" android:scrollbarTrackVertical="@color/gray_F5F6F7" android:scrollbarStyle="insideOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_function" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_marginLeft="20.0dip" android:text="@string/function" android:layout_centerVertical="true" style="@style/text14_80" />
+                <TextView android:id="@+id/tv_function_contract_name" android:layout_marginRight="@dimen/dp_10" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <View android:id="@+id/line" android:background="@color/gray_ee" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/rl_function" />
+            <RelativeLayout android:id="@+id/rl_function_param" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/line">
+                <TextView android:layout_marginLeft="20.0dip" android:text="@string/function_param" style="@style/text14_80" />
+                <TextView android:id="@+id/tv_function_param" android:layout_marginRight="12.0dip" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/text14_02_100" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rl_params" android:background="@drawable/roundborder_f5f6f7_4" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/rl_function_param" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_params">
+                <TextView android:id="@+id/hexadecimal_data_title" android:layout_marginLeft="20.0dip" android:text="@string/hexadecimal_data" style="@style/text14_80" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/hexadecimal_data_title">
+                    <TextView android:textColor="@color/black_02" android:id="@+id/hexadecimal_data_content" android:background="@drawable/roundborder_f5f6f7_4" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="12.0dip" android:text="" style="@style/text12_02" />
+                    <TextView android:gravity="center_vertical" android:id="@+id/tv_copy_hex" android:background="@drawable/roundborder_cdd1da_r8" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_height="22.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="10.0dip" android:text="@string/copy" android:layout_alignBottom="@id/hexadecimal_data_content" android:layout_alignParentRight="true" android:paddingHorizontal="15.0dip" style="@style/text12_23" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.tron.wallet.common.components.VerticalScrollView>
+</RelativeLayout>

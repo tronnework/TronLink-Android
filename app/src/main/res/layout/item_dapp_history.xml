@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/rb_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_bg" android:background="@mipmap/ic_dapp_icon_bg_58" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/simple_drawee_view" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_centerInParent="true" fresco:failureImage="@mipmap/ic_web_dapp" fresco:failureImageScaleType="centerInside" fresco:placeholderImage="@mipmap/ic_default_dapp" fresco:placeholderImageScaleType="centerInside" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/gray_02_70" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray_02_30" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <View android:id="@+id/iv_divider" android:layout_alignParentBottom="true" style="@style/line5" />
+    </RelativeLayout>
+</LinearLayout>

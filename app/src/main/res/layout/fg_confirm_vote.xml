@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+            <TextView android:textStyle="bold" android:id="@+id/tv_sumvote" android:text="1000" android:layout_below="@id/tv_one" android:layout_centerHorizontal="true" style="@style/text30_13" />
+            <TextView android:ellipsize="middle" android:id="@+id/tv_address" android:layout_width="205.0dip" android:singleLine="true" android:layout_below="@id/tv_sumvote" android:layout_centerHorizontal="true" style="@style/text12_02" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:layout_marginLeft="17.0dip" android:text="@string/consume" style="@style/text14_88" />
+            <TextView android:id="@+id/tv_cost_bandwidth" android:layout_marginRight="14.0dip" android:text="3000 带宽" android:layout_alignParentRight="true" style="@style/text14_50" />
+        </RelativeLayout>
+        <View android:visibility="gone" android:layout_marginLeft="14.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="14.0dip" style="@style/line" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rc_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_top" />
+        <TextView android:gravity="center" android:id="@+id/tv_empty" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/currently_not_voted" style="@style/text14_99" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray_88" android:gravity="center_horizontal" android:id="@+id/tv_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/vote_note" />
+    <Button android:id="@+id/bt_go" android:text="@string/now_vote" style="@style/bt40_16" />
+</LinearLayout>

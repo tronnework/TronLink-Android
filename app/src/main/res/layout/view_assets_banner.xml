@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/banner_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_indicator" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:id="@+id/ll_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>
